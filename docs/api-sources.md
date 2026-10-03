@@ -37,4 +37,4 @@ Apache-2.0 is used for the original project code. It supplies an explicit patent
 
 ## Platform identifiers
 
-Public platform references use identifiers such as `WinDomain` and `UnixSSH` in examples, but availability varies by installation and marketplace content. This dataset uses only `Mock...` identifiers, all marked `project-created`. None is claimed to be an official or installed vendor platform. The fixture file contains no customer-specific identifiers.
+The public [Get-PASPlatformSafe examples](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/docs/collections/_commands/Get-PASPlatformSafe.md) use `WinDomain` and `WinServerLocal`, but availability varies by installation and marketplace content. This dataset uses only `Mock...` identifiers, all marked `project-created`. None is claimed to be an official or installed vendor platform. The fixture file contains no customer-specific identifiers.
