@@ -1,0 +1,48 @@
+name: CI
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:18-alpine
+        env:
+          POSTGRES_USER: pam
+          POSTGRES_PASSWORD: pam_local_only
+          POSTGRES_DB: pam
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U pam -d pam"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      DATABASE_URL: postgresql://pam:pam_local_only@127.0.0.1:5432/pam?serverVersion=18&charset=utf8
+      APP_ENV: test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.5'
+          extensions: pdo_pgsql, intl, mbstring, dom
+          coverage: none
+      - run: composer install --no-interaction --prefer-dist
+      - run: composer validate --strict
+      - run: php bin/console doctrine:database:create --env=test --if-not-exists
+      - run: php bin/console doctrine:migrations:migrate --env=test --no-interaction
+      - run: vendor/bin/phpunit
+      - run: vendor/bin/phpstan analyse --memory-limit=512M
+      - run: vendor/bin/php-cs-fixer fix --dry-run --diff
+      - run: php bin/console api:openapi:export --output=api/openapi.json
+      - run: php bin/generate.php
+      - run: php bin/validate.php
+      - run: git diff --exit-code -- api/openapi.json docs/api-inventory.md docs/api-coverage.md clients/
+  docker-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker compose up -d --build --wait
+      - run: curl --fail http://localhost:8080/health
+      - run: curl --fail http://localhost:8080/api/docs
+      - if: always()
+        run: docker compose logs --tail=100

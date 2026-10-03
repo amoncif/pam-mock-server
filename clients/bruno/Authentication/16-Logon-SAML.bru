@@ -1,0 +1,32 @@
+meta {
+  name: Logon SAML
+  type: http
+  seq: 16
+}
+
+post {
+  url: {{baseUrl}}/PasswordVault/API/auth/SAML/Logon
+  body: formUrlEncoded
+  auth: none
+}
+
+headers {
+  Content-Type: application/x-www-form-urlencoded
+}
+
+body:form-urlencoded {
+  SAMLResponse: {{samlResponse}}
+  apiUse: true
+  concurrentSession: true
+}
+
+script:post-response {
+  if (res.getStatus() === 200) {
+    const body = res.getBody();
+    bru.setEnvVar("token", typeof body === "string" ? body : (body.CyberArkLogonResult || body.LogonResult));
+  }
+}
+
+tests {
+  test("Expected HTTP status", function () { expect(res.getStatus()).to.equal(200); });
+}

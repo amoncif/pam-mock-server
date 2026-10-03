@@ -1,10 +1,10 @@
 {
     "type": "project",
-    "license": "proprietary",
+    "license": "Apache-2.0",
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": ">=8.2",
+        "php": "^8.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "api-platform/doctrine-orm": "^5.0",
@@ -19,7 +19,11 @@
         "symfony/runtime": "7.4.*",
         "symfony/security-bundle": "7.4.*",
         "symfony/twig-bundle": "7.4.*",
-        "symfony/yaml": "7.4.*"
+        "symfony/yaml": "7.4.*",
+        "ext-pdo": "*",
+        "ext-dom": "*",
+        "ext-openssl": "*",
+        "doctrine/doctrine-fixtures-bundle": "^4.3"
     },
     "config": {
         "allow-plugins": {
@@ -72,11 +76,13 @@
         }
     },
     "require-dev": {
-        "doctrine/doctrine-fixtures-bundle": "^4.3",
         "friendsofphp/php-cs-fixer": "^3.95",
+        "opis/json-schema": "^2.6",
         "phpstan/phpstan": "^2.2",
         "phpunit/phpunit": "^13.4",
         "symfony/browser-kit": "7.4.*",
         "symfony/css-selector": "7.4.*"
-    }
+    },
+    "name": "pam-mock/pam-mock-server",
+    "description": "Open-source self-hosted PAM mock API for development, integration testing and training."
 }

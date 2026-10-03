@@ -1,7 +1,11 @@
 api_platform:
-    title: Hello API Platform
-    version: 1.0.0
+    title: PAM Mock Server
+    description: 'Independent CyberArk-compatible PAM mock API. See x-mock-status on each operation.'
+    version: 0.1.0
+    formats:
+        json: ['application/json']
+    docs_formats:
+        jsonopenapi: ['application/vnd.openapi+json']
+        html: ['text/html']
     defaults:
         stateless: true
-        cache_headers:
-            vary: ['Content-Type', 'Authorization', 'Origin']
