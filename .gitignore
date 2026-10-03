@@ -21,3 +21,5 @@
 
 # Generated Symfony configuration reference
 /config/reference.php
+
+/.idea/

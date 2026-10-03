@@ -13,7 +13,7 @@ fixtures: reset
 test:
 	$(PHP) php bin/console doctrine:database:create --env=test --if-not-exists
 	$(PHP) php bin/console doctrine:migrations:migrate --env=test --no-interaction
-	$(PHP) vendor/bin/phpunit
+	$(COMPOSE) exec -T -e APP_ENV=test php vendor/bin/phpunit
 lint:
 	$(PHP) vendor/bin/php-cs-fixer fix --dry-run --diff
 phpstan:
