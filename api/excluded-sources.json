@@ -1,0 +1,30 @@
+[
+  {
+    "source": "CyberArk Self-Hosted REST API/CyberArk Self-Hosted REST API/Self-Hosted PAM/Authentication/Logon/PTA Authentication.bru",
+    "reason": "Separate PTA host, outside PVWA API scope"
+  },
+  {
+    "source": "CyberArk Self-Hosted REST API/CyberArk Self-Hosted REST API/Self-Hosted PAM/PTA Installation/Get PTA Installation Status.bru",
+    "reason": "Separate PTA host, outside PVWA API scope"
+  },
+  {
+    "source": "CyberArk Self-Hosted REST API/CyberArk Self-Hosted REST API/Self-Hosted PAM/PTA Installation/Get Server Encryption Key.bru",
+    "reason": "Separate PTA host, outside PVWA API scope"
+  },
+  {
+    "source": "CyberArk Self-Hosted REST API/CyberArk Self-Hosted REST API/Self-Hosted PAM/PTA Installation/Install PTA.bru",
+    "reason": "Separate PTA host, outside PVWA API scope"
+  },
+  {
+    "source": "CyberArk Self-Hosted REST API/CyberArk Self-Hosted REST API/Self-Hosted PAM/PTA Installation/PTA Server Authentication.bru",
+    "reason": "Separate PTA host, outside PVWA API scope"
+  },
+  {
+    "source": "CyberArk Self-Hosted REST API/CyberArk Self-Hosted REST API/Self-Hosted PAM/System Health/PTA Health Monitoring Details.bru",
+    "reason": "Separate PTA host, outside PVWA API scope"
+  },
+  {
+    "source": "CyberArk Self-Hosted REST API/CyberArk Self-Hosted REST API/Self-Hosted PAM/System Health/PTA Prometheus Metrics.bru",
+    "reason": "Separate PTA host, outside PVWA API scope"
+  }
+]
