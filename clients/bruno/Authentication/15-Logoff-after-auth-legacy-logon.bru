@@ -1,0 +1,19 @@
+meta {
+  name: Logoff after auth.legacy.logon
+  type: http
+  seq: 15
+}
+
+post {
+  url: {{baseUrl}}/PasswordVault/WebServices/auth/Cyberark/CyberArkAuthenticationService.svc/Logoff
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}
+
+tests {
+  test("Expected HTTP status", function () { expect(res.getStatus()).to.equal(200); });
+}

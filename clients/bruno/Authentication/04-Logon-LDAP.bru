@@ -1,0 +1,34 @@
+meta {
+  name: Logon LDAP
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/PasswordVault/API/auth/LDAP/Logon
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+      "username": "{{ldapUsername}}",
+      "password": "{{ldapPassword}}",
+      "concurrentSession": true
+  }
+}
+
+script:post-response {
+  if (res.getStatus() === 200) {
+    const body = res.getBody();
+    bru.setEnvVar("token", typeof body === "string" ? body : (body.CyberArkLogonResult || body.LogonResult));
+  }
+}
+
+tests {
+  test("Expected HTTP status", function () { expect(res.getStatus()).to.equal(200); });
+}

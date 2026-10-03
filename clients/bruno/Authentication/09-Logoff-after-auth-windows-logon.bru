@@ -1,0 +1,19 @@
+meta {
+  name: Logoff after auth.windows.logon
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{baseUrl}}/PasswordVault/API/Auth/Logoff
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}
+
+tests {
+  test("Expected HTTP status", function () { expect(res.getStatus()).to.equal(200); });
+}

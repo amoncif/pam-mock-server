@@ -1,0 +1,725 @@
+{
+    "info": {
+        "name": "PAM Mock Server",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": "Independent local mock. Generated from the project contract; not copied from a vendor collection."
+    },
+    "item": [
+        {
+            "name": "Authentication",
+            "item": [
+                {
+                    "name": "Logon CyberArk",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/PasswordVault/API/auth/Cyberark/Logon",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"username\": \"{{username}}\",\n    \"password\": \"{{password}}\",\n    \"concurrentSession\": true\n}\n",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));",
+                                    "if (pm.response.code === 200) { const body = pm.response.json(); pm.environment.set(\"token\", typeof body === \"string\" ? body : (body.CyberArkLogonResult || body.LogonResult)); }"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Reuse token after auth.cyberark.logon",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/mock/session",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Logoff after auth.cyberark.logon",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/PasswordVault/API/Auth/Logoff",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Logon LDAP",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/PasswordVault/API/auth/LDAP/Logon",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"username\": \"{{ldapUsername}}\",\n    \"password\": \"{{ldapPassword}}\",\n    \"concurrentSession\": true\n}\n",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));",
+                                    "if (pm.response.code === 200) { const body = pm.response.json(); pm.environment.set(\"token\", typeof body === \"string\" ? body : (body.CyberArkLogonResult || body.LogonResult)); }"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Reuse token after auth.ldap.logon",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/mock/session",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Logoff after auth.ldap.logon",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/PasswordVault/API/Auth/Logoff",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Logon Windows",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/PasswordVault/API/auth/Windows/Logon",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"username\": \"{{windowsUsername}}\",\n    \"password\": \"{{windowsPassword}}\",\n    \"concurrentSession\": true\n}\n",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));",
+                                    "if (pm.response.code === 200) { const body = pm.response.json(); pm.environment.set(\"token\", typeof body === \"string\" ? body : (body.CyberArkLogonResult || body.LogonResult)); }"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Reuse token after auth.windows.logon",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/mock/session",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Logoff after auth.windows.logon",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/PasswordVault/API/Auth/Logoff",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Logon RADIUS",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/PasswordVault/API/auth/RADIUS/Logon",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"username\": \"{{radiusUsername}}\",\n    \"password\": \"{{radiusPassword}}\",\n    \"concurrentSession\": true\n}\n",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));",
+                                    "if (pm.response.code === 200) { const body = pm.response.json(); pm.environment.set(\"token\", typeof body === \"string\" ? body : (body.CyberArkLogonResult || body.LogonResult)); }"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Reuse token after auth.radius.logon",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/mock/session",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Logoff after auth.radius.logon",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/PasswordVault/API/Auth/Logoff",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Logon CyberArk legacy",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/PasswordVault/WebServices/auth/Cyberark/CyberArkAuthenticationService.svc/Logon",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"username\": \"{{username}}\",\n    \"password\": \"{{password}}\"\n}\n",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));",
+                                    "if (pm.response.code === 200) { const body = pm.response.json(); pm.environment.set(\"token\", typeof body === \"string\" ? body : (body.CyberArkLogonResult || body.LogonResult)); }"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Reuse token after auth.legacy.logon",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/mock/session",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Logoff after auth.legacy.logon",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/PasswordVault/WebServices/auth/Cyberark/CyberArkAuthenticationService.svc/Logoff",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Logon SAML",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/PasswordVault/API/auth/SAML/Logon",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/x-www-form-urlencoded"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "SAMLResponse",
+                                    "value": "{{samlResponse}}"
+                                },
+                                {
+                                    "key": "apiUse",
+                                    "value": "true"
+                                },
+                                {
+                                    "key": "concurrentSession",
+                                    "value": "true"
+                                }
+                            ]
+                        }
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));",
+                                    "if (pm.response.code === 200) { const body = pm.response.json(); pm.environment.set(\"token\", typeof body === \"string\" ? body : (body.CyberArkLogonResult || body.LogonResult)); }"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Reuse token after auth.saml.logon",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/mock/session",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Logoff after auth.saml.logon",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/PasswordVault/API/auth/SAML/Logoff",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Logon Shared",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/PasswordVault/WebServices/auth/Shared/RestfulAuthenticationService.svc/Logon",
+                        "header": []
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));",
+                                    "if (pm.response.code === 200) { const body = pm.response.json(); pm.environment.set(\"token\", typeof body === \"string\" ? body : (body.CyberArkLogonResult || body.LogonResult)); }"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Reuse token after auth.shared.logon",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/mock/session",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Logoff after auth.shared.logon",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/PasswordVault/WebServices/auth/Shared/RestfulAuthenticationService.svc/Logoff",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Invalid credentials",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/PasswordVault/API/auth/Cyberark/Logon",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"username\": \"{{username}}\",\n    \"password\": \"deliberately-invalid\"\n}\n",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(403));"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Account Groups",
+            "description": "Future implementation. See Swagger for all stub operations.",
+            "item": []
+        },
+        {
+            "name": "Accounts",
+            "description": "Future implementation. See Swagger for all stub operations.",
+            "item": []
+        },
+        {
+            "name": "Applications",
+            "description": "Future implementation. See Swagger for all stub operations.",
+            "item": []
+        },
+        {
+            "name": "Configuration",
+            "description": "Future implementation. See Swagger for all stub operations.",
+            "item": []
+        },
+        {
+            "name": "Discovery",
+            "description": "Future implementation. See Swagger for all stub operations.",
+            "item": []
+        },
+        {
+            "name": "LDAP Integration",
+            "description": "Future implementation. See Swagger for all stub operations.",
+            "item": []
+        },
+        {
+            "name": "Onboarding Rules",
+            "description": "Future implementation. See Swagger for all stub operations.",
+            "item": []
+        },
+        {
+            "name": "OPM Commands",
+            "description": "Future implementation. See Swagger for all stub operations.",
+            "item": []
+        },
+        {
+            "name": "Platforms",
+            "description": "Future implementation. See Swagger for all stub operations.",
+            "item": []
+        },
+        {
+            "name": "PSM",
+            "description": "Future implementation. See Swagger for all stub operations.",
+            "item": []
+        },
+        {
+            "name": "PTA Administration",
+            "description": "Future implementation. See Swagger for all stub operations.",
+            "item": []
+        },
+        {
+            "name": "Recordings",
+            "description": "Future implementation. See Swagger for all stub operations.",
+            "item": []
+        },
+        {
+            "name": "Reports and Tasks",
+            "description": "Future implementation. See Swagger for all stub operations.",
+            "item": []
+        },
+        {
+            "name": "Requests",
+            "description": "Future implementation. See Swagger for all stub operations.",
+            "item": []
+        },
+        {
+            "name": "Safe Members",
+            "description": "Future implementation. See Swagger for all stub operations.",
+            "item": []
+        },
+        {
+            "name": "Safes",
+            "description": "Future implementation. See Swagger for all stub operations.",
+            "item": []
+        },
+        {
+            "name": "Security",
+            "description": "Future implementation. See Swagger for all stub operations.",
+            "item": []
+        },
+        {
+            "name": "Sessions",
+            "description": "Future implementation. See Swagger for all stub operations.",
+            "item": []
+        },
+        {
+            "name": "System Health",
+            "description": "Future implementation. See Swagger for all stub operations.",
+            "item": []
+        },
+        {
+            "name": "User Groups",
+            "description": "Future implementation. See Swagger for all stub operations.",
+            "item": []
+        },
+        {
+            "name": "Users",
+            "description": "Future implementation. See Swagger for all stub operations.",
+            "item": []
+        },
+        {
+            "name": "Vault",
+            "description": "Future implementation. See Swagger for all stub operations.",
+            "item": []
+        }
+    ]
+}
