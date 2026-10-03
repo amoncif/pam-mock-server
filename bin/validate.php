@@ -34,6 +34,26 @@ $result = (new Validator())->validate($document, $resolveAnchor($schema));
 if (!$result->isValid()) {
     $errors[] = json_encode((new ErrorFormatter())->format($result->error()), JSON_PRETTY_PRINT);
 }
+// The official OAS document schema leaves Schema Objects open. Compile each
+// request/response schema too, so invalid schema keywords fail this check.
+$schemaValidator = new Validator();
+$checkSchemas = function (mixed $node, string $path = '') use (&$checkSchemas, &$errors, $schemaValidator): void {
+    if (!is_object($node) && !is_array($node)) {
+        return;
+    }
+    foreach ($node as $name => $child) {
+        if ('schema' === $name && $child instanceof stdClass) {
+            try {
+                $schemaValidator->loader()->loadObjectSchema($child, draft: '2020-12');
+            } catch (Throwable $error) {
+                $errors[] = $path.': '.$error->getMessage();
+            }
+        } else {
+            $checkSchemas($child, $path.'/'.$name);
+        }
+    }
+};
+$checkSchemas($document);
 $spec = json_decode(json_encode($document), true);
 foreach ($manifest as $endpoint) {
     foreach (['id', 'domain', 'name', 'method', 'path', 'authentication', 'parameters', 'responses', 'source', 'source_version', 'status', 'tests', 'confidence'] as $field) {
