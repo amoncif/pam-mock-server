@@ -25,8 +25,6 @@
 
     <source ignoreSuppressionOfDeprecations="true"
             ignoreIndirectDeprecations="true"
-            restrictNotices="true"
-            restrictWarnings="true"
     >
         <include>
             <directory>src</directory>

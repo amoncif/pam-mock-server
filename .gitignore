@@ -18,3 +18,6 @@
 /phpunit.xml
 /.phpunit.cache/
 ###< phpunit/phpunit ###
+
+# Generated Symfony configuration reference
+/config/reference.php

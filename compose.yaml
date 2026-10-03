@@ -1,25 +1,47 @@
-
+name: pam-mock-server
 services:
-###> doctrine/doctrine-bundle ###
   database:
-    image: postgres:${POSTGRES_VERSION:-16}-alpine
+    image: postgres:18-alpine
     environment:
-      POSTGRES_DB: ${POSTGRES_DB:-app}
-      # You should definitely change the password in production
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-!ChangeMe!}
-      POSTGRES_USER: ${POSTGRES_USER:-app}
-    healthcheck:
-      test: ["CMD", "pg_isready", "-d", "${POSTGRES_DB:-app}", "-U", "${POSTGRES_USER:-app}"]
-      timeout: 5s
-      retries: 5
-      start_period: 60s
+      POSTGRES_DB: pam
+      POSTGRES_USER: pam
+      POSTGRES_PASSWORD: pam_local_only
     volumes:
-      - database_data:/var/lib/postgresql/data:rw
-      # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
-      # - ./docker/db/data:/var/lib/postgresql/data:rw
-###< doctrine/doctrine-bundle ###
-
+      - database_data:/var/lib/postgresql
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U pam -d pam"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+  php:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    environment:
+      APP_ENV: dev
+      APP_DEBUG: 0
+      APP_SECRET: local-mock-only-not-a-production-secret
+      DATABASE_URL: postgresql://pam:pam_local_only@database:5432/pam?serverVersion=18&charset=utf8
+      PAM_TOKEN_TTL: 1200
+    volumes:
+      - public_assets:/app/public
+    depends_on:
+      database:
+        condition: service_healthy
+  web:
+    image: nginx:stable-alpine
+    ports:
+      - "127.0.0.1:${PAM_HTTP_PORT:-8080}:80"
+    volumes:
+      - ./docker/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - public_assets:/app/public:ro
+    depends_on:
+      - php
+    healthcheck:
+      test: [CMD-SHELL, "wget -q -O /dev/null http://127.0.0.1/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
 volumes:
-###> doctrine/doctrine-bundle ###
   database_data:
-###< doctrine/doctrine-bundle ###
+  public_assets:
