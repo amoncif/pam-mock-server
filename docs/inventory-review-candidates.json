@@ -1,0 +1,259 @@
+[
+  {
+    "function": "psPAS/Functions/Accounts/Clear-PASDiscoveredAccount.ps1",
+    "path": "/PasswordVault/api/DiscoveredAccounts/Delete/Bulk",
+    "methods": []
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Clear-PASDiscoveredAccount.ps1",
+    "path": "/PasswordVault/api/DiscoveredAccounts",
+    "methods": []
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Clear-PASLinkedAccount.ps1",
+    "path": "/PasswordVault/API/Accounts/Unlink/Bulk",
+    "methods": []
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Clear-PASLinkedAccount.ps1",
+    "path": "/PasswordVault/api/Accounts/{AccountID}/LinkAccount/{extraPasswordIndex}",
+    "methods": []
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Get-PASAccount.ps1",
+    "path": "/PasswordVault/api/Accounts",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Get-PASAccount.ps1",
+    "path": "/PasswordVault/WebServices/PIMServices.svc/Accounts",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Get-PASAccountImportJob.ps1",
+    "path": "/PasswordVault/api/bulkactions/accounts",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Get-PASDiscoveredAccount.ps1",
+    "path": "/PasswordVault/api/DiscoveredAccounts",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Resume-PASCPMAutoManagement.ps1",
+    "path": "/PasswordVault/API/Accounts/Resume/Bulk",
+    "methods": []
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Resume-PASCPMAutoManagement.ps1",
+    "path": "/PasswordVault/API/Accounts/{Accountid}/Resume/",
+    "methods": []
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Resume-PASDependentAccount.ps1",
+    "path": "/PasswordVault/API/Accounts/dependentAccounts/Resume/Bulk",
+    "methods": []
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Resume-PASDependentAccount.ps1",
+    "path": "/PasswordVault/API/Accounts/{AccountID}/dependentAccounts/{dependentAccountId}/Resume",
+    "methods": []
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Set-PASAccount.ps1",
+    "path": "/PasswordVault/api/Accounts/{AccountID}",
+    "methods": []
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Set-PASAccount.ps1",
+    "path": "/PasswordVault/WebServices/PIMServices.svc/Accounts/{AccountID}",
+    "methods": []
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Set-PASLinkedAccount.ps1",
+    "path": "/PasswordVault/API/Accounts/Link/Bulk",
+    "methods": []
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Set-PASLinkedAccount.ps1",
+    "path": "/PasswordVault/api/Accounts/{AccountID}/LinkAccount",
+    "methods": []
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Stop-PASCPMTask.ps1",
+    "path": "/PasswordVault/api/Accounts/{Accountid}/DependentAccounts/{dependentAccountid}/Cancel",
+    "methods": []
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Stop-PASCPMTask.ps1",
+    "path": "/PasswordVault/API/Accounts/Cancel/Bulk",
+    "methods": []
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Stop-PASCPMTask.ps1",
+    "path": "/PasswordVault/API/Accounts/{Accountid}/Cancel/",
+    "methods": []
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Sync-PASDependentAccount.ps1",
+    "path": "/PasswordVault/API/Accounts/{AccountID}/dependentAccounts",
+    "methods": []
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Unlock-PASAccount.ps1",
+    "path": "/PasswordVault/API/Accounts/CheckIn/Bulk",
+    "methods": []
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Unlock-PASAccount.ps1",
+    "path": "/PasswordVault/API/Accounts/{AccountID}/CheckIn",
+    "methods": []
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Unlock-PASAccount.ps1",
+    "path": "/PasswordVault/API/Accounts/Unlock/Bulk",
+    "methods": []
+  },
+  {
+    "function": "psPAS/Functions/Accounts/Unlock-PASAccount.ps1",
+    "path": "/PasswordVault/API/Accounts/{AccountID}/Unlock",
+    "methods": []
+  },
+  {
+    "function": "psPAS/Functions/AccountsFeed/Get-PASDiscoveryScan.ps1",
+    "path": "/PasswordVault/api/DiscoveryScans",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "function": "psPAS/Functions/Applications/Get-PASApplication.ps1",
+    "path": "/PasswordVault/WebServices/PIMServices.svc/Applications",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "function": "psPAS/Functions/Authentication/New-PASPrivateSSHKey.ps1",
+    "path": "/PasswordVault/api/Users",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "function": "psPAS/Functions/Authentication/Remove-PASPrivateSSHKey.ps1",
+    "path": "/PasswordVault/api/Users",
+    "methods": [
+      "DELETE"
+    ]
+  },
+  {
+    "function": "psPAS/Functions/EventSecurity/Get-PASPTASecurityConfigurationCategory.ps1",
+    "path": "/PasswordVault/API/pta/API/configuration/categories",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "function": "psPAS/Functions/LDAPDirectories/Get-PASDirectory.ps1",
+    "path": "/PasswordVault/api/Configuration/LDAP/Directories",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "function": "psPAS/Functions/Monitoring/Get-PASPSMRecording.ps1",
+    "path": "/PasswordVault/API/Recordings",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "function": "psPAS/Functions/Monitoring/Get-PASPSMSession.ps1",
+    "path": "/PasswordVault/API/LiveSessions",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "function": "psPAS/Functions/Requests/Approve-PASRequest.ps1",
+    "path": "/PasswordVault/API/IncomingRequests",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "function": "psPAS/Functions/Requests/Deny-PASRequest.ps1",
+    "path": "/PasswordVault/API/IncomingRequests",
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "function": "psPAS/Functions/SafeMembers/Get-PASSafeMember.ps1",
+    "path": "/PasswordVault/WebServices/PIMServices.svc/Safes/{SafeName}/Members",
+    "methods": []
+  },
+  {
+    "function": "psPAS/Functions/SafeMembers/Get-PASSafeMember.ps1",
+    "path": "/PasswordVault/api/Safes/{SafeName}/Members",
+    "methods": []
+  },
+  {
+    "function": "psPAS/Functions/Safes/Get-PASSafe.ps1",
+    "path": "/PasswordVault/API/Safes",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "function": "psPAS/Functions/Safes/Get-PASSafe.ps1",
+    "path": "/PasswordVault/API/Safes/{SafeName}",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "function": "psPAS/Functions/Safes/Get-PASSafe.ps1",
+    "path": "/PasswordVault/WebServices/PIMServices.svc/Safes",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "function": "psPAS/Functions/User/Get-PASGroup.ps1",
+    "path": "/PasswordVault/API/UserGroups",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "function": "psPAS/Functions/User/Get-PASUser.ps1",
+    "path": "/PasswordVault/api/Users",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "function": "psPAS/Functions/User/Get-PASUser.ps1",
+    "path": "/PasswordVault/WebServices/PIMServices.svc/Users/{UserName}",
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "function": "psPAS/Functions/User/Get-PASUser.ps1",
+    "path": "/PasswordVault/API/Users/{id}/safes",
+    "methods": [
+      "GET"
+    ]
+  }
+]

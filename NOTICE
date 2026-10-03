@@ -1,0 +1,8 @@
+PAM Mock Server
+Copyright 2026 PAM Mock Server contributors
+
+This project is an independent open-source project and is not affiliated with,
+sponsored by, or endorsed by CyberArk.
+CyberArk is a trademark of its respective owner. No trademark rights are granted.
+Public HTTP contracts are used only for interoperability. No proprietary software
+or documentation is distributed. See docs/api-sources.md and third-party notices.
