@@ -1,0 +1,7 @@
+title = "PAM Mock Server secret scanning"
+[extend]
+useDefault = true
+[[allowlists]]
+description = "Explicitly fictional local-only configuration"
+regexTarget = "match"
+regexes = ['''local-mock-only-not-a-production-secret''', '''pam_local_only''']
