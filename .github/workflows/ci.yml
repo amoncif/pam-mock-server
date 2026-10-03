@@ -20,7 +20,7 @@ jobs:
       DATABASE_URL: postgresql://pam:pam_local_only@127.0.0.1:5432/pam?serverVersion=18&charset=utf8
       APP_ENV: test
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: shivammathur/setup-php@v2
         with:
           php-version: '8.5'
@@ -40,7 +40,7 @@ jobs:
   docker-smoke:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - run: docker compose up -d --build --wait
       - run: curl --fail http://localhost:8080/health
       - run: curl --fail http://localhost:8080/api/docs
