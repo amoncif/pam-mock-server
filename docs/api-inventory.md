@@ -13,8 +13,8 @@ This is the union of reviewed public PVWA references. It is not certified as exh
 - Authentication: none
 - Request media type: application/json
 - Request fields: `username` (string), `password` (string), `concurrentSession` (boolean), `newPassword` (string)
-- Parameters: 
-- Response contracts: 200 string; 400 object; 401 object; 403 object; 409 object; 415 object; 
+- Parameters:
+- Response contracts: 200 string; 400 object; 401 object; 403 object; 409 object; 415 object;
 - Known errors: PASWS013E, PASWS006E, ITATS004E, ITATS005E, ITATS006E, ITATS009E, PAMMOCK409
 - Source: [official-documentation](https://docs.cyberark.com/pam-self-hosted/latest/en/content/sdk/cyberark%20authentication%20-%20logon_v10.htm)
 - Source version: PAM Self-Hosted 15.2, accessed 2026-10-03
@@ -31,8 +31,8 @@ Local fixture authentication; no external identity service. Error text and polic
 - Authentication: none
 - Request media type: application/json
 - Request fields: `username` (string), `password` (string), `concurrentSession` (boolean), `newPassword` (string)
-- Parameters: 
-- Response contracts: 200 string; 400 object; 401 object; 403 object; 409 object; 415 object; 
+- Parameters:
+- Response contracts: 200 string; 400 object; 401 object; 403 object; 409 object; 415 object;
 - Known errors: PASWS013E, PASWS006E, ITATS004E, ITATS005E, ITATS006E, ITATS009E, PAMMOCK409
 - Source: [official-documentation](https://docs.cyberark.com/pam-self-hosted/latest/en/content/sdk/cyberark%20authentication%20-%20logon_v10.htm)
 - Source version: PAM Self-Hosted 15.2, accessed 2026-10-03
@@ -49,8 +49,8 @@ Local fixture authentication; no external identity service. Error text and polic
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 409 object; 
+- Parameters:
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 409 object;
 - Known errors: PASWS013E, PASWS006E, ITATS004E, ITATS005E, ITATS006E, ITATS009E, PAMMOCK409
 - Source: [official-documentation](https://docs.cyberark.com/pam-self-hosted/latest/en/content/sdk/cyberark%20authentication%20-%20logoff_v10.htm)
 - Source version: PAM Self-Hosted 15.2, accessed 2026-10-03
@@ -67,8 +67,8 @@ Local fixture authentication; no external identity service. Error text and polic
 - Authentication: none
 - Request media type: application/json
 - Request fields: `username` (string), `password` (string), `concurrentSession` (boolean)
-- Parameters: 
-- Response contracts: 200 string; 400 object; 401 object; 403 object; 409 object; 415 object; 
+- Parameters:
+- Response contracts: 200 string; 400 object; 401 object; 403 object; 409 object; 415 object;
 - Known errors: PASWS013E, PASWS006E, ITATS004E, ITATS005E, ITATS006E, ITATS009E, PAMMOCK409
 - Source: [official-documentation](https://docs.cyberark.com/pam-self-hosted/latest/en/content/sdk/cyberark%20authentication%20-%20logon_v10.htm)
 - Source version: PAM Self-Hosted 15.2, accessed 2026-10-03
@@ -85,8 +85,8 @@ Local fixture authentication; no external identity service. Error text and polic
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 409 object; 
+- Parameters:
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 409 object;
 - Known errors: PASWS013E, PASWS006E, ITATS004E, ITATS005E, ITATS006E, ITATS009E, PAMMOCK409
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Authentication/Logoff/SAML%20-%20Logoff.bru)
 - Source version: PAM Self-Hosted 15.2, accessed 2026-10-03
@@ -103,8 +103,8 @@ Local fixture authentication; no external identity service. Error text and polic
 - Authentication: none
 - Request media type: application/x-www-form-urlencoded
 - Request fields: `SAMLResponse` (string), `apiUse` (boolean), `concurrentSession` (boolean)
-- Parameters: 
-- Response contracts: 200 string; 400 object; 401 object; 403 object; 409 object; 415 object; 
+- Parameters:
+- Response contracts: 200 string; 400 object; 401 object; 403 object; 409 object; 415 object;
 - Known errors: PASWS013E, PASWS006E, ITATS004E, ITATS005E, ITATS006E, ITATS009E, PAMMOCK409
 - Source: [official-documentation](https://docs.cyberark.com/pam-self-hosted/latest/en/content/sdk/saml_%20authentication_%20logon_newgen.htm)
 - Source version: PAM Self-Hosted 15.2, accessed 2026-10-03
@@ -121,8 +121,8 @@ Local fixture authentication; no external identity service. Error text and polic
 - Authentication: none
 - Request media type: application/json
 - Request fields: `username` (string), `password` (string), `concurrentSession` (boolean)
-- Parameters: 
-- Response contracts: 200 string; 400 object; 401 object; 403 object; 409 object; 415 object; 
+- Parameters:
+- Response contracts: 200 string; 400 object; 401 object; 403 object; 409 object; 415 object;
 - Known errors: PASWS013E, PASWS006E, ITATS004E, ITATS005E, ITATS006E, ITATS009E, PAMMOCK409
 - Source: [official-documentation](https://docs.cyberark.com/pam-self-hosted/latest/en/content/sdk/cyberark%20authentication%20-%20logon_v10.htm)
 - Source version: PAM Self-Hosted 15.2, accessed 2026-10-03
@@ -139,8 +139,8 @@ Local fixture authentication; no external identity service. Error text and polic
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 200 unspecified; 400 object; 401 object; 403 object; 409 object; 
+- Parameters:
+- Response contracts: 200 unspecified; 400 object; 401 object; 403 object; 409 object;
 - Known errors: PASWS013E, PASWS006E, ITATS004E, ITATS005E, ITATS006E, ITATS009E, PAMMOCK409
 - Source: [official-documentation](https://docs.cyberark.com/pam-self-hosted/latest/en/content/sdk/cyberark%20authentication%20-%20logoff_v10.htm)
 - Source version: PAM Self-Hosted 15.2, accessed 2026-10-03
@@ -157,8 +157,8 @@ Local fixture authentication; no external identity service. Error text and polic
 - Authentication: none
 - Request media type: application/json
 - Request fields: `username` (string), `password` (string), `newPassword` (string), `useRadiusAuthentication` (boolean), `connectionNumber` (integer)
-- Parameters: 
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 409 object; 415 object; 
+- Parameters:
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 409 object; 415 object;
 - Known errors: PASWS013E, PASWS006E, ITATS004E, ITATS005E, ITATS006E, ITATS009E, PAMMOCK409
 - Source: [official-documentation](https://docs.cyberark.com/pam-self-hosted/latest/en/content/sdk/cyberark%20authentication%20-%20logon_v10.htm)
 - Source version: PAM Self-Hosted 15.2, accessed 2026-10-03
@@ -175,8 +175,8 @@ Local fixture authentication; no external identity service. Error text and polic
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 409 object; 
+- Parameters:
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 409 object;
 - Known errors: PASWS013E, PASWS006E, ITATS004E, ITATS005E, ITATS006E, ITATS009E, PAMMOCK409
 - Source: [official-documentation](https://docs.cyberark.com/pam-self-hosted/latest/en/content/sdk/shared%20logon%20authentication%20-%20logoff.htm)
 - Source version: PAM Self-Hosted 15.2, accessed 2026-10-03
@@ -193,8 +193,8 @@ Local fixture authentication; no external identity service. Error text and polic
 - Authentication: none
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 409 object; 
+- Parameters:
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 409 object;
 - Known errors: PASWS013E, PASWS006E, ITATS004E, ITATS005E, ITATS006E, ITATS009E, PAMMOCK409
 - Source: [official-documentation](https://docs.cyberark.com/pam-self-hosted/latest/en/content/sdk/shared%20logon%20authentication%20-%20logon.htm)
 - Source version: PAM Self-Hosted 15.2, accessed 2026-10-03
@@ -212,7 +212,7 @@ Local fixture authentication; no external identity service. Error text and polic
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `Safe`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Groups/Get%20Account%20Group%20by%20Safe.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -229,8 +229,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: `GroupName` (string), `GroupPlatformID` (string), `Safe` (string)
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Groups/Add%20Account%20Group.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -248,7 +248,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `groupID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Groups/Get%20Account%20Group%20Members.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -266,7 +266,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `AccountID` (string)
 - Parameters: path `groupID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Groups/Add%20Member%20to%20Account%20Group.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -284,7 +284,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `groupID`, path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Groups/Delete%20Member%20from%20Account%20Group.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -302,7 +302,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `Safe`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/AccountGroups/Get-PASAccountGroup.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -320,7 +320,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `search`, query `searchType`, query `sort`, query `offset`, query `limit`, query `filter`, query `savedfilter`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Get%20Accounts.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -337,8 +337,8 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Authentication: token
 - Request media type: application/json
 - Request fields: `name` (string), `address` (string), `userName` (string), `platformId` (string), `safeName` (string), `secretType` (string), `secret` (string), `platformAccountProperties` (object), `secretManagement` (object), `remoteMachinesAccess` (object)
-- Parameters: 
-- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Parameters:
+- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Add%20Account.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -355,8 +355,8 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Authentication: token
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Ad-Hoc%20Connect%20Using%20PSM.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -374,7 +374,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `search`, query `searchType`, query `sort`, query `offset`, query `limit`, query `filter`, query `savedfilter`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Get%20Advanced%20Search%20Properties.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -391,8 +391,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Stop-PASCPMTask.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -409,8 +409,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Unlock-PASAccount.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -427,8 +427,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Resume-PASDependentAccount.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -445,8 +445,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Set-PASLinkedAccount.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -463,8 +463,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Add-PASPersonalAdminAccount.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -481,8 +481,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Resume-PASCPMAutoManagement.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -499,8 +499,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Clear-PASLinkedAccount.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -517,8 +517,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Unlock-PASAccount.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -536,7 +536,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Delete%20Account.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -554,7 +554,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Get%20Account%20Details.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -572,7 +572,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
 - Parameters: path `accountID`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Update%20Account.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -590,7 +590,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `AccountID`, path `dependentAccountId`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Set-PASDependentLinkedAccount.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -608,7 +608,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `AccountID`, path `dependentAccountId`, path `extraPasswordIndex`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Clear-PASDependentLinkedAccount.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -626,7 +626,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `AccountID`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Get-PASAccountActivity.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -644,7 +644,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `Accountid`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Stop-PASCPMTask.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -662,7 +662,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: application/json
 - Request fields: `ChangeEntireGroup` (boolean)
 - Parameters: path `accountID`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Change%20Credentials%20Immediately.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -680,7 +680,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Check%20In%20an%20Exclusive%20Account.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -698,7 +698,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`, query `search`, query `filter`, query `failed`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Dependent%20Accounts/Get%20All%20Dependent%20Accounts%20of%20a%20Specific%20Account.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -716,7 +716,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `name` (string), `platformId` (string), `platformAccountProperties` (object), `secretManagement` (object)
 - Parameters: path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Dependent%20Accounts/Add%20Dependent%20Account.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -734,7 +734,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `bulkItems` (array)
 - Parameters: path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Dependent%20Accounts/Bulk%20Sync%20Dependent%20Account%20Secret.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -752,7 +752,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`, path `dependentAccountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Dependent%20Accounts/Delete%20Dependent%20Account.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -770,7 +770,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`, path `dependentAccountID`, query `extendedDetails`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Dependent%20Accounts/Get%20Dependent%20Account%20Details.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -788,7 +788,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `name` (string), `platformAccountProperties` (object), `secretManagement` (object)
 - Parameters: path `accountID`, path `dependentAccountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Dependent%20Accounts/Update%20Dependent%20Account.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -806,7 +806,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `Accountid`, path `dependentAccountid`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Stop-PASCPMTask.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -824,7 +824,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `AccountID`, path `dependentAccountId`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Set-PASDependentLinkedAccount.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -842,7 +842,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`, path `dependentAccountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Dependent%20Accounts/Resume%20Dependent%20Account.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -860,7 +860,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`, path `dependentAccountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Dependent%20Accounts/Sync%20Dependent%20Account%20Secret.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -878,7 +878,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `AccountID`, path `dependentAccountId`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Clear-PASDependentLinkedAccount.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -896,7 +896,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Get%20Just%20in%20Time%20Access.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -914,7 +914,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
 - Parameters: path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Linked%20Accounts/Link%20an%20Account.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -932,7 +932,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`, path `extraPassIndex`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Linked%20Accounts/Unlink%20an%20Account.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -950,7 +950,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
 - Parameters: path `accountID`
-- Response contracts: 200 string; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 string; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Get%20Password%20Value.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -968,7 +968,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: application/json
 - Request fields: `NewCredentials` (string)
 - Parameters: path `accountID`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Change%20Credentials%20in%20the%20Vault.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -986,7 +986,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
 - Parameters: path `accountID`
-- Response contracts: 200 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Connect%20Using%20PSM.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1004,7 +1004,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Reconcile%20Credentials.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1022,7 +1022,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `Accountid`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Resume-PASCPMAutoManagement.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -1040,7 +1040,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Revoke%20Just%20in%20Time%20Access.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1058,7 +1058,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`
-- Response contracts: 200 string; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 string; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Generate%20Password.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1076,7 +1076,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
 - Parameters: path `accountID`
-- Response contracts: 200 string; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 string; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Retrieve%20Private%20SSH%20Key%20Account.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1094,7 +1094,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`, query `showTemporary`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Get%20Secret%20Versions.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1112,7 +1112,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: application/json
 - Request fields: `ChangeImmediately` (boolean), `NewCredentials` (string)
 - Parameters: path `accountID`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Change%20Credentials%20and%20Set%20Next%20Password.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1130,7 +1130,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Unlock%20Account.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1148,7 +1148,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Verify%20Credentials.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1166,7 +1166,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `filter`, query `limit`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Bulk%20Upload%20of%20Accounts/Get%20All%20Bulk%20Account%20Uploads%20for%20User.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1183,8 +1183,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: `source` (string), `accountsList` (array)
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Bulk%20Upload%20of%20Accounts/Create%20Bulk%20Upload%20of%20Accounts.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1202,7 +1202,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `ID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Bulk%20Upload%20of%20Accounts/Get%20Bulk%20Account%20Upload%20Result.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1220,7 +1220,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `search`, query `offset`, query `limit`, query `filter`, query `IncludeDeleted`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Dependent%20Accounts/Get%20All%20Dependent%20Accounts%20in%20the%20System.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1237,8 +1237,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Discovered%20Accounts/Delete%20Discovered%20Accounts.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1256,7 +1256,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `filter`, query `search`, query `searchType`, query `offset`, query `limit`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Discovered%20Accounts/Get%20Discovered%20Accounts.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1273,8 +1273,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Discovered%20Accounts/Add%20Discovered%20Accounts.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1291,8 +1291,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Clear-PASDiscoveredAccount.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -1310,7 +1310,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Discovered%20Accounts/Get%20Discovered%20Account%20Details.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1328,7 +1328,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Clear-PASDiscoveredAccount.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -1346,7 +1346,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `id`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Publish-PASDiscoveredAccount.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -1364,7 +1364,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `id`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Get-PASLinkedAccount.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -1382,7 +1382,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `id`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Get-PASAccountDetail.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -1399,8 +1399,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Add-PASAccount.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -1417,8 +1417,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Get-PASAccount.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -1436,7 +1436,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `AccountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Remove-PASAccount.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -1454,7 +1454,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `AccountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Set-PASAccount.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -1472,7 +1472,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Get%20Account%20Activity.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1490,7 +1490,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `AccountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Get-PASAccount.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -1507,8 +1507,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Add-PASPendingAccount.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -1526,7 +1526,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `Location`, query `IncludeSublocations`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Applications/Get%20Applications.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1543,8 +1543,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Applications/Add%20Application.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1562,7 +1562,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `applicationID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Applications/Delete%20Application.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1580,7 +1580,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `applicationID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Applications/Get%20Application%20Details.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1598,7 +1598,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `applicationID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Applications/Get%20Application%20Authentication%20Methods.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1616,7 +1616,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
 - Parameters: path `applicationID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Applications/Add%20Application%20Authentication%20Method.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1634,7 +1634,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `applicationID`, path `authID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Applications/Delete%20Application%20Authentication%20Method.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1651,8 +1651,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Customization/Reset-PASTheme.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -1669,8 +1669,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Customization/Get-PASTheme.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -1687,8 +1687,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Customization/Enable-PASTheme.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -1705,8 +1705,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/General/Get%20Allowed%20Referrer.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1723,8 +1723,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/General/Add%20Allowed%20Referrer.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1741,8 +1741,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Authentication/Auth%20Methods%20Config/Get%20Auth%20Methods.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1759,8 +1759,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Authentication/Auth%20Methods%20Config/Add%20Auth%20Method.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1778,7 +1778,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `authID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Authentication/Auth%20Methods%20Config/Delete%20Auth%20Method.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1796,7 +1796,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `authID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Authentication/Auth%20Methods%20Config/Get%20Specific%20Auth%20Method.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1814,7 +1814,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
 - Parameters: path `authID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Authentication/Auth%20Methods%20Config/Update%20Auth%20Method.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1831,8 +1831,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; 
+- Parameters:
+- Response contracts: 501 object; 401 object;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Authentication/Get-PASOAuthProvider.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; PVWA 15.2 reference
@@ -1849,8 +1849,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
-- Parameters: 
-- Response contracts: 501 object; 401 object; 
+- Parameters:
+- Response contracts: 501 object; 401 object;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Authentication/Add-PASOAuthProvider.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; PVWA 15.2 reference
@@ -1868,7 +1868,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `id`
-- Response contracts: 501 object; 401 object; 
+- Response contracts: 501 object; 401 object;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Authentication/Remove-PASOAuthProvider.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; PVWA 15.2 reference
@@ -1886,7 +1886,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
 - Parameters: path `id`
-- Response contracts: 501 object; 401 object; 
+- Response contracts: 501 object; 401 object;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Authentication/Set-PASOAuthProvider.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; PVWA 15.2 reference
@@ -1903,8 +1903,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Authentication/Auth%20Methods%20Config/OIDC%20Identity%20Provider/Get%20All%20OpenID%20Connect%20Identity%20Providers.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1921,8 +1921,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Authentication/Auth%20Methods%20Config/OIDC%20Identity%20Provider/Add%20OpenID%20Connect%20Identity%20Provider.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1940,7 +1940,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `authID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Authentication/Auth%20Methods%20Config/OIDC%20Identity%20Provider/Delete%20OpenID%20Connect%20Identity%20Provider.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1958,7 +1958,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `authID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Authentication/Auth%20Methods%20Config/OIDC%20Identity%20Provider/Get%20Specific%20OpenID%20Connect%20Identity%20Provider.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1976,7 +1976,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
 - Parameters: path `authID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Authentication/Auth%20Methods%20Config/OIDC%20Identity%20Provider/Update%20OpenID%20Connect%20Identity%20Provider.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -1994,7 +1994,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `fidoKeyID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Authentication/Auth%20Methods%20Config/FIDO2%20Device%20Management/Remove%20FIDO2%20Device.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2011,8 +2011,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: `Attestation` (object), `UserId` (integer)
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Authentication/Auth%20Methods%20Config/FIDO2%20Device%20Management/Register%20FIDO2%20Device.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2029,8 +2029,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: `UserId` (integer)
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Authentication/Auth%20Methods%20Config/FIDO2%20Device%20Management/Start%20FIDO2%20Registration.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2048,7 +2048,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `fidoKeyID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Authentication/Auth%20Methods%20Config/FIDO2%20Device%20Management/Remove%20Own%20FIDO2%20Device.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2065,8 +2065,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: `Attestation` (object), `UserId` (integer)
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Authentication/Auth%20Methods%20Config/FIDO2%20Device%20Management/Register%20Own%20FIDO2%20Device.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2084,7 +2084,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `imageName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Customization/Export-PASThemeImage.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -2102,7 +2102,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `id`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Policies/Set-PASPlatform.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -2120,7 +2120,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `PolicyId`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Policies/Get-PASMasterPolicy.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -2138,7 +2138,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `PolicyId`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Policies/Set-PASMasterPolicy.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -2155,8 +2155,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Authentication/Get-PASSessionTimeout.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -2173,8 +2173,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Customization/Get-PASTheme.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -2191,8 +2191,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Customization/New-PASTheme.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -2210,7 +2210,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `ThemeName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Customization/Remove-PASTheme.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -2228,7 +2228,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `ThemeName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Customization/Get-PASTheme.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -2246,7 +2246,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `ThemeName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Customization/Set-PASTheme.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -2264,7 +2264,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `ThemeName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Customization/Publish-PASTheme.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -2281,8 +2281,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Authentication/Auth%20Methods%20Config/Add%20Auth%20Methods%20to%20Users.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2299,8 +2299,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Authentication/Auth%20Methods%20Config/Delete%20Auth%20Methods%20to%20Users.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2317,8 +2317,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/AccountsFeed/Get-PASDiscoveryScan.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -2335,8 +2335,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/AccountsFeed/Add-PASDiscoveryScan.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -2354,7 +2354,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `taskId`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/AccountsFeed/Remove-PASDiscoveryScan.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -2372,7 +2372,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `taskId`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/AccountsFeed/Get-PASDiscoveryScan.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -2390,7 +2390,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `taskId`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/AccountsFeed/Stop-PASDiscoveryScan.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -2407,8 +2407,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/LDAP%20Integration/LDAP%20Directories/Get%20Directories.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2425,8 +2425,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: `DirectoryType` (string), `DCList ` (array), `BindUsername` (string), `BindPassword` (string), `Port` (integer), `DomainName` (string), `DomainBaseContext` (string)
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/LDAP%20Integration/LDAP%20Directories/Create%20Directory.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2444,7 +2444,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
 - Parameters: path `directoryName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/LDAP%20Integration/LDAP%20Mappings/Reorder%20Directory%20Mappings.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2462,7 +2462,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `directoryName`, path `LDAPID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/LDAP%20Integration/LDAP%20Mappings/Delete%20Directory%20Mapping.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2480,7 +2480,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `LDAPID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/LDAP%20Integration/LDAP%20Directories/Delete%20Directory.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2498,7 +2498,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `LDAPID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/LDAP%20Integration/LDAP%20Directories/Get%20Directory%20Details.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2516,7 +2516,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `LDAPID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/LDAP%20Integration/LDAP%20Mappings/Get%20Directory%20Mapping%20List.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2534,7 +2534,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
 - Parameters: path `LDAPID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/LDAP%20Integration/LDAP%20Mappings/Create%20Directory%20Mapping.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2552,7 +2552,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `directoryName`, path `LDAPID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/LDAP%20Integration/LDAP%20Mappings/Get%20Mapping%20Details.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2570,7 +2570,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `LDAPBranch` (string), `VaultGroups` (array), `MappingAuthorizations` (array), `Location` (string), `AuthenticationMethod` (array), `UserType` (string), `DisableUser` (boolean), `UserActivityLogPeriod` (integer), `UserExpiration` (integer), `LogonFromHour` (integer), `LogonToHour` (integer), `MappingID` (integer), `DirectoryMappingOrder` (integer), `MappingName` (string), `LDAPQuery` (string), `DomainGroups` (array)
 - Parameters: path `directoryName`, path `LDAPID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/LDAP%20Integration/LDAP%20Mappings/Edit%20Directory%20Mapping.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2587,8 +2587,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/LDAPDirectories/Get-PASDirectoryID.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -2606,7 +2606,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `name`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Onboarding%20Rules/Get%20Onboarding%20Rule.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2623,8 +2623,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Onboarding%20Rules/Add%20Onboarding%20Rule.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2642,7 +2642,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `ruleID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Onboarding%20Rules/Delete%20Onboarding%20Rule.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2660,7 +2660,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
 - Parameters: path `ruleID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Onboarding%20Rules/Update%20Onboarding%20Rule.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2678,7 +2678,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `AccountAddress`, path `AccountUserName`, path `AccountPolicyId`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/AccountACL/Get-PASAccountACL.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -2696,7 +2696,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `AccountAddress`, path `AccountUserName`, path `AccountPolicyId`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/AccountACL/Add-PASAccountACL.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -2714,7 +2714,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `AccountAddress`, path `AccountUserName`, path `AccountPolicyId`, path `Id`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/AccountACL/Remove-PASAccountACL.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -2732,7 +2732,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountDetails`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/OPM%20Commands/Accounts/Get%20OPM%20Account%20Commands.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2750,7 +2750,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
 - Parameters: path `accountDetails`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/OPM%20Commands/Accounts/Add%20OPM%20Account%20Commands.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2768,7 +2768,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountDetails`, path `id`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/OPM%20Commands/Accounts/Delete%20OPM%20Account%20Commands.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2786,7 +2786,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `policyID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/OPM%20Commands/Policy/Get%20OPM%20Rules.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2804,7 +2804,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
 - Parameters: path `policyID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/OPM%20Commands/Policy/Add%20OPM%20Policy.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2822,7 +2822,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `policyID`, path `ruleID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/OPM%20Commands/Policy/Delete%20OPM%20Policy.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2840,7 +2840,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `Active`, query `PlatformType`, query `PlatformName`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Get%20Platforms.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2858,7 +2858,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `search`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Dependent%20Platforms/Get%20Dependent%20Platforms.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2876,7 +2876,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `DependentID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Platforms/Export-PASPlatform.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -2894,7 +2894,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformID`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Dependent%20Platforms/Delete%20Dependent%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2912,7 +2912,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: application/json
 - Request fields: `Name` (string), `Description` (string)
 - Parameters: path `platformID`
-- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Dependent%20Platforms/Duplicate%20Dependent%20Platforms.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2930,7 +2930,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `search`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Group%20Platforms/Get%20Group%20Platforms.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2948,7 +2948,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformID`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Group%20Platforms/Delete%20Group%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2966,7 +2966,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformID`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Group%20Platforms/Activate%20Group%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -2984,7 +2984,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformID`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Group%20Platforms/Deactivate%20Group%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3002,7 +3002,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: application/json
 - Request fields: `Name` (string), `Description` (string)
 - Parameters: path `platformID`
-- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Group%20Platforms/Duplicate%20Group%20Platforms.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3019,8 +3019,8 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Authentication: token
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Stored%20Platforms/Import%20Stored%20Platform%20Alongside%20Existing%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3037,8 +3037,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Import%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3056,7 +3056,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `search`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Rotational%20Group%20Platforms/Get%20Rotational%20Group%20Platforms.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3074,7 +3074,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformID`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Rotational%20Group%20Platforms/Delete%20Rotational%20Group%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3092,7 +3092,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformID`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Rotational%20Group%20Platforms/Activate%20Rotational%20Group%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3110,7 +3110,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformID`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Rotational%20Group%20Platforms/Deactivate%20Rotational%20Group%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3128,7 +3128,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: application/json
 - Request fields: `Name` (string), `Description` (string)
 - Parameters: path `platformID`
-- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Rotational%20Group%20Platforms/Duplicate%20Rotational%20Group%20Platforms.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3146,7 +3146,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `RotationalGroupID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Platforms/Export-PASPlatform.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -3163,8 +3163,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Stored%20Platforms/Delete%20Stored%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3181,8 +3181,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Stored%20Platforms/Get%20Stored%20Platform%20Details.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3200,7 +3200,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `Filter`, query `search`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Target%20Platforms/Get%20Target%20Platforms.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3217,8 +3217,8 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Parameters:
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Platforms/Get-PASPlatformSummary.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -3236,7 +3236,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
 - Parameters: path `ID`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Platforms/Rename-PASPlatform.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -3254,7 +3254,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `id`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Platforms/Get-PASPlatform.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -3272,7 +3272,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `ID`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Target%20Platforms/Delete%20Target%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3290,7 +3290,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformID`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Target%20Platforms/Activate%20Target%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3308,7 +3308,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformID`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Target%20Platforms/Deactivate%20Target%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3326,7 +3326,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: application/json
 - Request fields: `Name` (string), `Description` (string)
 - Parameters: path `platformID`
-- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Target%20Platforms/Duplicate%20Target%20Platforms.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3344,7 +3344,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Export%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3362,7 +3362,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `Platformid`
-- Response contracts: 200 string; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 string; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Platforms/New-PASPlatformSecret.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -3380,7 +3380,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Stored%20Platforms/Update%20Platform%20with%20Stored%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3398,7 +3398,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformName`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Get%20Platform%20Details.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3415,8 +3415,8 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Authentication: token
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Session%20Management/Import%20Connection%20Component.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3434,7 +3434,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformId`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Session%20Management/Get%20Session%20Management%20Policy%20of%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3452,7 +3452,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: application/json
 - Request fields: `PSMServerId` (string), `PSMServerName` (string), `PSMConnectors` (array)
 - Parameters: path `platformId`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Session%20Management/Update%20Session%20Management%20Policy%20of%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3469,8 +3469,8 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Parameters:
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Session%20Management/Get%20All%20Connection%20Components.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3487,8 +3487,8 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Parameters:
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Session%20Management/Get%20All%20PSM%20Servers.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3505,8 +3505,8 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/PTA%20Administration/Get%20PTA%20Administration.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3523,8 +3523,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/PTA%20Administration/Get%20Global%20Catalog%20Connectivity%20Details.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3541,8 +3541,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: `ldap_certificate` (string), `properties` (object)
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/PTA%20Administration/Add%20Global%20Catalog%20Connectivity%20Details.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3559,8 +3559,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/PTAAdministration/Set-PASPTASMTP.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -3577,8 +3577,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/PTAAdministration/Add-PASPTAExcludedTarget.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -3595,8 +3595,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/PTAAdministration/Add-PASPTAIncludedTarget.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -3614,7 +3614,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `ID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/PTAAdministration/Remove-PASPTAIncludedTarget.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -3631,8 +3631,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/PTAAdministration/Add-PASPTASyslog.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -3650,7 +3650,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `ID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/PTAAdministration/Remove-PASPTASyslog.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -3668,7 +3668,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `propertyKey`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/PTA%20Administration/Update%20PTA%20Administration%20Property.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3686,7 +3686,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `propertyKey`, path `ID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/PTA%20Administration/Delete%20PTA%20Administration%20Property.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3704,7 +3704,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `Limit`, query `sort`, query `Offset`, query `Search`, query `Safe`, query `FromTime`, query `ToTime`, query `Activities`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Monitor%20Sessions/Recordings/Get%20Recordings.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3722,7 +3722,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `recordingID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Monitor%20Sessions/Recordings/Get%20Recording%20Details.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3740,7 +3740,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `recordingID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Monitor%20Sessions/Recordings/Get%20Recording%20Activities.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3758,7 +3758,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `recordingID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Monitor%20Sessions/Recordings/Play%20Recording.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3776,7 +3776,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `recordingID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Monitor%20Sessions/Recordings/Get%20Recording%20Properties.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3794,7 +3794,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `SessionID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Monitoring/Test-PASPSMRecording.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -3812,7 +3812,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `data`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Reports%20and%20Tasks/Download%20Report.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3830,7 +3830,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `offset`, query `limit`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Reports%20and%20Tasks/Get%20Reports.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3848,7 +3848,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `offset`, query `limit`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Reports%20and%20Tasks/Get%20Tasks.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3865,8 +3865,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: `version` (integer), `type` (string), `subType` (string), `name` (string), `keepTaskDefinition` (boolean), `schedule` (object), `subscribers` (array), `notifyOnFailure` (boolean)
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Reports%20and%20Tasks/Create%20Task.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3884,7 +3884,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `id`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Reports/Remove-PASReportTask.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -3902,7 +3902,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `id`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Reports/Get-PASReportTask.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -3920,7 +3920,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `id`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Reports/Set-PASReportTask.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -3938,7 +3938,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: application/json
 - Request fields: `BulkItems` (array)
 - Parameters: path `requestID`, query `DisplayExtendedItems`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Requests/My%20Requests/Multiple%20Access%20Requests/Get%20Multiple%20Account%20Access%20Status.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3956,7 +3956,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `OnlyWaiting`, query `Expired`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Requests/Incoming%20Requests/Get%20Incoming%20Request%20List.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3973,8 +3973,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Requests/Incoming%20Requests/Confirm%20Request%20in%20Bulk.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -3991,8 +3991,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Requests/Incoming%20Requests/Reject%20Request%20in%20Bulk.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4010,7 +4010,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `requestID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Requests/Incoming%20Requests/Get%20Confirmation%20Request%20Details.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4028,7 +4028,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `Reason` (string)
 - Parameters: path `requestID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Requests/Incoming%20Requests/Confirm%20Request.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4046,7 +4046,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `Reason` (string)
 - Parameters: path `requestID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Requests/Incoming%20Requests/Reject%20Request.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4064,7 +4064,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `OnlyWaiting`, query `Expired`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Requests/My%20Requests/Get%20My%20Requests.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4081,8 +4081,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Requests/My%20Requests/Create%20an%20Access%20Request.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4100,7 +4100,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `requestID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Requests/My%20Requests/Delete%20My%20Request.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4118,7 +4118,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `requestID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Requests/My%20Requests/Get%20Details%20of%20My%20Requests.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4136,7 +4136,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `safeID`, query `filter`, query `search`, query `offset`, query `limit`, query `sort`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Safe%20Members/Get%20All%20Safe%20Members.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4154,7 +4154,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: application/json
 - Request fields: `memberName` (string), `searchIn` (string), `membershipExpirationDate` (integer), `permissions` (object), `MemberType` (string)
 - Parameters: path `safeID`
-- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Safe%20Members/Add%20Safe%20Member.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4172,7 +4172,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `safeID`, path `memberName`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Safe%20Members/Delete%20Safe%20Member.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4190,7 +4190,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `safeID`, path `memberName`, query `useCache`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Safe%20Members/Get%20Safe%20Member.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4208,7 +4208,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: application/json
 - Request fields: `membershipExpirationDate` (integer), `permissions` (object)
 - Parameters: path `safeID`, path `memberName`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Safe%20Members/Update%20Safe%20Member.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4226,7 +4226,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `SafeName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/SafeMembers/Get-PASSafeMember.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -4244,7 +4244,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `SafeName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/SafeMembers/Add-PASSafeMember.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -4262,7 +4262,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `SafeName`, path `MemberName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/SafeMembers/Remove-PASSafeMember.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -4280,7 +4280,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `SafeName`, path `MemberName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/SafeMembers/Get-PASSafeMember.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -4298,7 +4298,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `SafeName`, path `MemberName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/SafeMembers/Set-PASSafeMember.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -4316,7 +4316,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformID`, query `safeName`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Get%20Safe%20by%20Platform%20ID.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4334,7 +4334,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `search`, query `offset`, query `limit`, query `sort`, query `includeAccounts`, query `extendedDetails`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Get%20All%20Safes.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4351,8 +4351,8 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Authentication: token
 - Request media type: application/json
 - Request fields: `numberOfDaysRetention` (integer), `numberOfVersionsRetention` (integer), `oLACEnabled` (boolean), `autoPurgeEnabled` (boolean), `managingCPM` (string), `safeName` (string), `description` (string), `location` (string)
-- Parameters: 
-- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Parameters:
+- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Add%20Safe.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4370,7 +4370,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `safeID`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Delete%20Safe.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4388,7 +4388,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `safeID`, query `includeAccounts`, query `useCache`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Get%20Safe%20Details.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4406,7 +4406,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: application/json
 - Request fields: `safeName` (string), `safeNumber` (integer), `description` (string), `location` (string), `creator` (object), `olacEnabled` (boolean), `managingCPM` (string), `numberOfVersionsRetention` (integer), `numberOfDaysRetention` (integer)
 - Parameters: path `safeID`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Update%20Safe.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4424,7 +4424,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `Query`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Search%20for%20a%20Safe.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4441,8 +4441,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Safes/Add-PASSafe.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -4460,7 +4460,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `SafeName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Safes/Remove-PASSafe.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -4478,7 +4478,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `SafeName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Safes/Get-PASSafe.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -4496,7 +4496,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `SafeName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Safes/Set-PASSafe.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -4514,7 +4514,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `ID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/EventSecurity/Remove-PASPTAExcludedTarget.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -4531,8 +4531,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Security/Get%20PTA%20Security%20Configuration.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4549,8 +4549,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/EventSecurity/Get-PASPTASecurityConfigurationCategory.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -4568,7 +4568,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `categoryKey`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/EventSecurity/Get-PASPTASecurityConfigurationCategory.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -4585,8 +4585,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/EventSecurity/Add-PASPTAPrivilegedGroup.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -4604,7 +4604,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `ID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/EventSecurity/Remove-PASPTAPrivilegedGroup.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -4621,8 +4621,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/EventSecurity/Add-PASPTAPrivilegedUser.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -4640,7 +4640,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `ID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/EventSecurity/Remove-PASPTAPrivilegedUser.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -4658,7 +4658,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `categoryKey`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/EventSecurity/Reset-PASPTASecurityConfigurationCategory.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -4676,7 +4676,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `propertyKey`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Security/Update%20PTA%20Security%20Configuration%20Property.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4694,7 +4694,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `propertyKey`, path `ID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Security/Delete%20PTA%20Security%20Configuration%20Property.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4712,7 +4712,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `fromUpdateTime`, query `status`, query `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Security/Get%20Security%20Events.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4730,7 +4730,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `mStatus` (string), `closeReason` (string), `reasonText` (string)
 - Parameters: path `eventID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Security/Update%20Security%20Event%20Status.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4748,7 +4748,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `Status` (string), `closeReason` (string), `reasonText` (string)
 - Parameters: path `eventID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Security/Update%20Risk%20Event%20Status.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4766,7 +4766,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `filter`, query `sort`, query `page`, query `size`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Security/Get%20Risk%20Events.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4783,8 +4783,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Security/Get%20Risk%20Summary.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4801,8 +4801,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Security/Get%20Security%20Settings.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4819,8 +4819,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Security/Update%20Security%20Remediation%20Settings.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4837,8 +4837,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: `category` (string), `regex` (string), `score` (integer), `description` (string), `response` (string), `active` (boolean), `scope` (object)
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Security/Add%20Suspicious%20Activities%20Rule.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4855,8 +4855,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: `id` (string), `category` (string), `regex` (string), `score` (integer), `description` (string), `response` (string), `active` (boolean), `scope` (object)
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Security/Update%20Suspicious%20Activity%20Rule.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4874,7 +4874,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `Limit`, query `Sort`, query `offset`, query `Search`, query `Safe`, query `FromTime`, query `ToTime`, query `Activities`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Monitor%20Sessions/Get%20Active%20Sessions.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4892,7 +4892,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `liveSessionID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Monitor%20Sessions/Get%20Active%20Session.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4910,7 +4910,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `liveSessionID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Monitor%20Sessions/Get%20Active%20Session%20Activities.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4928,7 +4928,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `liveSessionID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Monitor%20Sessions/Session%20Actions/Monitor%20an%20Active%20Session.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4946,7 +4946,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `liveSessionID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Monitor%20Sessions/Get%20Active%20Session%20Properties.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -4964,7 +4964,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `LiveSessionId`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Monitoring/Resume-PASPSMSession.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -4982,7 +4982,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `liveSessionID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Monitor%20Sessions/Session%20Actions/Suspend%20or%20Resume%20an%20Active%20Session.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5000,7 +5000,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `liveSessionID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Monitor%20Sessions/Session%20Actions/Terminate%20an%20Active%20Session.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5018,7 +5018,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `componentID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/System%20Health/PAM%20-%20Self-Hosted%20System%20Health%20Details.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5035,8 +5035,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/System%20Health/PAM%20-%20Self-Hosted%20System%20Health%20Summary.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5054,7 +5054,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `GroupPlatformID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Platforms/Export-PASPlatform.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -5072,7 +5072,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `filter`, query `search`, query `sort`, query `includeMembers`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Groups/Get%20Groups.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5089,8 +5089,8 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Authentication: token
 - Request media type: application/json
 - Request fields: `groupName` (string), `description` (string), `location` (string)
-- Parameters: 
-- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Parameters:
+- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Groups/Create%20Group.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5108,7 +5108,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `groupID`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Groups/Delete%20Group.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5126,7 +5126,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `groupID`, query `includeMembers`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Groups/Get%20Group%20Details.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5144,7 +5144,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: application/json
 - Request fields: `groupName` (string)
 - Parameters: path `groupID`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Groups/Update%20Group.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5162,7 +5162,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: application/json
 - Request fields: `memberId` (string), `memberType` (string), `domainName` (string)
 - Parameters: path `groupID`
-- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Groups/Add%20Member%20to%20Group.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5180,7 +5180,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `groupID`, path `memberName`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Groups/Remove%20User%20from%20Group.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5198,7 +5198,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `GroupName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/User/Add-PASGroupMember.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -5215,8 +5215,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Parameters:
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/User/Get-PASLoggedOnUser.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -5233,8 +5233,8 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Parameters:
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/User/Get-PASUserLoginInfo.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -5252,7 +5252,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `filter`, query `search`, query `ExtendedDetails`, query `sort`, query `pageOffset`, query `pageSize`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Users/Get%20Users.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5269,8 +5269,8 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Authentication: token
 - Request media type: application/json
 - Request fields: `username` (string), `userType` (string), `initialPassword` (string), `authenticationMethod` (array), `location` (string), `unAuthorizedInterfaces` (array), `expiryDate` (integer), `vaultAuthorization` (array), `enableUser` (boolean), `changePassOnNextLogon` (boolean), `passwordNeverExpires` (boolean), `description` (string), `businessAddress` (object), `internet` (object), `phones` (object), `personalDetails` (object)
-- Parameters: 
-- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Parameters:
+- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Users/Add%20User.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5287,8 +5287,8 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Private%20SSH%20Authentication/Delete%20an%20MFA%20Caching%20SSH%20key.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5305,8 +5305,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: application/json
 - Request fields: `formats` (string)
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Private%20SSH%20Authentication/Generate%20an%20MFA%20Caching%20SSH%20Key.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5323,8 +5323,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Private%20SSH%20Authentication/Delete%20All%20MFA%20Caching%20SSH%20Keys.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5342,7 +5342,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `id`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/User/Get-PASUser.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -5360,7 +5360,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `userID`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Users/Delete%20User.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5378,7 +5378,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `userID`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Users/Get%20User%20Details.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5396,7 +5396,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: application/json
 - Request fields: `enableUser` (boolean), `changePassOnNextLogon` (boolean), `expiryDate` (integer), `suspended` (boolean), `unAuthorizedInterfaces` (array), `authenticationMethod` (array), `passwordNeverExpires` (boolean), `distinguishedName` (string), `description` (string), `businessAddress` (object), `internet` (object), `phones` (object), `personalDetails` (object), `id` (integer), `username` (string), `source` (string), `userType` (string), `componentUser` (boolean), `vaultAuthorization` (array), `location` (string)
 - Parameters: path `userID`
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Users/Update%20User.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5414,7 +5414,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `userID`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Users/Activate%20User.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5432,7 +5432,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `userID`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Users/Disable%20User.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5450,7 +5450,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `userID`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Users/Enable%20User.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5468,7 +5468,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: application/json
 - Request fields: `id` (string), `newPassword` (string)
 - Parameters: path `userID`
-- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Users/Reset%20User%20Password.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5486,7 +5486,7 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `UserName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Private%20SSH%20Authentication/Delete%20an%20MFA%20Caching%20SSH%20Key%20for%20Another%20User.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5504,7 +5504,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `formats` (string), `keyPassword` (string)
 - Parameters: path `UserName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Private%20SSH%20Authentication/Generate%20an%20MFA%20Caching%20SSH%20Key%20for%20Another%20User.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5521,8 +5521,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
+- Parameters:
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Users/Get%20User%20Types.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5539,8 +5539,8 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Users/Get%20Logged%20On%20User%20Details.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5557,8 +5557,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/User/New-PASUser.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -5576,7 +5576,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `UserName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/User/Remove-PASUser.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -5594,7 +5594,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `UserName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/User/Get-PASUser.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -5612,7 +5612,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `UserName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/User/Set-PASUser.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -5630,7 +5630,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `UserName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Public%20SSH%20Authentication/Get%20Public%20SSH%20Key.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5648,7 +5648,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `PublicSSHKey` (string)
 - Parameters: path `UserName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Public%20SSH%20Authentication/Add%20a%20Public%20SSH%20Key.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5666,7 +5666,7 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `UserName`, path `keyID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Public%20SSH%20Authentication/Delete%20Public%20SSH%20Key.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5683,8 +5683,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/ServerWebServices/Get-PASServer.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -5701,8 +5701,8 @@ Request target verified against public client source. Required fields, response 
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/ServerWebServices/Get-PASServerWebService.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
@@ -5720,7 +5720,7 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `type`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Server/Logo.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5737,8 +5737,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Server/Server.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
@@ -5755,8 +5755,8 @@ HTTP contract from a public reference collection. Success response and required-
 - Authentication: token
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
-- Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Parameters:
+- Response contracts: 501 object; 401 object; default unspecified;
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Server/Verify.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03

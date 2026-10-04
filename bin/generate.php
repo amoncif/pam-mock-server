@@ -11,6 +11,9 @@ function writeArtifact(string $name, string $content): void
 {
     global $root;
     @mkdir(dirname($root.'/'.$name), 0775, true);
+    if (str_ends_with($name, '.md')) {
+        $content = preg_replace('/[ \t]+$/m', '', $content);
+    }
     file_put_contents($root.'/'.$name, $content);
 }
 function encode(mixed $data): string
