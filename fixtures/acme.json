@@ -6,91 +6,104 @@
       "provider": "CyberArk",
       "passwordHash": "$argon2id$v=19$m=65536,t=4,p=1$cmVJS2pIYXJwMUE4TC5qZA$VVOzsw+yPjdESTLLPat5qI2hmlKjq+2KOBmYv/E5jt4",
       "persona": "PAM administrator",
-      "state": "active"
+      "state": "active",
+      "id": 1
     },
     {
       "username": "vaultadmin",
       "provider": "CyberArk",
       "passwordHash": "$argon2id$v=19$m=65536,t=4,p=1$clBWZ1JLT05aenFBTnJ1cQ$XHp8N3lc41J/SjxtIRC54DI1+Bw8qiibC1hw0J3RMrM",
       "persona": "Vault administrator",
-      "state": "active"
+      "state": "active",
+      "id": 2
     },
     {
       "username": "psmoperator",
       "provider": "CyberArk",
       "passwordHash": "$argon2id$v=19$m=65536,t=4,p=1$TkNxVHF3SUd1cEpLb2hnRg$K9P3laRujR/4fAgnGhS6OHJveuLg7nyplI6/tliQwiw",
       "persona": "Session operator",
-      "state": "active"
+      "state": "active",
+      "id": 3
     },
     {
       "username": "auditor",
       "provider": "CyberArk",
       "passwordHash": "$argon2id$v=19$m=65536,t=4,p=1$S0M2a2drdU50VWthazhsQw$Y2td5GLUdpwnB/1f/F5WRo9JJElT9GUaZ90WWqDIh3g",
       "persona": "Audit reviewer",
-      "state": "active"
+      "state": "active",
+      "id": 4
     },
     {
       "username": "safeowner",
       "provider": "CyberArk",
       "passwordHash": "$argon2id$v=19$m=65536,t=4,p=1$V3FOWFdsS3J6cnNweWJoZA$8LUOTggUCpHpmZmRcbXtTTGvqqXKHJjBywpoZmNtOmE",
       "persona": "Safe owner",
-      "state": "active"
+      "state": "active",
+      "id": 5
     },
     {
       "username": "appuser",
       "provider": "CyberArk",
       "passwordHash": "$argon2id$v=19$m=65536,t=4,p=1$YnpFUHlsa3ZRd1VDd0hDYg$pUrm5ryHl//RZhQ+lLEHXqexSu/6BxWSXcFK9C2mE9c",
       "persona": "Shared application user",
-      "state": "active"
+      "state": "active",
+      "id": 6
     },
     {
       "username": "readonly",
       "provider": "CyberArk",
       "passwordHash": "$argon2id$v=19$m=65536,t=4,p=1$TTBDRHhaNFNvS3drNmpIYQ$wPKuSGqZzraSb9BhDpfat7qwEwtrSS8Mfu8ajIIA/Kk",
       "persona": "Read-only analyst",
-      "state": "disabled"
+      "state": "disabled",
+      "id": 7
     },
     {
       "username": "helpdesk",
       "provider": "CyberArk",
       "passwordHash": "$argon2id$v=19$m=65536,t=4,p=1$Vy56em1yakJaVXZSQktMZg$zfkBqh3t/j1sL2BDQAquB6/Z6uyZdwUKXHcaOBPD78E",
       "persona": "Helpdesk operator",
-      "state": "locked"
+      "state": "locked",
+      "id": 8
     },
     {
       "username": "expired.user",
       "provider": "CyberArk",
       "passwordHash": "$argon2id$v=19$m=65536,t=4,p=1$eDBKQTNteGVJZHZ1U3M3QQ$OiT4DsIGpHfU575Sn6C3gS6XQqpBff9TsDTNxYFm0+k",
       "persona": "Expired password scenario",
-      "state": "expired"
+      "state": "expired",
+      "id": 9
     },
     {
       "username": "john.ldap",
       "provider": "LDAP",
       "passwordHash": "$argon2id$v=19$m=65536,t=4,p=1$QnJlUFVZVW1xdHI0dTFBOA$1UHNDbcmmLPUHjDHCsNYTKF/+hFeufo6SXLcfZwrVgg",
       "persona": "Directory user",
-      "state": "active"
+      "state": "active",
+      "id": 10
     },
     {
       "username": "windows.user",
       "provider": "Windows",
       "passwordHash": "$argon2id$v=19$m=65536,t=4,p=1$ZjV5RmFkdS5NcXhiQVJsNg$nrmzU6zK0TQmWEIDGAKuxjLeysIEw4QdK542TDoUtm4",
       "persona": "Windows user",
-      "state": "active"
+      "state": "active",
+      "id": 11
     },
     {
       "username": "radius.user",
       "provider": "RADIUS",
       "passwordHash": "$argon2id$v=19$m=65536,t=4,p=1$UjlXaXpUbGRhZnphSWlVVg$7juQHGRN75jXRA82nYp80Iy2HaLTUHio4rKMI/lIKqA",
       "persona": "RADIUS user",
-      "state": "active"
+      "state": "active",
+      "id": 12
     },
     {
       "username": "saml.user",
       "provider": "SAML",
       "passwordHash": "$argon2id$v=19$m=65536,t=4,p=1$aEhTZjRFWW5tR0dQbVNOVA$+0kABYYv1RXWzU0nPq1ZaiXTiJD4aRc23YAJtB520S8",
       "persona": "Federated user",
-      "state": "active"
+      "state": "active",
+      "id": 13
     }
   ],
   "safes": [
@@ -99,56 +112,80 @@
       "safeName": "APP-PROD-WINDOWS",
       "description": "Fictional ACME lab safe",
       "creationTime": 1735689600,
-      "retentionDays": 30
+      "safeUrlId": "APP-PROD-WINDOWS",
+      "olacEnabled": false,
+      "numberOfDaysRetention": 30,
+      "managingCPM": "PasswordManager"
     },
     {
       "id": "safe-02",
       "safeName": "APP-PROD-LINUX",
       "description": "Fictional ACME lab safe",
       "creationTime": 1735689600,
-      "retentionDays": 30
+      "safeUrlId": "APP-PROD-LINUX",
+      "olacEnabled": false,
+      "numberOfDaysRetention": 30,
+      "managingCPM": "PasswordManager"
     },
     {
       "id": "safe-03",
       "safeName": "APP-UAT-DATABASE",
       "description": "Fictional ACME lab safe",
       "creationTime": 1735689600,
-      "retentionDays": 30
+      "safeUrlId": "APP-UAT-DATABASE",
+      "olacEnabled": false,
+      "numberOfDaysRetention": 30,
+      "managingCPM": "PasswordManager"
     },
     {
       "id": "safe-04",
       "safeName": "INFRA-NETWORK",
       "description": "Fictional ACME lab safe",
       "creationTime": 1735689600,
-      "retentionDays": 30
+      "safeUrlId": "INFRA-NETWORK",
+      "olacEnabled": false,
+      "numberOfDaysRetention": 30,
+      "managingCPM": "PasswordManager"
     },
     {
       "id": "safe-05",
       "safeName": "OPS-BREAKGLASS",
       "description": "Fictional ACME lab safe",
       "creationTime": 1735689600,
-      "retentionDays": 30
+      "safeUrlId": "OPS-BREAKGLASS",
+      "olacEnabled": false,
+      "numberOfDaysRetention": 30,
+      "managingCPM": "PasswordManager"
     },
     {
       "id": "safe-06",
       "safeName": "CYBER-SECURITY",
       "description": "Fictional ACME lab safe",
       "creationTime": 1735689600,
-      "retentionDays": 30
+      "safeUrlId": "CYBER-SECURITY",
+      "olacEnabled": false,
+      "numberOfDaysRetention": 30,
+      "managingCPM": "PasswordManager"
     },
     {
       "id": "safe-07",
       "safeName": "APP-UAT-SERVICES",
       "description": "Fictional ACME lab safe",
       "creationTime": 1735689600,
-      "retentionDays": 30
+      "safeUrlId": "APP-UAT-SERVICES",
+      "olacEnabled": false,
+      "numberOfDaysRetention": 30,
+      "managingCPM": "PasswordManager"
     },
     {
       "id": "safe-08",
       "safeName": "RECORDING-LAB",
       "description": "Fictional ACME lab safe",
       "creationTime": 1735689600,
-      "retentionDays": 30
+      "safeUrlId": "RECORDING-LAB",
+      "olacEnabled": false,
+      "numberOfDaysRetention": 30,
+      "managingCPM": "PasswordManager"
     }
   ],
   "platforms": [
@@ -157,56 +194,309 @@
       "name": "MockWinDomain",
       "identifierOrigin": "project-created; not an official platform identifier",
       "active": true,
-      "psmCompatible": true
+      "ID": 1,
+      "platformID": "MockWinDomain",
+      "category": "targets",
+      "systemType": "Windows",
+      "psm": {
+        "PSMServerId": "PSM-LAB-01",
+        "PSMConnectors": [
+          {
+            "PSMConnectorID": "PSM-RDP",
+            "Enabled": true,
+            "OverrideUserParameters": [
+              {
+                "Name": "Port",
+                "Value": "3389",
+                "Visible": true,
+                "Required": false
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "MockWinLocal",
       "name": "MockWinLocal",
       "identifierOrigin": "project-created; not an official platform identifier",
       "active": true,
-      "psmCompatible": true
+      "ID": 2,
+      "platformID": "MockWinLocal",
+      "category": "targets",
+      "systemType": "Windows",
+      "psm": {
+        "PSMServerId": "PSM-LAB-01",
+        "PSMConnectors": [
+          {
+            "PSMConnectorID": "PSM-RDP",
+            "Enabled": true,
+            "OverrideUserParameters": [
+              {
+                "Name": "Port",
+                "Value": "3389",
+                "Visible": true,
+                "Required": false
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "MockUnixSSH",
       "name": "MockUnixSSH",
       "identifierOrigin": "project-created; not an official platform identifier",
       "active": true,
-      "psmCompatible": true
+      "ID": 3,
+      "platformID": "MockUnixSSH",
+      "category": "targets",
+      "systemType": "Unix",
+      "psm": {
+        "PSMServerId": "PSMP-LAB-01",
+        "PSMConnectors": [
+          {
+            "PSMConnectorID": "SSH",
+            "Enabled": true,
+            "OverrideUserParameters": [
+              {
+                "Name": "Port",
+                "Value": "22",
+                "Visible": true,
+                "Required": false
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "MockLinuxService",
       "name": "MockLinuxService",
       "identifierOrigin": "project-created; not an official platform identifier",
       "active": true,
-      "psmCompatible": true
+      "ID": 4,
+      "platformID": "MockLinuxService",
+      "category": "targets",
+      "systemType": "Unix",
+      "psm": {
+        "PSMServerId": "PSM-LAB-01",
+        "PSMConnectors": [
+          {
+            "PSMConnectorID": "PSM-SSH",
+            "Enabled": true,
+            "OverrideUserParameters": [
+              {
+                "Name": "Port",
+                "Value": "22",
+                "Visible": true,
+                "Required": false
+              }
+            ]
+          },
+          {
+            "PSMConnectorID": "PSM-WinSCP",
+            "Enabled": true,
+            "OverrideUserParameters": [
+              {
+                "Name": "Port",
+                "Value": "22",
+                "Visible": true,
+                "Required": false
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "MockOracleDB",
       "name": "MockOracleDB",
       "identifierOrigin": "project-created; not an official platform identifier",
       "active": true,
-      "psmCompatible": true
+      "ID": 5,
+      "platformID": "MockOracleDB",
+      "category": "targets",
+      "systemType": "Database",
+      "psm": {
+        "PSMServerId": "PSM-LAB-01",
+        "PSMConnectors": [
+          {
+            "PSMConnectorID": "PSM-Oracle",
+            "Enabled": true,
+            "OverrideUserParameters": [
+              {
+                "Name": "Port",
+                "Value": "443",
+                "Visible": true,
+                "Required": false
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "MockMSSQL",
       "name": "MockMSSQL",
       "identifierOrigin": "project-created; not an official platform identifier",
       "active": true,
-      "psmCompatible": true
+      "ID": 6,
+      "platformID": "MockMSSQL",
+      "category": "targets",
+      "systemType": "Database",
+      "psm": {
+        "PSMServerId": "PSM-LAB-01",
+        "PSMConnectors": [
+          {
+            "PSMConnectorID": "PSM-SQLServerMgmtStudio",
+            "Enabled": true,
+            "OverrideUserParameters": [
+              {
+                "Name": "Port",
+                "Value": "443",
+                "Visible": true,
+                "Required": false
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "MockApplication",
       "name": "MockApplication",
       "identifierOrigin": "project-created; not an official platform identifier",
       "active": true,
-      "psmCompatible": false
+      "ID": 7,
+      "platformID": "MockApplication",
+      "category": "targets",
+      "systemType": "Application",
+      "psm": {
+        "PSMServerId": "PSM-LAB-01",
+        "PSMConnectors": [
+          {
+            "PSMConnectorID": "PSM-WebApp",
+            "Enabled": true,
+            "OverrideUserParameters": [
+              {
+                "Name": "Port",
+                "Value": "443",
+                "Visible": true,
+                "Required": false
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "MockNetworkSSH",
       "name": "MockNetworkSSH",
       "identifierOrigin": "project-created; not an official platform identifier",
       "active": true,
-      "psmCompatible": true
+      "ID": 8,
+      "platformID": "MockNetworkSSH",
+      "category": "targets",
+      "systemType": "Network",
+      "psm": {
+        "PSMServerId": "PSMP-LAB-01",
+        "PSMConnectors": [
+          {
+            "PSMConnectorID": "SSH",
+            "Enabled": true,
+            "OverrideUserParameters": [
+              {
+                "Name": "Port",
+                "Value": "22",
+                "Visible": true,
+                "Required": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "MockWindowsServiceDependent",
+      "name": "MockWindowsServiceDependent",
+      "identifierOrigin": "project-created; not an official platform identifier",
+      "active": true,
+      "ID": 9,
+      "platformID": "MockWindowsServiceDependent",
+      "category": "dependents",
+      "systemType": "Windows",
+      "psm": {
+        "PSMServerId": "PSM-LAB-01",
+        "PSMConnectors": [
+          {
+            "PSMConnectorID": "PSM-RDP",
+            "Enabled": true,
+            "OverrideUserParameters": [
+              {
+                "Name": "Port",
+                "Value": "3389",
+                "Visible": true,
+                "Required": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "MockAccountGroup",
+      "name": "MockAccountGroup",
+      "identifierOrigin": "project-created; not an official platform identifier",
+      "active": true,
+      "ID": 10,
+      "platformID": "MockAccountGroup",
+      "category": "groups",
+      "systemType": "Windows",
+      "psm": {
+        "PSMServerId": "PSM-LAB-01",
+        "PSMConnectors": [
+          {
+            "PSMConnectorID": "PSM-RDP",
+            "Enabled": true,
+            "OverrideUserParameters": [
+              {
+                "Name": "Port",
+                "Value": "3389",
+                "Visible": true,
+                "Required": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "MockRotationalGroup",
+      "name": "MockRotationalGroup",
+      "identifierOrigin": "project-created; not an official platform identifier",
+      "active": true,
+      "ID": 11,
+      "platformID": "MockRotationalGroup",
+      "category": "rotationalgroups",
+      "systemType": "Windows",
+      "psm": {
+        "PSMServerId": "PSM-LAB-01",
+        "PSMConnectors": [
+          {
+            "PSMConnectorID": "PSM-RDP",
+            "Enabled": true,
+            "OverrideUserParameters": [
+              {
+                "Name": "Port",
+                "Value": "3389",
+                "Visible": true,
+                "Required": false
+              }
+            ]
+          }
+        ]
+      }
     }
   ],
   "accounts": [
@@ -217,14 +507,19 @@
       "address": "host-001.acme.example",
       "platformId": "MockWinDomain",
       "safeName": "APP-PROD-WINDOWS",
-      "active": false,
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": false
       },
       "createdTime": 1735689600,
-      "lastModifiedTime": 1767225600,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "3389"
+      },
+      "modifiedTime": 1767225600,
+      "_secret": "ACME-Mock-Only-001!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "1_2",
@@ -232,15 +527,20 @@
       "userName": "Administrator",
       "address": "host-002.acme.example",
       "platformId": "MockWinLocal",
-      "safeName": "APP-PROD-LINUX",
-      "active": true,
+      "safeName": "APP-PROD-WINDOWS",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1735776000,
-      "lastModifiedTime": 1767229200,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "3389"
+      },
+      "modifiedTime": 1767229200,
+      "_secret": "ACME-Mock-Only-002!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "1_3",
@@ -248,15 +548,20 @@
       "userName": "root",
       "address": "host-003.acme.example",
       "platformId": "MockUnixSSH",
-      "safeName": "APP-UAT-DATABASE",
-      "active": true,
+      "safeName": "APP-PROD-LINUX",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1735862400,
-      "lastModifiedTime": 1767232800,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "22"
+      },
+      "modifiedTime": 1767232800,
+      "_secret": "ACME-Mock-Only-003!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "1_4",
@@ -264,15 +569,20 @@
       "userName": "svc.batch",
       "address": "host-004.acme.example",
       "platformId": "MockLinuxService",
-      "safeName": "INFRA-NETWORK",
-      "active": true,
+      "safeName": "APP-UAT-SERVICES",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1735948800,
-      "lastModifiedTime": 1767236400,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "22"
+      },
+      "modifiedTime": 1767236400,
+      "_secret": "ACME-Mock-Only-004!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "1_5",
@@ -280,15 +590,20 @@
       "userName": "system",
       "address": "host-005.acme.example",
       "platformId": "MockOracleDB",
-      "safeName": "OPS-BREAKGLASS",
-      "active": true,
+      "safeName": "APP-UAT-DATABASE",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1736035200,
-      "lastModifiedTime": 1767240000,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "1521"
+      },
+      "modifiedTime": 1767240000,
+      "_secret": "ACME-Mock-Only-005!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "1_6",
@@ -296,15 +611,20 @@
       "userName": "sa",
       "address": "host-006.acme.example",
       "platformId": "MockMSSQL",
-      "safeName": "CYBER-SECURITY",
-      "active": true,
+      "safeName": "APP-UAT-DATABASE",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": false
       },
       "createdTime": 1736121600,
-      "lastModifiedTime": 1767243600,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "1433"
+      },
+      "modifiedTime": 1767243600,
+      "_secret": "ACME-Mock-Only-006!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "1_7",
@@ -312,15 +632,20 @@
       "userName": "svc.application",
       "address": "host-007.acme.example",
       "platformId": "MockApplication",
-      "safeName": "APP-UAT-SERVICES",
-      "active": true,
+      "safeName": "CYBER-SECURITY",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1736208000,
-      "lastModifiedTime": 1767247200,
-      "psmCompatible": false
+      "platformAccountProperties": {
+        "Port": "443"
+      },
+      "modifiedTime": 1767247200,
+      "_secret": "ACME-Mock-Only-007!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "1_8",
@@ -328,15 +653,20 @@
       "userName": "netadmin",
       "address": "host-008.acme.example",
       "platformId": "MockNetworkSSH",
-      "safeName": "RECORDING-LAB",
-      "active": false,
+      "safeName": "INFRA-NETWORK",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1736294400,
-      "lastModifiedTime": 1767250800,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "22"
+      },
+      "modifiedTime": 1767250800,
+      "_secret": "ACME-Mock-Only-008!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "2_9",
@@ -345,14 +675,19 @@
       "address": "host-009.acme.example",
       "platformId": "MockWinDomain",
       "safeName": "APP-PROD-WINDOWS",
-      "active": true,
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1736380800,
-      "lastModifiedTime": 1767254400,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "3389"
+      },
+      "modifiedTime": 1767254400,
+      "_secret": "ACME-Mock-Only-009!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "2_10",
@@ -360,15 +695,20 @@
       "userName": "Administrator",
       "address": "host-010.acme.example",
       "platformId": "MockWinLocal",
-      "safeName": "APP-PROD-LINUX",
-      "active": true,
+      "safeName": "APP-PROD-WINDOWS",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1736467200,
-      "lastModifiedTime": 1767258000,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "3389"
+      },
+      "modifiedTime": 1767258000,
+      "_secret": "ACME-Mock-Only-010!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "2_11",
@@ -376,15 +716,20 @@
       "userName": "root",
       "address": "host-011.acme.example",
       "platformId": "MockUnixSSH",
-      "safeName": "APP-UAT-DATABASE",
-      "active": true,
+      "safeName": "APP-PROD-LINUX",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": false
       },
       "createdTime": 1736553600,
-      "lastModifiedTime": 1767261600,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "22"
+      },
+      "modifiedTime": 1767261600,
+      "_secret": "ACME-Mock-Only-011!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "2_12",
@@ -392,15 +737,20 @@
       "userName": "svc.batch",
       "address": "host-012.acme.example",
       "platformId": "MockLinuxService",
-      "safeName": "INFRA-NETWORK",
-      "active": true,
+      "safeName": "APP-UAT-SERVICES",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1736640000,
-      "lastModifiedTime": 1767265200,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "22"
+      },
+      "modifiedTime": 1767265200,
+      "_secret": "ACME-Mock-Only-012!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "2_13",
@@ -408,15 +758,20 @@
       "userName": "system",
       "address": "host-013.acme.example",
       "platformId": "MockOracleDB",
-      "safeName": "OPS-BREAKGLASS",
-      "active": true,
+      "safeName": "APP-UAT-DATABASE",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1736726400,
-      "lastModifiedTime": 1767268800,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "1521"
+      },
+      "modifiedTime": 1767268800,
+      "_secret": "ACME-Mock-Only-013!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "2_14",
@@ -424,15 +779,20 @@
       "userName": "sa",
       "address": "host-014.acme.example",
       "platformId": "MockMSSQL",
-      "safeName": "CYBER-SECURITY",
-      "active": true,
+      "safeName": "APP-UAT-DATABASE",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1736812800,
-      "lastModifiedTime": 1767272400,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "1433"
+      },
+      "modifiedTime": 1767272400,
+      "_secret": "ACME-Mock-Only-014!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "2_15",
@@ -440,15 +800,20 @@
       "userName": "svc.application",
       "address": "host-015.acme.example",
       "platformId": "MockApplication",
-      "safeName": "APP-UAT-SERVICES",
-      "active": false,
+      "safeName": "CYBER-SECURITY",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1736899200,
-      "lastModifiedTime": 1767276000,
-      "psmCompatible": false
+      "platformAccountProperties": {
+        "Port": "443"
+      },
+      "modifiedTime": 1767276000,
+      "_secret": "ACME-Mock-Only-015!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "2_16",
@@ -456,15 +821,20 @@
       "userName": "netadmin",
       "address": "host-016.acme.example",
       "platformId": "MockNetworkSSH",
-      "safeName": "RECORDING-LAB",
-      "active": true,
+      "safeName": "INFRA-NETWORK",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": false
       },
       "createdTime": 1736985600,
-      "lastModifiedTime": 1767279600,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "22"
+      },
+      "modifiedTime": 1767279600,
+      "_secret": "ACME-Mock-Only-016!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "3_17",
@@ -473,14 +843,19 @@
       "address": "host-017.acme.example",
       "platformId": "MockWinDomain",
       "safeName": "APP-PROD-WINDOWS",
-      "active": true,
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1737072000,
-      "lastModifiedTime": 1767283200,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "3389"
+      },
+      "modifiedTime": 1767283200,
+      "_secret": "ACME-Mock-Only-017!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "3_18",
@@ -488,15 +863,20 @@
       "userName": "Administrator",
       "address": "host-018.acme.example",
       "platformId": "MockWinLocal",
-      "safeName": "APP-PROD-LINUX",
-      "active": true,
+      "safeName": "APP-PROD-WINDOWS",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1737158400,
-      "lastModifiedTime": 1767286800,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "3389"
+      },
+      "modifiedTime": 1767286800,
+      "_secret": "ACME-Mock-Only-018!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "3_19",
@@ -504,15 +884,20 @@
       "userName": "root",
       "address": "host-019.acme.example",
       "platformId": "MockUnixSSH",
-      "safeName": "APP-UAT-DATABASE",
-      "active": true,
+      "safeName": "APP-PROD-LINUX",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1737244800,
-      "lastModifiedTime": 1767290400,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "22"
+      },
+      "modifiedTime": 1767290400,
+      "_secret": "ACME-Mock-Only-019!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "3_20",
@@ -520,15 +905,20 @@
       "userName": "svc.batch",
       "address": "host-020.acme.example",
       "platformId": "MockLinuxService",
-      "safeName": "INFRA-NETWORK",
-      "active": true,
+      "safeName": "APP-UAT-SERVICES",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1737331200,
-      "lastModifiedTime": 1767294000,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "22"
+      },
+      "modifiedTime": 1767294000,
+      "_secret": "ACME-Mock-Only-020!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "3_21",
@@ -536,15 +926,20 @@
       "userName": "system",
       "address": "host-021.acme.example",
       "platformId": "MockOracleDB",
-      "safeName": "OPS-BREAKGLASS",
-      "active": true,
+      "safeName": "APP-UAT-DATABASE",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": false
       },
       "createdTime": 1737417600,
-      "lastModifiedTime": 1767297600,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "1521"
+      },
+      "modifiedTime": 1767297600,
+      "_secret": "ACME-Mock-Only-021!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "3_22",
@@ -552,15 +947,20 @@
       "userName": "sa",
       "address": "host-022.acme.example",
       "platformId": "MockMSSQL",
-      "safeName": "CYBER-SECURITY",
-      "active": false,
+      "safeName": "APP-UAT-DATABASE",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1737504000,
-      "lastModifiedTime": 1767301200,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "1433"
+      },
+      "modifiedTime": 1767301200,
+      "_secret": "ACME-Mock-Only-022!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "3_23",
@@ -568,15 +968,20 @@
       "userName": "svc.application",
       "address": "host-023.acme.example",
       "platformId": "MockApplication",
-      "safeName": "APP-UAT-SERVICES",
-      "active": true,
+      "safeName": "CYBER-SECURITY",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1737590400,
-      "lastModifiedTime": 1767304800,
-      "psmCompatible": false
+      "platformAccountProperties": {
+        "Port": "443"
+      },
+      "modifiedTime": 1767304800,
+      "_secret": "ACME-Mock-Only-023!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "3_24",
@@ -584,15 +989,20 @@
       "userName": "netadmin",
       "address": "host-024.acme.example",
       "platformId": "MockNetworkSSH",
-      "safeName": "RECORDING-LAB",
-      "active": true,
+      "safeName": "INFRA-NETWORK",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1737676800,
-      "lastModifiedTime": 1767308400,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "22"
+      },
+      "modifiedTime": 1767308400,
+      "_secret": "ACME-Mock-Only-024!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "4_25",
@@ -601,14 +1011,19 @@
       "address": "host-025.acme.example",
       "platformId": "MockWinDomain",
       "safeName": "APP-PROD-WINDOWS",
-      "active": true,
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1737763200,
-      "lastModifiedTime": 1767312000,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "3389"
+      },
+      "modifiedTime": 1767312000,
+      "_secret": "ACME-Mock-Only-025!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "4_26",
@@ -616,15 +1031,20 @@
       "userName": "Administrator",
       "address": "host-026.acme.example",
       "platformId": "MockWinLocal",
-      "safeName": "APP-PROD-LINUX",
-      "active": true,
+      "safeName": "APP-PROD-WINDOWS",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": false
       },
       "createdTime": 1737849600,
-      "lastModifiedTime": 1767315600,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "3389"
+      },
+      "modifiedTime": 1767315600,
+      "_secret": "ACME-Mock-Only-026!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "4_27",
@@ -632,15 +1052,20 @@
       "userName": "root",
       "address": "host-027.acme.example",
       "platformId": "MockUnixSSH",
-      "safeName": "APP-UAT-DATABASE",
-      "active": true,
+      "safeName": "APP-PROD-LINUX",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1737936000,
-      "lastModifiedTime": 1767319200,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "22"
+      },
+      "modifiedTime": 1767319200,
+      "_secret": "ACME-Mock-Only-027!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "4_28",
@@ -648,15 +1073,20 @@
       "userName": "svc.batch",
       "address": "host-028.acme.example",
       "platformId": "MockLinuxService",
-      "safeName": "INFRA-NETWORK",
-      "active": true,
+      "safeName": "APP-UAT-SERVICES",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1738022400,
-      "lastModifiedTime": 1767322800,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "22"
+      },
+      "modifiedTime": 1767322800,
+      "_secret": "ACME-Mock-Only-028!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "4_29",
@@ -664,15 +1094,20 @@
       "userName": "system",
       "address": "host-029.acme.example",
       "platformId": "MockOracleDB",
-      "safeName": "OPS-BREAKGLASS",
-      "active": false,
+      "safeName": "APP-UAT-DATABASE",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1738108800,
-      "lastModifiedTime": 1767326400,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "1521"
+      },
+      "modifiedTime": 1767326400,
+      "_secret": "ACME-Mock-Only-029!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "4_30",
@@ -680,15 +1115,20 @@
       "userName": "sa",
       "address": "host-030.acme.example",
       "platformId": "MockMSSQL",
-      "safeName": "CYBER-SECURITY",
-      "active": true,
+      "safeName": "APP-UAT-DATABASE",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1738195200,
-      "lastModifiedTime": 1767330000,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "1433"
+      },
+      "modifiedTime": 1767330000,
+      "_secret": "ACME-Mock-Only-030!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "4_31",
@@ -696,15 +1136,20 @@
       "userName": "svc.application",
       "address": "host-031.acme.example",
       "platformId": "MockApplication",
-      "safeName": "APP-UAT-SERVICES",
-      "active": true,
+      "safeName": "CYBER-SECURITY",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": false
       },
       "createdTime": 1738281600,
-      "lastModifiedTime": 1767333600,
-      "psmCompatible": false
+      "platformAccountProperties": {
+        "Port": "443"
+      },
+      "modifiedTime": 1767333600,
+      "_secret": "ACME-Mock-Only-031!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "4_32",
@@ -712,15 +1157,20 @@
       "userName": "netadmin",
       "address": "host-032.acme.example",
       "platformId": "MockNetworkSSH",
-      "safeName": "RECORDING-LAB",
-      "active": true,
+      "safeName": "INFRA-NETWORK",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1738368000,
-      "lastModifiedTime": 1767337200,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "22"
+      },
+      "modifiedTime": 1767337200,
+      "_secret": "ACME-Mock-Only-032!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "5_33",
@@ -728,15 +1178,20 @@
       "userName": "svc.domain",
       "address": "host-033.acme.example",
       "platformId": "MockWinDomain",
-      "safeName": "APP-PROD-WINDOWS",
-      "active": true,
+      "safeName": "OPS-BREAKGLASS",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1738454400,
-      "lastModifiedTime": 1767340800,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "3389"
+      },
+      "modifiedTime": 1767340800,
+      "_secret": "ACME-Mock-Only-033!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "5_34",
@@ -744,15 +1199,20 @@
       "userName": "Administrator",
       "address": "host-034.acme.example",
       "platformId": "MockWinLocal",
-      "safeName": "APP-PROD-LINUX",
-      "active": true,
+      "safeName": "OPS-BREAKGLASS",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1738540800,
-      "lastModifiedTime": 1767344400,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "3389"
+      },
+      "modifiedTime": 1767344400,
+      "_secret": "ACME-Mock-Only-034!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "5_35",
@@ -760,15 +1220,20 @@
       "userName": "root",
       "address": "host-035.acme.example",
       "platformId": "MockUnixSSH",
-      "safeName": "APP-UAT-DATABASE",
-      "active": true,
+      "safeName": "APP-PROD-LINUX",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1738627200,
-      "lastModifiedTime": 1767348000,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "22"
+      },
+      "modifiedTime": 1767348000,
+      "_secret": "ACME-Mock-Only-035!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "5_36",
@@ -776,15 +1241,20 @@
       "userName": "svc.batch",
       "address": "host-036.acme.example",
       "platformId": "MockLinuxService",
-      "safeName": "INFRA-NETWORK",
-      "active": false,
+      "safeName": "RECORDING-LAB",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": false
       },
       "createdTime": 1738713600,
-      "lastModifiedTime": 1767351600,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "22"
+      },
+      "modifiedTime": 1767351600,
+      "_secret": "ACME-Mock-Only-036!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "5_37",
@@ -792,15 +1262,20 @@
       "userName": "system",
       "address": "host-037.acme.example",
       "platformId": "MockOracleDB",
-      "safeName": "OPS-BREAKGLASS",
-      "active": true,
+      "safeName": "APP-UAT-DATABASE",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1738800000,
-      "lastModifiedTime": 1767355200,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "1521"
+      },
+      "modifiedTime": 1767355200,
+      "_secret": "ACME-Mock-Only-037!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "5_38",
@@ -808,15 +1283,20 @@
       "userName": "sa",
       "address": "host-038.acme.example",
       "platformId": "MockMSSQL",
-      "safeName": "CYBER-SECURITY",
-      "active": true,
+      "safeName": "APP-UAT-DATABASE",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1738886400,
-      "lastModifiedTime": 1767358800,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "1433"
+      },
+      "modifiedTime": 1767358800,
+      "_secret": "ACME-Mock-Only-038!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "5_39",
@@ -824,15 +1304,20 @@
       "userName": "svc.application",
       "address": "host-039.acme.example",
       "platformId": "MockApplication",
-      "safeName": "APP-UAT-SERVICES",
-      "active": true,
+      "safeName": "CYBER-SECURITY",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1738972800,
-      "lastModifiedTime": 1767362400,
-      "psmCompatible": false
+      "platformAccountProperties": {
+        "Port": "443"
+      },
+      "modifiedTime": 1767362400,
+      "_secret": "ACME-Mock-Only-039!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     },
     {
       "id": "5_40",
@@ -840,277 +1325,1113 @@
       "userName": "netadmin",
       "address": "host-040.acme.example",
       "platformId": "MockNetworkSSH",
-      "safeName": "RECORDING-LAB",
-      "active": true,
+      "safeName": "INFRA-NETWORK",
       "secretType": "password",
       "secretManagement": {
         "automaticManagementEnabled": true
       },
       "createdTime": 1739059200,
-      "lastModifiedTime": 1767366000,
-      "psmCompatible": true
+      "platformAccountProperties": {
+        "Port": "22"
+      },
+      "modifiedTime": 1767366000,
+      "_secret": "ACME-Mock-Only-040!",
+      "_versions": [],
+      "_activities": [],
+      "_lockedBy": null
     }
   ],
   "memberships": [
     {
-      "id": "pamadmin.0",
-      "userName": "pamadmin",
+      "id": "member-01",
       "safeName": "APP-PROD-WINDOWS",
+      "memberId": 1,
+      "memberName": "Safe Owners",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
       "permissions": {
-        "listAccounts": true,
+        "useAccounts": true,
         "retrieveAccounts": true,
-        "manageSafe": true
+        "listAccounts": true,
+        "addAccounts": true,
+        "updateAccountContent": true,
+        "updateAccountProperties": true,
+        "initiateCPMAccountManagementOperations": true,
+        "specifyNextAccountContent": true,
+        "renameAccounts": true,
+        "deleteAccounts": true,
+        "unlockAccounts": true,
+        "manageSafe": true,
+        "manageSafeMembers": true,
+        "backupSafe": true,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": true,
+        "createFolders": true,
+        "deleteFolders": true,
+        "moveAccountsAndFolders": true,
+        "requestsAuthorizationLevel1": true,
+        "requestsAuthorizationLevel2": true
       }
     },
     {
-      "id": "pamadmin.1",
-      "userName": "pamadmin",
-      "safeName": "APP-PROD-LINUX",
+      "id": "member-02",
+      "safeName": "APP-PROD-WINDOWS",
+      "memberId": 2,
+      "memberName": "Auditors",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
       "permissions": {
-        "listAccounts": true,
-        "retrieveAccounts": true,
-        "manageSafe": true
-      }
-    },
-    {
-      "id": "vaultadmin.1",
-      "userName": "vaultadmin",
-      "safeName": "APP-PROD-LINUX",
-      "permissions": {
-        "listAccounts": true,
-        "retrieveAccounts": true,
-        "manageSafe": true
-      }
-    },
-    {
-      "id": "vaultadmin.2",
-      "userName": "vaultadmin",
-      "safeName": "APP-UAT-DATABASE",
-      "permissions": {
-        "listAccounts": true,
-        "retrieveAccounts": true,
-        "manageSafe": true
-      }
-    },
-    {
-      "id": "psmoperator.2",
-      "userName": "psmoperator",
-      "safeName": "APP-UAT-DATABASE",
-      "permissions": {
-        "listAccounts": true,
-        "retrieveAccounts": true,
-        "manageSafe": false
-      }
-    },
-    {
-      "id": "psmoperator.3",
-      "userName": "psmoperator",
-      "safeName": "INFRA-NETWORK",
-      "permissions": {
-        "listAccounts": true,
-        "retrieveAccounts": true,
-        "manageSafe": false
-      }
-    },
-    {
-      "id": "auditor.3",
-      "userName": "auditor",
-      "safeName": "INFRA-NETWORK",
-      "permissions": {
-        "listAccounts": true,
+        "useAccounts": false,
         "retrieveAccounts": false,
-        "manageSafe": false
+        "listAccounts": true,
+        "addAccounts": false,
+        "updateAccountContent": false,
+        "updateAccountProperties": false,
+        "initiateCPMAccountManagementOperations": false,
+        "specifyNextAccountContent": false,
+        "renameAccounts": false,
+        "deleteAccounts": false,
+        "unlockAccounts": false,
+        "manageSafe": false,
+        "manageSafeMembers": false,
+        "backupSafe": false,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": false,
+        "createFolders": false,
+        "deleteFolders": false,
+        "moveAccountsAndFolders": false,
+        "requestsAuthorizationLevel1": false,
+        "requestsAuthorizationLevel2": false
       }
     },
     {
-      "id": "auditor.4",
-      "userName": "auditor",
-      "safeName": "OPS-BREAKGLASS",
+      "id": "member-03",
+      "safeName": "APP-PROD-LINUX",
+      "memberId": 1,
+      "memberName": "Safe Owners",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
       "permissions": {
+        "useAccounts": true,
+        "retrieveAccounts": true,
         "listAccounts": true,
+        "addAccounts": true,
+        "updateAccountContent": true,
+        "updateAccountProperties": true,
+        "initiateCPMAccountManagementOperations": true,
+        "specifyNextAccountContent": true,
+        "renameAccounts": true,
+        "deleteAccounts": true,
+        "unlockAccounts": true,
+        "manageSafe": true,
+        "manageSafeMembers": true,
+        "backupSafe": true,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": true,
+        "createFolders": true,
+        "deleteFolders": true,
+        "moveAccountsAndFolders": true,
+        "requestsAuthorizationLevel1": true,
+        "requestsAuthorizationLevel2": true
+      }
+    },
+    {
+      "id": "member-04",
+      "safeName": "APP-PROD-LINUX",
+      "memberId": 2,
+      "memberName": "Auditors",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
+      "permissions": {
+        "useAccounts": false,
         "retrieveAccounts": false,
-        "manageSafe": false
+        "listAccounts": true,
+        "addAccounts": false,
+        "updateAccountContent": false,
+        "updateAccountProperties": false,
+        "initiateCPMAccountManagementOperations": false,
+        "specifyNextAccountContent": false,
+        "renameAccounts": false,
+        "deleteAccounts": false,
+        "unlockAccounts": false,
+        "manageSafe": false,
+        "manageSafeMembers": false,
+        "backupSafe": false,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": false,
+        "createFolders": false,
+        "deleteFolders": false,
+        "moveAccountsAndFolders": false,
+        "requestsAuthorizationLevel1": false,
+        "requestsAuthorizationLevel2": false
       }
     },
     {
-      "id": "safeowner.4",
-      "userName": "safeowner",
+      "id": "member-05",
+      "safeName": "APP-UAT-DATABASE",
+      "memberId": 1,
+      "memberName": "Safe Owners",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
+      "permissions": {
+        "useAccounts": true,
+        "retrieveAccounts": true,
+        "listAccounts": true,
+        "addAccounts": true,
+        "updateAccountContent": true,
+        "updateAccountProperties": true,
+        "initiateCPMAccountManagementOperations": true,
+        "specifyNextAccountContent": true,
+        "renameAccounts": true,
+        "deleteAccounts": true,
+        "unlockAccounts": true,
+        "manageSafe": true,
+        "manageSafeMembers": true,
+        "backupSafe": true,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": true,
+        "createFolders": true,
+        "deleteFolders": true,
+        "moveAccountsAndFolders": true,
+        "requestsAuthorizationLevel1": true,
+        "requestsAuthorizationLevel2": true
+      }
+    },
+    {
+      "id": "member-06",
+      "safeName": "APP-UAT-DATABASE",
+      "memberId": 2,
+      "memberName": "Auditors",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
+      "permissions": {
+        "useAccounts": false,
+        "retrieveAccounts": false,
+        "listAccounts": true,
+        "addAccounts": false,
+        "updateAccountContent": false,
+        "updateAccountProperties": false,
+        "initiateCPMAccountManagementOperations": false,
+        "specifyNextAccountContent": false,
+        "renameAccounts": false,
+        "deleteAccounts": false,
+        "unlockAccounts": false,
+        "manageSafe": false,
+        "manageSafeMembers": false,
+        "backupSafe": false,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": false,
+        "createFolders": false,
+        "deleteFolders": false,
+        "moveAccountsAndFolders": false,
+        "requestsAuthorizationLevel1": false,
+        "requestsAuthorizationLevel2": false
+      }
+    },
+    {
+      "id": "member-07",
+      "safeName": "INFRA-NETWORK",
+      "memberId": 1,
+      "memberName": "Safe Owners",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
+      "permissions": {
+        "useAccounts": true,
+        "retrieveAccounts": true,
+        "listAccounts": true,
+        "addAccounts": true,
+        "updateAccountContent": true,
+        "updateAccountProperties": true,
+        "initiateCPMAccountManagementOperations": true,
+        "specifyNextAccountContent": true,
+        "renameAccounts": true,
+        "deleteAccounts": true,
+        "unlockAccounts": true,
+        "manageSafe": true,
+        "manageSafeMembers": true,
+        "backupSafe": true,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": true,
+        "createFolders": true,
+        "deleteFolders": true,
+        "moveAccountsAndFolders": true,
+        "requestsAuthorizationLevel1": true,
+        "requestsAuthorizationLevel2": true
+      }
+    },
+    {
+      "id": "member-08",
+      "safeName": "INFRA-NETWORK",
+      "memberId": 2,
+      "memberName": "Auditors",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
+      "permissions": {
+        "useAccounts": false,
+        "retrieveAccounts": false,
+        "listAccounts": true,
+        "addAccounts": false,
+        "updateAccountContent": false,
+        "updateAccountProperties": false,
+        "initiateCPMAccountManagementOperations": false,
+        "specifyNextAccountContent": false,
+        "renameAccounts": false,
+        "deleteAccounts": false,
+        "unlockAccounts": false,
+        "manageSafe": false,
+        "manageSafeMembers": false,
+        "backupSafe": false,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": false,
+        "createFolders": false,
+        "deleteFolders": false,
+        "moveAccountsAndFolders": false,
+        "requestsAuthorizationLevel1": false,
+        "requestsAuthorizationLevel2": false
+      }
+    },
+    {
+      "id": "member-09",
       "safeName": "OPS-BREAKGLASS",
+      "memberId": 1,
+      "memberName": "Safe Owners",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
       "permissions": {
-        "listAccounts": true,
+        "useAccounts": true,
         "retrieveAccounts": true,
-        "manageSafe": true
+        "listAccounts": true,
+        "addAccounts": true,
+        "updateAccountContent": true,
+        "updateAccountProperties": true,
+        "initiateCPMAccountManagementOperations": true,
+        "specifyNextAccountContent": true,
+        "renameAccounts": true,
+        "deleteAccounts": true,
+        "unlockAccounts": true,
+        "manageSafe": true,
+        "manageSafeMembers": true,
+        "backupSafe": true,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": true,
+        "createFolders": true,
+        "deleteFolders": true,
+        "moveAccountsAndFolders": true,
+        "requestsAuthorizationLevel1": true,
+        "requestsAuthorizationLevel2": true
       }
     },
     {
-      "id": "safeowner.5",
-      "userName": "safeowner",
+      "id": "member-10",
+      "safeName": "OPS-BREAKGLASS",
+      "memberId": 2,
+      "memberName": "Auditors",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
+      "permissions": {
+        "useAccounts": false,
+        "retrieveAccounts": false,
+        "listAccounts": true,
+        "addAccounts": false,
+        "updateAccountContent": false,
+        "updateAccountProperties": false,
+        "initiateCPMAccountManagementOperations": false,
+        "specifyNextAccountContent": false,
+        "renameAccounts": false,
+        "deleteAccounts": false,
+        "unlockAccounts": false,
+        "manageSafe": false,
+        "manageSafeMembers": false,
+        "backupSafe": false,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": false,
+        "createFolders": false,
+        "deleteFolders": false,
+        "moveAccountsAndFolders": false,
+        "requestsAuthorizationLevel1": false,
+        "requestsAuthorizationLevel2": false
+      }
+    },
+    {
+      "id": "member-11",
       "safeName": "CYBER-SECURITY",
+      "memberId": 1,
+      "memberName": "Safe Owners",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
       "permissions": {
-        "listAccounts": true,
+        "useAccounts": true,
         "retrieveAccounts": true,
-        "manageSafe": true
+        "listAccounts": true,
+        "addAccounts": true,
+        "updateAccountContent": true,
+        "updateAccountProperties": true,
+        "initiateCPMAccountManagementOperations": true,
+        "specifyNextAccountContent": true,
+        "renameAccounts": true,
+        "deleteAccounts": true,
+        "unlockAccounts": true,
+        "manageSafe": true,
+        "manageSafeMembers": true,
+        "backupSafe": true,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": true,
+        "createFolders": true,
+        "deleteFolders": true,
+        "moveAccountsAndFolders": true,
+        "requestsAuthorizationLevel1": true,
+        "requestsAuthorizationLevel2": true
       }
     },
     {
-      "id": "appuser.5",
-      "userName": "appuser",
+      "id": "member-12",
       "safeName": "CYBER-SECURITY",
+      "memberId": 2,
+      "memberName": "Auditors",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
       "permissions": {
+        "useAccounts": false,
+        "retrieveAccounts": false,
         "listAccounts": true,
-        "retrieveAccounts": true,
-        "manageSafe": false
+        "addAccounts": false,
+        "updateAccountContent": false,
+        "updateAccountProperties": false,
+        "initiateCPMAccountManagementOperations": false,
+        "specifyNextAccountContent": false,
+        "renameAccounts": false,
+        "deleteAccounts": false,
+        "unlockAccounts": false,
+        "manageSafe": false,
+        "manageSafeMembers": false,
+        "backupSafe": false,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": false,
+        "createFolders": false,
+        "deleteFolders": false,
+        "moveAccountsAndFolders": false,
+        "requestsAuthorizationLevel1": false,
+        "requestsAuthorizationLevel2": false
       }
     },
     {
-      "id": "appuser.6",
-      "userName": "appuser",
+      "id": "member-13",
       "safeName": "APP-UAT-SERVICES",
+      "memberId": 1,
+      "memberName": "Safe Owners",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
       "permissions": {
-        "listAccounts": true,
+        "useAccounts": true,
         "retrieveAccounts": true,
-        "manageSafe": false
+        "listAccounts": true,
+        "addAccounts": true,
+        "updateAccountContent": true,
+        "updateAccountProperties": true,
+        "initiateCPMAccountManagementOperations": true,
+        "specifyNextAccountContent": true,
+        "renameAccounts": true,
+        "deleteAccounts": true,
+        "unlockAccounts": true,
+        "manageSafe": true,
+        "manageSafeMembers": true,
+        "backupSafe": true,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": true,
+        "createFolders": true,
+        "deleteFolders": true,
+        "moveAccountsAndFolders": true,
+        "requestsAuthorizationLevel1": true,
+        "requestsAuthorizationLevel2": true
       }
     },
     {
-      "id": "readonly.6",
-      "userName": "readonly",
+      "id": "member-14",
       "safeName": "APP-UAT-SERVICES",
+      "memberId": 2,
+      "memberName": "Auditors",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
       "permissions": {
-        "listAccounts": true,
+        "useAccounts": false,
         "retrieveAccounts": false,
-        "manageSafe": false
+        "listAccounts": true,
+        "addAccounts": false,
+        "updateAccountContent": false,
+        "updateAccountProperties": false,
+        "initiateCPMAccountManagementOperations": false,
+        "specifyNextAccountContent": false,
+        "renameAccounts": false,
+        "deleteAccounts": false,
+        "unlockAccounts": false,
+        "manageSafe": false,
+        "manageSafeMembers": false,
+        "backupSafe": false,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": false,
+        "createFolders": false,
+        "deleteFolders": false,
+        "moveAccountsAndFolders": false,
+        "requestsAuthorizationLevel1": false,
+        "requestsAuthorizationLevel2": false
       }
     },
     {
-      "id": "readonly.7",
-      "userName": "readonly",
+      "id": "member-15",
       "safeName": "RECORDING-LAB",
+      "memberId": 1,
+      "memberName": "Safe Owners",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
       "permissions": {
+        "useAccounts": true,
+        "retrieveAccounts": true,
         "listAccounts": true,
+        "addAccounts": true,
+        "updateAccountContent": true,
+        "updateAccountProperties": true,
+        "initiateCPMAccountManagementOperations": true,
+        "specifyNextAccountContent": true,
+        "renameAccounts": true,
+        "deleteAccounts": true,
+        "unlockAccounts": true,
+        "manageSafe": true,
+        "manageSafeMembers": true,
+        "backupSafe": true,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": true,
+        "createFolders": true,
+        "deleteFolders": true,
+        "moveAccountsAndFolders": true,
+        "requestsAuthorizationLevel1": true,
+        "requestsAuthorizationLevel2": true
+      }
+    },
+    {
+      "id": "member-16",
+      "safeName": "RECORDING-LAB",
+      "memberId": 2,
+      "memberName": "Auditors",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
+      "permissions": {
+        "useAccounts": false,
         "retrieveAccounts": false,
-        "manageSafe": false
-      }
-    },
-    {
-      "id": "helpdesk.0",
-      "userName": "helpdesk",
-      "safeName": "APP-PROD-WINDOWS",
-      "permissions": {
         "listAccounts": true,
-        "retrieveAccounts": true,
-        "manageSafe": false
+        "addAccounts": false,
+        "updateAccountContent": false,
+        "updateAccountProperties": false,
+        "initiateCPMAccountManagementOperations": false,
+        "specifyNextAccountContent": false,
+        "renameAccounts": false,
+        "deleteAccounts": false,
+        "unlockAccounts": false,
+        "manageSafe": false,
+        "manageSafeMembers": false,
+        "backupSafe": false,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": false,
+        "createFolders": false,
+        "deleteFolders": false,
+        "moveAccountsAndFolders": false,
+        "requestsAuthorizationLevel1": false,
+        "requestsAuthorizationLevel2": false
       }
     },
     {
-      "id": "helpdesk.7",
-      "userName": "helpdesk",
+      "id": "member-17",
+      "safeName": "APP-PROD-WINDOWS",
+      "memberId": 3,
+      "memberName": "Windows Operators",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
+      "permissions": {
+        "useAccounts": true,
+        "retrieveAccounts": true,
+        "listAccounts": true,
+        "addAccounts": false,
+        "updateAccountContent": false,
+        "updateAccountProperties": false,
+        "initiateCPMAccountManagementOperations": false,
+        "specifyNextAccountContent": false,
+        "renameAccounts": false,
+        "deleteAccounts": false,
+        "unlockAccounts": false,
+        "manageSafe": false,
+        "manageSafeMembers": false,
+        "backupSafe": false,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": false,
+        "createFolders": false,
+        "deleteFolders": false,
+        "moveAccountsAndFolders": false,
+        "requestsAuthorizationLevel1": false,
+        "requestsAuthorizationLevel2": false
+      }
+    },
+    {
+      "id": "member-18",
+      "safeName": "OPS-BREAKGLASS",
+      "memberId": 3,
+      "memberName": "Windows Operators",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
+      "permissions": {
+        "useAccounts": true,
+        "retrieveAccounts": true,
+        "listAccounts": true,
+        "addAccounts": false,
+        "updateAccountContent": false,
+        "updateAccountProperties": false,
+        "initiateCPMAccountManagementOperations": false,
+        "specifyNextAccountContent": false,
+        "renameAccounts": false,
+        "deleteAccounts": false,
+        "unlockAccounts": false,
+        "manageSafe": false,
+        "manageSafeMembers": false,
+        "backupSafe": false,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": false,
+        "createFolders": false,
+        "deleteFolders": false,
+        "moveAccountsAndFolders": false,
+        "requestsAuthorizationLevel1": false,
+        "requestsAuthorizationLevel2": false
+      }
+    },
+    {
+      "id": "member-19",
       "safeName": "RECORDING-LAB",
+      "memberId": 3,
+      "memberName": "Windows Operators",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
       "permissions": {
-        "listAccounts": true,
+        "useAccounts": true,
         "retrieveAccounts": true,
-        "manageSafe": false
+        "listAccounts": true,
+        "addAccounts": false,
+        "updateAccountContent": false,
+        "updateAccountProperties": false,
+        "initiateCPMAccountManagementOperations": false,
+        "specifyNextAccountContent": false,
+        "renameAccounts": false,
+        "deleteAccounts": false,
+        "unlockAccounts": false,
+        "manageSafe": false,
+        "manageSafeMembers": false,
+        "backupSafe": false,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": false,
+        "createFolders": false,
+        "deleteFolders": false,
+        "moveAccountsAndFolders": false,
+        "requestsAuthorizationLevel1": false,
+        "requestsAuthorizationLevel2": false
       }
     },
     {
-      "id": "expired.user.0",
-      "userName": "expired.user",
-      "safeName": "APP-PROD-WINDOWS",
-      "permissions": {
-        "listAccounts": true,
-        "retrieveAccounts": true,
-        "manageSafe": false
-      }
-    },
-    {
-      "id": "expired.user.1",
-      "userName": "expired.user",
+      "id": "member-20",
       "safeName": "APP-PROD-LINUX",
+      "memberId": 4,
+      "memberName": "Linux Operators",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
       "permissions": {
-        "listAccounts": true,
+        "useAccounts": true,
         "retrieveAccounts": true,
-        "manageSafe": false
+        "listAccounts": true,
+        "addAccounts": false,
+        "updateAccountContent": false,
+        "updateAccountProperties": false,
+        "initiateCPMAccountManagementOperations": false,
+        "specifyNextAccountContent": false,
+        "renameAccounts": false,
+        "deleteAccounts": false,
+        "unlockAccounts": false,
+        "manageSafe": false,
+        "manageSafeMembers": false,
+        "backupSafe": false,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": false,
+        "createFolders": false,
+        "deleteFolders": false,
+        "moveAccountsAndFolders": false,
+        "requestsAuthorizationLevel1": false,
+        "requestsAuthorizationLevel2": false
       }
     },
     {
-      "id": "john.ldap.1",
-      "userName": "john.ldap",
-      "safeName": "APP-PROD-LINUX",
-      "permissions": {
-        "listAccounts": true,
-        "retrieveAccounts": true,
-        "manageSafe": false
-      }
-    },
-    {
-      "id": "john.ldap.2",
-      "userName": "john.ldap",
-      "safeName": "APP-UAT-DATABASE",
-      "permissions": {
-        "listAccounts": true,
-        "retrieveAccounts": true,
-        "manageSafe": false
-      }
-    },
-    {
-      "id": "windows.user.2",
-      "userName": "windows.user",
-      "safeName": "APP-UAT-DATABASE",
-      "permissions": {
-        "listAccounts": true,
-        "retrieveAccounts": true,
-        "manageSafe": false
-      }
-    },
-    {
-      "id": "windows.user.3",
-      "userName": "windows.user",
+      "id": "member-21",
       "safeName": "INFRA-NETWORK",
+      "memberId": 4,
+      "memberName": "Linux Operators",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
       "permissions": {
-        "listAccounts": true,
+        "useAccounts": true,
         "retrieveAccounts": true,
-        "manageSafe": false
+        "listAccounts": true,
+        "addAccounts": false,
+        "updateAccountContent": false,
+        "updateAccountProperties": false,
+        "initiateCPMAccountManagementOperations": false,
+        "specifyNextAccountContent": false,
+        "renameAccounts": false,
+        "deleteAccounts": false,
+        "unlockAccounts": false,
+        "manageSafe": false,
+        "manageSafeMembers": false,
+        "backupSafe": false,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": false,
+        "createFolders": false,
+        "deleteFolders": false,
+        "moveAccountsAndFolders": false,
+        "requestsAuthorizationLevel1": false,
+        "requestsAuthorizationLevel2": false
       }
     },
     {
-      "id": "radius.user.3",
-      "userName": "radius.user",
-      "safeName": "INFRA-NETWORK",
+      "id": "member-22",
+      "safeName": "APP-UAT-SERVICES",
+      "memberId": 4,
+      "memberName": "Linux Operators",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
       "permissions": {
-        "listAccounts": true,
+        "useAccounts": true,
         "retrieveAccounts": true,
-        "manageSafe": false
+        "listAccounts": true,
+        "addAccounts": false,
+        "updateAccountContent": false,
+        "updateAccountProperties": false,
+        "initiateCPMAccountManagementOperations": false,
+        "specifyNextAccountContent": false,
+        "renameAccounts": false,
+        "deleteAccounts": false,
+        "unlockAccounts": false,
+        "manageSafe": false,
+        "manageSafeMembers": false,
+        "backupSafe": false,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": false,
+        "createFolders": false,
+        "deleteFolders": false,
+        "moveAccountsAndFolders": false,
+        "requestsAuthorizationLevel1": false,
+        "requestsAuthorizationLevel2": false
       }
     },
     {
-      "id": "radius.user.4",
-      "userName": "radius.user",
-      "safeName": "OPS-BREAKGLASS",
+      "id": "member-23",
+      "safeName": "APP-UAT-DATABASE",
+      "memberId": 5,
+      "memberName": "Database Operators",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
       "permissions": {
-        "listAccounts": true,
+        "useAccounts": true,
         "retrieveAccounts": true,
-        "manageSafe": false
+        "listAccounts": true,
+        "addAccounts": false,
+        "updateAccountContent": false,
+        "updateAccountProperties": false,
+        "initiateCPMAccountManagementOperations": false,
+        "specifyNextAccountContent": false,
+        "renameAccounts": false,
+        "deleteAccounts": false,
+        "unlockAccounts": false,
+        "manageSafe": false,
+        "manageSafeMembers": false,
+        "backupSafe": false,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": false,
+        "createFolders": false,
+        "deleteFolders": false,
+        "moveAccountsAndFolders": false,
+        "requestsAuthorizationLevel1": false,
+        "requestsAuthorizationLevel2": false
       }
     },
     {
-      "id": "saml.user.4",
-      "userName": "saml.user",
-      "safeName": "OPS-BREAKGLASS",
-      "permissions": {
-        "listAccounts": true,
-        "retrieveAccounts": true,
-        "manageSafe": false
-      }
-    },
-    {
-      "id": "saml.user.5",
-      "userName": "saml.user",
+      "id": "member-24",
       "safeName": "CYBER-SECURITY",
+      "memberId": 6,
+      "memberName": "Application Users",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
       "permissions": {
-        "listAccounts": true,
+        "useAccounts": true,
         "retrieveAccounts": true,
-        "manageSafe": false
+        "listAccounts": true,
+        "addAccounts": false,
+        "updateAccountContent": false,
+        "updateAccountProperties": false,
+        "initiateCPMAccountManagementOperations": false,
+        "specifyNextAccountContent": false,
+        "renameAccounts": false,
+        "deleteAccounts": false,
+        "unlockAccounts": false,
+        "manageSafe": false,
+        "manageSafeMembers": false,
+        "backupSafe": false,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": false,
+        "createFolders": false,
+        "deleteFolders": false,
+        "moveAccountsAndFolders": false,
+        "requestsAuthorizationLevel1": false,
+        "requestsAuthorizationLevel2": false
       }
+    },
+    {
+      "id": "member-25",
+      "safeName": "APP-UAT-SERVICES",
+      "memberId": 6,
+      "memberName": "Application Users",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
+      "permissions": {
+        "useAccounts": true,
+        "retrieveAccounts": true,
+        "listAccounts": true,
+        "addAccounts": false,
+        "updateAccountContent": false,
+        "updateAccountProperties": false,
+        "initiateCPMAccountManagementOperations": false,
+        "specifyNextAccountContent": false,
+        "renameAccounts": false,
+        "deleteAccounts": false,
+        "unlockAccounts": false,
+        "manageSafe": false,
+        "manageSafeMembers": false,
+        "backupSafe": false,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": false,
+        "createFolders": false,
+        "deleteFolders": false,
+        "moveAccountsAndFolders": false,
+        "requestsAuthorizationLevel1": false,
+        "requestsAuthorizationLevel2": false
+      }
+    },
+    {
+      "id": "member-26",
+      "safeName": "RECORDING-LAB",
+      "memberId": 6,
+      "memberName": "Application Users",
+      "memberType": "Group",
+      "membershipExpirationDate": null,
+      "permissions": {
+        "useAccounts": true,
+        "retrieveAccounts": true,
+        "listAccounts": true,
+        "addAccounts": false,
+        "updateAccountContent": false,
+        "updateAccountProperties": false,
+        "initiateCPMAccountManagementOperations": false,
+        "specifyNextAccountContent": false,
+        "renameAccounts": false,
+        "deleteAccounts": false,
+        "unlockAccounts": false,
+        "manageSafe": false,
+        "manageSafeMembers": false,
+        "backupSafe": false,
+        "viewAuditLog": true,
+        "viewSafeMembers": true,
+        "accessWithoutConfirmation": false,
+        "createFolders": false,
+        "deleteFolders": false,
+        "moveAccountsAndFolders": false,
+        "requestsAuthorizationLevel1": false,
+        "requestsAuthorizationLevel2": false
+      }
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "groupName": "Safe Owners",
+      "groupType": "Vault",
+      "description": "ACME mock Safe Owners",
+      "location": "\\",
+      "members": [
+        {
+          "memberId": 5,
+          "memberName": "safeowner",
+          "memberType": "Vault"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "groupName": "Auditors",
+      "groupType": "Vault",
+      "description": "ACME mock Auditors",
+      "location": "\\",
+      "members": [
+        {
+          "memberId": 4,
+          "memberName": "auditor",
+          "memberType": "Vault"
+        },
+        {
+          "memberId": 7,
+          "memberName": "readonly",
+          "memberType": "Vault"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "groupName": "Windows Operators",
+      "groupType": "Vault",
+      "description": "ACME mock Windows Operators",
+      "location": "\\",
+      "members": [
+        {
+          "memberId": 3,
+          "memberName": "psmoperator",
+          "memberType": "Vault"
+        },
+        {
+          "memberId": 11,
+          "memberName": "windows.user",
+          "memberType": "Vault"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "groupName": "Linux Operators",
+      "groupType": "Vault",
+      "description": "ACME mock Linux Operators",
+      "location": "\\",
+      "members": [
+        {
+          "memberId": 10,
+          "memberName": "john.ldap",
+          "memberType": "Vault"
+        },
+        {
+          "memberId": 12,
+          "memberName": "radius.user",
+          "memberType": "Vault"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "groupName": "Database Operators",
+      "groupType": "Vault",
+      "description": "ACME mock Database Operators",
+      "location": "\\",
+      "members": [
+        {
+          "memberId": 3,
+          "memberName": "psmoperator",
+          "memberType": "Vault"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "groupName": "Application Users",
+      "groupType": "Vault",
+      "description": "ACME mock Application Users",
+      "location": "\\",
+      "members": [
+        {
+          "memberId": 6,
+          "memberName": "appuser",
+          "memberType": "Vault"
+        },
+        {
+          "memberId": 13,
+          "memberName": "saml.user",
+          "memberType": "Vault"
+        }
+      ]
+    }
+  ],
+  "servers": [
+    {
+      "id": "PSM-LAB-01",
+      "ID": "PSM-LAB-01",
+      "Name": "ACME Windows PSM",
+      "Address": "psm-01.acme.example",
+      "Type": "PSM"
+    },
+    {
+      "id": "PSM-LAB-02",
+      "ID": "PSM-LAB-02",
+      "Name": "ACME standby PSM",
+      "Address": "psm-02.acme.example",
+      "Type": "PSM"
+    },
+    {
+      "id": "PSMP-LAB-01",
+      "ID": "PSMP-LAB-01",
+      "Name": "ACME SSH proxy",
+      "Address": "psmp-01.acme.example",
+      "Type": "PSMP"
+    }
+  ],
+  "connectors": [
+    {
+      "id": "PSM-RDP",
+      "ID": "PSM-RDP",
+      "DisplayName": "Remote Desktop",
+      "_protocols": [
+        "PSM"
+      ],
+      "UserParameters": [
+        {
+          "Name": "Port",
+          "Value": "3389",
+          "Visible": true,
+          "Required": false
+        }
+      ]
+    },
+    {
+      "id": "PSM-SSH",
+      "ID": "PSM-SSH",
+      "DisplayName": "SSH through PSM",
+      "_protocols": [
+        "PSM"
+      ],
+      "UserParameters": [
+        {
+          "Name": "Port",
+          "Value": "22",
+          "Visible": true,
+          "Required": false
+        }
+      ]
+    },
+    {
+      "id": "SSH",
+      "ID": "SSH",
+      "DisplayName": "SSH through PSMP",
+      "_protocols": [
+        "PSMP"
+      ],
+      "UserParameters": [
+        {
+          "Name": "Port",
+          "Value": "22",
+          "Visible": true,
+          "Required": false
+        }
+      ]
+    },
+    {
+      "id": "PSM-WinSCP",
+      "ID": "PSM-WinSCP",
+      "DisplayName": "SFTP / SCP",
+      "_protocols": [
+        "PSM"
+      ],
+      "UserParameters": [
+        {
+          "Name": "Port",
+          "Value": "3389",
+          "Visible": true,
+          "Required": false
+        }
+      ]
+    },
+    {
+      "id": "PSM-SQLServerMgmtStudio",
+      "ID": "PSM-SQLServerMgmtStudio",
+      "DisplayName": "SQL Server Management Studio",
+      "_protocols": [
+        "PSM"
+      ],
+      "UserParameters": [
+        {
+          "Name": "Port",
+          "Value": "3389",
+          "Visible": true,
+          "Required": false
+        }
+      ]
+    },
+    {
+      "id": "PSM-Oracle",
+      "ID": "PSM-Oracle",
+      "DisplayName": "Oracle SQL client",
+      "_protocols": [
+        "PSM"
+      ],
+      "UserParameters": [
+        {
+          "Name": "Port",
+          "Value": "3389",
+          "Visible": true,
+          "Required": false
+        }
+      ]
+    },
+    {
+      "id": "PSM-WebApp",
+      "ID": "PSM-WebApp",
+      "DisplayName": "Web application (mock example)",
+      "_protocols": [
+        "PSM"
+      ],
+      "UserParameters": [
+        {
+          "Name": "Port",
+          "Value": "3389",
+          "Visible": true,
+          "Required": false
+        }
+      ]
+    },
+    {
+      "id": "PSM-VNC",
+      "ID": "PSM-VNC",
+      "DisplayName": "VNC (mock example)",
+      "_protocols": [
+        "PSM"
+      ],
+      "UserParameters": [
+        {
+          "Name": "Port",
+          "Value": "3389",
+          "Visible": true,
+          "Required": false
+        }
+      ]
     }
   ]
 }

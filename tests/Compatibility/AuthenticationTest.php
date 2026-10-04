@@ -67,7 +67,7 @@ final class AuthenticationTest extends WebTestCase
         self::assertResponseIsSuccessful();
         self::assertSame($user, json_decode($this->client->getResponse()->getContent(), true)['username']);
         $this->client->request('GET', '/PasswordVault/API/Accounts', server: ['HTTP_AUTHORIZATION' => $token]);
-        $this->error(501, 'PAMMOCK001');
+        self::assertResponseIsSuccessful();
         $stored = self::getContainer()->get(EntityManagerInterface::class)->find(PamSession::class, hash('sha256', $token));
         self::assertNotNull($stored);
         self::assertSame($provider, $stored->provider);
@@ -256,7 +256,7 @@ final class AuthenticationTest extends WebTestCase
     {
         $db = self::getContainer()->get(EntityManagerInterface::class)->getConnection();
         self::assertSame(13, (int) $db->fetchOne('SELECT COUNT(*) FROM pam_user'));
-        foreach (['safes' => 8, 'accounts' => 40, 'platforms' => 8, 'memberships' => 26] as $kind => $count) {
+        foreach (['safes' => 8, 'accounts' => 40, 'platforms' => 11, 'memberships' => 26] as $kind => $count) {
             self::assertSame($count, (int) $db->fetchOne('SELECT COUNT(*) FROM lab_object WHERE kind = ?', [$kind]));
         }
         $before = $db->fetchAllAssociative('SELECT * FROM lab_object ORDER BY id');

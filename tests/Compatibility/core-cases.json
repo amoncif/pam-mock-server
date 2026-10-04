@@ -1,0 +1,620 @@
+[
+  {
+    "id": "accounts.get.accounts",
+    "method": "GET",
+    "path": "Accounts",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "accounts.add.account",
+    "method": "POST",
+    "path": "Accounts",
+    "body": {
+      "userName": "svc.new",
+      "address": "new.acme.example",
+      "safeName": "APP-PROD-WINDOWS",
+      "platformId": "MockWinDomain",
+      "secret": "LocalMock123!"
+    },
+    "status": 201
+  },
+  {
+    "id": "accounts.delete.account",
+    "method": "DELETE",
+    "path": "Accounts/1_1",
+    "body": null,
+    "status": 204
+  },
+  {
+    "id": "accounts.get.account.details",
+    "method": "GET",
+    "path": "Accounts/1_1",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "accounts.update.account",
+    "method": "PATCH",
+    "path": "Accounts/1_1",
+    "body": [
+      {
+        "op": "replace",
+        "path": "/name",
+        "value": "Updated account"
+      }
+    ],
+    "status": 200
+  },
+  {
+    "id": "accounts.get.account.activity.get.296",
+    "method": "GET",
+    "path": "Accounts/1_1/Activities",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "accounts.stop.cpmtask.post.306",
+    "method": "POST",
+    "path": "Accounts/1_1/Cancel",
+    "body": null,
+    "status": 204
+  },
+  {
+    "id": "accounts.change.credentials.immediately",
+    "method": "POST",
+    "path": "Accounts/1_1/Change",
+    "body": null,
+    "status": 204
+  },
+  {
+    "id": "accounts.check.in.an.exclusive.account",
+    "method": "POST",
+    "path": "Accounts/1_1/CheckIn",
+    "body": null,
+    "status": 204
+  },
+  {
+    "id": "accounts.get.password.value",
+    "method": "POST",
+    "path": "Accounts/1_1/Password/Retrieve",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "accounts.change.credentials.in.the.vault",
+    "method": "POST",
+    "path": "Accounts/1_1/Password/Update",
+    "body": {
+      "NewCredentials": "LocalChanged123!"
+    },
+    "status": 204
+  },
+  {
+    "id": "accounts.connect.using.psm",
+    "method": "POST",
+    "path": "Accounts/1_1/PSMConnect",
+    "body": {
+      "ConnectionComponent": "PSM-RDP"
+    },
+    "status": 200
+  },
+  {
+    "id": "accounts.reconcile.credentials",
+    "method": "POST",
+    "path": "Accounts/1_1/Reconcile",
+    "body": null,
+    "status": 204
+  },
+  {
+    "id": "accounts.resume.cpmauto.management.post.301",
+    "method": "POST",
+    "path": "Accounts/1_1/Resume",
+    "body": null,
+    "status": 204
+  },
+  {
+    "id": "accounts.generate.password",
+    "method": "POST",
+    "path": "Accounts/1_1/Secret/Generate",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "accounts.retrieve.private.ssh.key.account",
+    "method": "POST",
+    "path": "Accounts/1_1/Secret/Retrieve",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "accounts.get.secret.versions",
+    "method": "GET",
+    "path": "Accounts/1_1/Secret/Versions",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "accounts.change.credentials.and.set.next.password",
+    "method": "POST",
+    "path": "Accounts/1_1/SetNextPassword",
+    "body": {
+      "NewCredentials": "LocalChanged123!"
+    },
+    "status": 204
+  },
+  {
+    "id": "accounts.unlock.account",
+    "method": "POST",
+    "path": "Accounts/1_1/Unlock",
+    "body": null,
+    "status": 204
+  },
+  {
+    "id": "accounts.verify.credentials",
+    "method": "POST",
+    "path": "Accounts/1_1/Verify",
+    "body": null,
+    "status": 204
+  },
+  {
+    "id": "platforms.get.platforms",
+    "method": "GET",
+    "path": "Platforms",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "platforms.get.dependent.platforms",
+    "method": "GET",
+    "path": "platforms/dependents",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "platforms.delete.dependent.platform",
+    "method": "DELETE",
+    "path": "platforms/dependents/9",
+    "body": null,
+    "status": 204
+  },
+  {
+    "id": "platforms.duplicate.dependent.platforms",
+    "method": "POST",
+    "path": "platforms/dependents/9/duplicate",
+    "body": {
+      "Name": "DuplicateMock"
+    },
+    "status": 201
+  },
+  {
+    "id": "platforms.get.group.platforms",
+    "method": "GET",
+    "path": "platforms/groups",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "platforms.delete.group.platform",
+    "method": "DELETE",
+    "path": "platforms/groups/10",
+    "body": null,
+    "status": 204
+  },
+  {
+    "id": "platforms.activate.group.platform",
+    "method": "POST",
+    "path": "platforms/groups/10/activate",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "platforms.deactivate.group.platform",
+    "method": "POST",
+    "path": "platforms/groups/10/deactivate",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "platforms.duplicate.group.platforms",
+    "method": "POST",
+    "path": "platforms/groups/10/duplicate",
+    "body": {
+      "Name": "DuplicateMock"
+    },
+    "status": 201
+  },
+  {
+    "id": "platforms.get.rotational.group.platforms",
+    "method": "GET",
+    "path": "platforms/rotationalGroups",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "platforms.delete.rotational.group.platform",
+    "method": "DELETE",
+    "path": "platforms/rotationalGroups/11",
+    "body": null,
+    "status": 204
+  },
+  {
+    "id": "platforms.activate.rotational.group.platform",
+    "method": "POST",
+    "path": "platforms/rotationalGroups/11/activate",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "platforms.deactivate.rotational.group.platform",
+    "method": "POST",
+    "path": "platforms/rotationalGroups/11/deactivate",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "platforms.duplicate.rotational.group.platforms",
+    "method": "POST",
+    "path": "platforms/rotationalGroups/11/duplicate",
+    "body": {
+      "Name": "DuplicateMock"
+    },
+    "status": 201
+  },
+  {
+    "id": "platforms.get.target.platforms",
+    "method": "GET",
+    "path": "platforms/targets",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "platforms.get.platform.summary.get.270",
+    "method": "GET",
+    "path": "Platforms/Targets/SystemTypes",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "platforms.rename.platform.put.272",
+    "method": "PUT",
+    "path": "Platforms/targets/1",
+    "body": {
+      "Name": "Renamed platform"
+    },
+    "status": 200
+  },
+  {
+    "id": "platforms.get.platform.get.269",
+    "method": "GET",
+    "path": "platforms/targets/1/settings",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "platforms.delete.target.platform",
+    "method": "DELETE",
+    "path": "Platforms/targets/1",
+    "body": null,
+    "status": 409
+  },
+  {
+    "id": "platforms.activate.target.platform",
+    "method": "POST",
+    "path": "platforms/targets/1/activate",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "platforms.deactivate.target.platform",
+    "method": "POST",
+    "path": "platforms/targets/1/deactivate",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "platforms.duplicate.target.platforms",
+    "method": "POST",
+    "path": "platforms/targets/1/duplicate",
+    "body": {
+      "Name": "DuplicateMock"
+    },
+    "status": 201
+  },
+  {
+    "id": "platforms.new.platform.secret.post.271",
+    "method": "POST",
+    "path": "Platforms/1/GenerateSecret",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "platforms.get.platform.details",
+    "method": "GET",
+    "path": "Platforms/1",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "psm.get.session.management.policy.of.platform",
+    "method": "GET",
+    "path": "Platforms/Targets/1/PrivilegedSessionManagement",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "psm.update.session.management.policy.of.platform",
+    "method": "PUT",
+    "path": "Platforms/Targets/1/PrivilegedSessionManagement",
+    "body": {
+      "PSMServerId": "PSM-LAB-01",
+      "PSMConnectors": [
+        {
+          "PSMConnectorID": "PSM-RDP",
+          "Enabled": true
+        }
+      ]
+    },
+    "status": 200
+  },
+  {
+    "id": "psm.get.all.connection.components",
+    "method": "GET",
+    "path": "PSM/Connectors",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "psm.get.all.psm.servers",
+    "method": "GET",
+    "path": "PSM/Servers",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "safe.members.get.all.safe.members",
+    "method": "GET",
+    "path": "Safes/APP-PROD-WINDOWS/Members",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "safe.members.add.safe.member",
+    "method": "POST",
+    "path": "Safes/APP-PROD-WINDOWS/Members",
+    "body": {
+      "permissions": {
+        "listAccounts": true,
+        "viewSafeMembers": true
+      },
+      "memberName": "appuser"
+    },
+    "status": 201
+  },
+  {
+    "id": "safe.members.delete.safe.member",
+    "method": "DELETE",
+    "path": "Safes/APP-PROD-WINDOWS/Members/Auditors",
+    "body": null,
+    "status": 204
+  },
+  {
+    "id": "safe.members.get.safe.member",
+    "method": "GET",
+    "path": "Safes/APP-PROD-WINDOWS/Members/Auditors",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "safe.members.update.safe.member",
+    "method": "PUT",
+    "path": "Safes/APP-PROD-WINDOWS/Members/Auditors",
+    "body": {
+      "permissions": {
+        "listAccounts": true,
+        "viewSafeMembers": true
+      }
+    },
+    "status": 200
+  },
+  {
+    "id": "safes.get.safe.by.platform.id",
+    "method": "GET",
+    "path": "Platforms/1/Safes",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "safes.get.all.safes",
+    "method": "GET",
+    "path": "Safes",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "safes.add.safe",
+    "method": "POST",
+    "path": "Safes",
+    "body": {
+      "safeName": "NEW-SAFE"
+    },
+    "status": 201
+  },
+  {
+    "id": "safes.delete.safe",
+    "method": "DELETE",
+    "path": "Safes/APP-PROD-WINDOWS",
+    "body": null,
+    "status": 409
+  },
+  {
+    "id": "safes.get.safe.details",
+    "method": "GET",
+    "path": "Safes/APP-PROD-WINDOWS",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "safes.update.safe",
+    "method": "PUT",
+    "path": "Safes/APP-PROD-WINDOWS",
+    "body": {
+      "description": "Changed safe"
+    },
+    "status": 200
+  },
+  {
+    "id": "user.groups.get.groups",
+    "method": "GET",
+    "path": "UserGroups",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "user.groups.create.group",
+    "method": "POST",
+    "path": "UserGroups",
+    "body": {
+      "groupName": "Created Group"
+    },
+    "status": 201
+  },
+  {
+    "id": "user.groups.delete.group",
+    "method": "DELETE",
+    "path": "UserGroups/2",
+    "body": null,
+    "status": 204
+  },
+  {
+    "id": "user.groups.get.group.details",
+    "method": "GET",
+    "path": "UserGroups/2",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "user.groups.update.group",
+    "method": "PUT",
+    "path": "UserGroups/2",
+    "body": {
+      "description": "Changed"
+    },
+    "status": 200
+  },
+  {
+    "id": "user.groups.add.member.to.group",
+    "method": "POST",
+    "path": "UserGroups/2/Members",
+    "body": {
+      "memberId": "5",
+      "memberType": "vault"
+    },
+    "status": 201
+  },
+  {
+    "id": "user.groups.remove.user.from.group",
+    "method": "DELETE",
+    "path": "UserGroups/2/members/auditor",
+    "body": null,
+    "status": 204
+  },
+  {
+    "id": "users.get.logged.on.user.get.289",
+    "method": "GET",
+    "path": "currentuser",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "users.get.user.login.info.get.290",
+    "method": "GET",
+    "path": "LoginsInfo",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "users.get.users",
+    "method": "GET",
+    "path": "Users",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "users.add.user",
+    "method": "POST",
+    "path": "Users",
+    "body": {
+      "username": "test.created",
+      "initialPassword": "MockTest123!"
+    },
+    "status": 201
+  },
+  {
+    "id": "users.get.user.get.321",
+    "method": "GET",
+    "path": "Users/8/safes",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "users.delete.user",
+    "method": "DELETE",
+    "path": "Users/8",
+    "body": null,
+    "status": 204
+  },
+  {
+    "id": "users.get.user.details",
+    "method": "GET",
+    "path": "Users/8",
+    "body": null,
+    "status": 200
+  },
+  {
+    "id": "users.update.user",
+    "method": "PUT",
+    "path": "Users/8",
+    "body": {
+      "description": "Updated mock user"
+    },
+    "status": 200
+  },
+  {
+    "id": "users.activate.user",
+    "method": "POST",
+    "path": "Users/8/activate",
+    "body": null,
+    "status": 204
+  },
+  {
+    "id": "users.disable.user",
+    "method": "POST",
+    "path": "Users/8/disable",
+    "body": null,
+    "status": 204
+  },
+  {
+    "id": "users.enable.user",
+    "method": "POST",
+    "path": "Users/8/enable",
+    "body": null,
+    "status": 204
+  },
+  {
+    "id": "users.reset.user.password",
+    "method": "POST",
+    "path": "Users/8/ResetPassword",
+    "body": {
+      "newPassword": "ResetMock123!"
+    },
+    "status": 204
+  },
+  {
+    "id": "users.get.user.types",
+    "method": "GET",
+    "path": "UserTypes",
+    "body": null,
+    "status": 200
+  }
+]

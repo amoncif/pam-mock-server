@@ -1,0 +1,19 @@
+meta {
+  name: Get All Safe Members
+  type: http
+  seq: 39
+}
+
+get {
+  url: {{baseUrl}}/PasswordVault/API/Safes/APP-PROD-WINDOWS/Members
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}
+
+tests {
+  test("Expected HTTP status", function () { expect(res.getStatus()).to.equal(200); });
+}

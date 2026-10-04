@@ -1,0 +1,19 @@
+meta {
+  name: Get Safe Details
+  type: http
+  seq: 43
+}
+
+get {
+  url: {{baseUrl}}/PasswordVault/API/Safes/APP-PROD-WINDOWS
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}
+
+tests {
+  test("Expected HTTP status", function () { expect(res.getStatus()).to.equal(200); });
+}

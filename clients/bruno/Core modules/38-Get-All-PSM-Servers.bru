@@ -1,0 +1,19 @@
+meta {
+  name: Get All PSM Servers
+  type: http
+  seq: 38
+}
+
+get {
+  url: {{baseUrl}}/PasswordVault/API/PSM/Servers
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}
+
+tests {
+  test("Expected HTTP status", function () { expect(res.getStatus()).to.equal(200); });
+}

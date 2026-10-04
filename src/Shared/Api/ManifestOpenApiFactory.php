@@ -22,7 +22,7 @@ final class ManifestOpenApiFactory implements OpenApiFactoryInterface
             foreach ($e['parameters'] as $p) {
                 $params[] = new Model\Parameter(name: $p['name'], in: $p['in'], required: $p['required'], schema: $p['schema']);
             }
-            $body = null === $e['request_schema'] ? null : new Model\RequestBody(content: new \ArrayObject([$e['request_content_type'] => ['schema' => $e['request_schema']]]), required: true);
+            $body = null === $e['request_schema'] ? null : new Model\RequestBody(content: new \ArrayObject([$e['request_content_type'] => ['schema' => $e['request_schema']]]), required: !empty($e['request_schema']['required']));
             $responses = [];
             foreach ($e['responses'] as $status => $response) {
                 $responses[(string) $status] = new Model\Response(description: $response['description'], content: isset($response['schema']) ? new \ArrayObject(['application/json' => ['schema' => $response['schema']]]) : null);

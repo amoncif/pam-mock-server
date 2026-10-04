@@ -4,7 +4,7 @@ namespace App\Shared\Fixtures\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
-/** Seed data only. No API resources or domain behavior are exposed. */
+/** Persistent simulator documents; access is mediated by the core services. */
 #[ORM\Entity]
 #[ORM\Table(name: 'lab_object')]
 class LabObject

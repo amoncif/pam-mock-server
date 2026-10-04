@@ -18,7 +18,7 @@ function encode(mixed $data): string
     return json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_THROW_ON_ERROR)."\n";
 }
 $groups = [];
-$inventory = "# API inventory\n\nGenerated from `api/pam-endpoints.yaml`. Run `make generate` after changing the manifest and exporting OpenAPI.\n\nThis is the union of reviewed public PVWA references. It is not certified as exhaustive for PAM 15.2. Each entry records evidence and uncertainty. Configuration APIs remain stubs, including authentication-provider configuration. Separate PTA-host, cloud-only and VRM-host services are excluded.\n\n";
+$inventory = "# API inventory\n\nGenerated from `api/pam-endpoints.yaml`. Run `make generate` after changing the manifest and exporting OpenAPI.\n\nThis is the union of reviewed public PVWA references. It is not certified as exhaustive for PAM 15.2. Each entry records evidence and uncertainty. Authentication-provider configuration APIs remain stubs. Separate PTA-host, cloud-only and VRM-host services are excluded.\n\n";
 foreach ($manifest as $e) {
     $groups[$e['tag']] ??= ['total' => 0, 'implemented' => 0, 'partial' => 0];
     ++$groups[$e['tag']]['total'];
@@ -70,6 +70,23 @@ foreach (['auth.cyberark.logon', 'auth.ldap.logon', 'auth.windows.logon', 'auth.
     $requests[] = ['name' => 'Logoff after '.$id, 'method' => 'POST', 'path' => $logout['path'], 'status' => 200, 'capture' => false, 'auth' => true, 'body' => null, 'mode' => null];
 }
 $requests[] = ['name' => 'Invalid credentials', 'method' => 'POST', 'path' => $byId['auth.cyberark.logon']['path'], 'body' => ['username' => '{{username}}', 'password' => 'deliberately-invalid'], 'mode' => 'raw', 'status' => 403, 'capture' => false, 'auth' => false];
+$coreLogin = $requests[0];
+$coreLogin['folder'] = 'Core modules';
+$coreLogin['name'] = 'Core logon';
+$requests[] = $coreLogin;
+$cases = json_decode(file_get_contents($root.'/tests/Compatibility/core-cases.json'), true, 512, JSON_THROW_ON_ERROR);
+foreach ($manifest as $operation) {
+    if ('core' !== ($operation['handler'] ?? '') || 'GET' !== $operation['method']) {
+        continue;
+    }
+    foreach ($cases as $case) {
+        if ($case['id'] !== $operation['id']) {
+            continue;
+        }
+        $requests[] = ['folder' => 'Core modules', 'name' => $operation['name'], 'method' => 'GET', 'path' => '/PasswordVault/API/'.$case['path'], 'status' => 200, 'capture' => false, 'auth' => true, 'body' => null, 'mode' => null];
+    }
+}
+$requests[] = ['folder' => 'Core modules', 'name' => 'Core logoff', 'method' => 'POST', 'path' => '/PasswordVault/API/Auth/Logoff', 'status' => 200, 'capture' => false, 'auth' => true, 'body' => null, 'mode' => null];
 $postman = [];
 foreach ($requests as $i => $q) {
     $header = [];
@@ -90,7 +107,7 @@ foreach ($requests as $i => $q) {
     if ($q['capture']) {
         $script[] = 'if (pm.response.code === 200) { const body = pm.response.json(); pm.environment.set("token", typeof body === "string" ? body : (body.CyberArkLogonResult || body.LogonResult)); }';
     }
-    $postman[] = ['name' => $q['name'], 'request' => $request, 'event' => [['listen' => 'test', 'script' => ['type' => 'text/javascript', 'exec' => $script]]]];
+    $postman[$q['folder'] ?? 'Authentication'][] = ['name' => $q['name'], 'request' => $request, 'event' => [['listen' => 'test', 'script' => ['type' => 'text/javascript', 'exec' => $script]]]];
     $bru = "meta {\n  name: ".$q['name']."\n  type: http\n  seq: ".($i + 1)."\n}\n\n".strtolower($q['method'])." {\n  url: {{baseUrl}}".$q['path']."\n  body: ".('raw' === $q['mode'] ? 'json' : ('urlencoded' === $q['mode'] ? 'formUrlEncoded' : 'none'))."\n  auth: none\n}\n";
     if ([] !== $header) {
         $bru .= "\nheaders {\n";
@@ -111,15 +128,12 @@ foreach ($requests as $i => $q) {
         $bru .= "\nscript:post-response {\n  if (res.getStatus() === 200) {\n    const body = res.getBody();\n    bru.setEnvVar(\"token\", typeof body === \"string\" ? body : (body.CyberArkLogonResult || body.LogonResult));\n  }\n}\n";
     }
     $bru .= "\ntests {\n  test(\"Expected HTTP status\", function () { expect(res.getStatus()).to.equal(".$q['status']."); });\n}\n";
-    writeArtifact('clients/bruno/Authentication/'.sprintf('%02d', $i + 1).'-'.preg_replace('/[^a-z0-9]+/i', '-', $q['name']).'.bru', $bru);
+    writeArtifact('clients/bruno/'.($q['folder'] ?? 'Authentication').'/'.sprintf('%02d', $i + 1).'-'.preg_replace('/[^a-z0-9]+/i', '-', $q['name']).'.bru', $bru);
 }
-$folders = [['name' => 'Authentication', 'item' => $postman]];
-foreach (array_keys($groups) as $index => $tag) {
-    if ('Authentication' === $tag) {
-        continue;
-    }
-    $folders[] = ['name' => $tag, 'description' => 'Future implementation. See Swagger for all stub operations.', 'item' => []];
-    writeArtifact('clients/bruno/'.$tag.'/folder.bru', "meta {\n  name: $tag\n  seq: ".($index + 2)."\n}\n");
+$folders = [];
+foreach ($postman as $folder => $items) {
+    $folders[] = ['name' => $folder, 'item' => $items];
+    writeArtifact('clients/bruno/'.$folder.'/folder.bru', "meta {\n  name: $folder\n  seq: ".count($folders)."\n}\n");
 }
 writeArtifact('clients/postman/pam-mock.postman_collection.json', encode(['info' => ['name' => 'PAM Mock Server', 'schema' => 'https://schema.getpostman.com/json/collection/v2.1.0/collection.json', 'description' => 'Independent local mock. Generated from the project contract; not copied from a vendor collection.'], 'item' => $folders]));
 writeArtifact('clients/postman/local.postman_environment.json', encode(['name' => 'PAM Mock local', 'values' => array_map(fn ($key, $value) => ['key' => $key, 'value' => $value, 'enabled' => true, 'type' => 'default'], array_keys($env), $env)]));

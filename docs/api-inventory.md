@@ -2,7 +2,7 @@
 
 Generated from `api/pam-endpoints.yaml`. Run `make generate` after changing the manifest and exporting OpenAPI.
 
-This is the union of reviewed public PVWA references. It is not certified as exhaustive for PAM 15.2. Each entry records evidence and uncertainty. Configuration APIs remain stubs, including authentication-provider configuration. Separate PTA-host, cloud-only and VRM-host services are excluded.
+This is the union of reviewed public PVWA references. It is not certified as exhaustive for PAM 15.2. Each entry records evidence and uncertainty. Authentication-provider configuration APIs remain stubs. Separate PTA-host, cloud-only and VRM-host services are excluded.
 
 ## auth.cyberark.logon
 
@@ -312,7 +312,7 @@ Request target verified against public client source. Required fields, response 
 
 ## accounts.get.accounts
 
-`GET /PasswordVault/API/Accounts` — **stub**
+`GET /PasswordVault/API/Accounts` — **partial**
 
 - Category: Accounts
 - Operation: Get Accounts
@@ -320,17 +320,17 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `search`, query `searchType`, query `sort`, query `offset`, query `limit`, query `filter`, query `savedfilter`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Get%20Accounts.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## accounts.add.account
 
-`POST /PasswordVault/API/Accounts` — **stub**
+`POST /PasswordVault/API/Accounts` — **partial**
 
 - Category: Accounts
 - Operation: Add Account
@@ -338,13 +338,13 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `name` (string), `address` (string), `userName` (string), `platformId` (string), `safeName` (string), `secretType` (string), `secret` (string), `platformAccountProperties` (object), `secretManagement` (object), `remoteMachinesAccess` (object)
 - Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Add%20Account.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## accounts.ad.hoc.connect.using.psm
 
@@ -528,7 +528,7 @@ Request target verified against public client source. Required fields, response 
 
 ## accounts.delete.account
 
-`DELETE /PasswordVault/API/Accounts/{accountID}` — **stub**
+`DELETE /PasswordVault/API/Accounts/{accountID}` — **partial**
 
 - Category: Accounts
 - Operation: Delete Account
@@ -536,17 +536,17 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Delete%20Account.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## accounts.get.account.details
 
-`GET /PasswordVault/API/Accounts/{accountID}` — **stub**
+`GET /PasswordVault/API/Accounts/{accountID}` — **partial**
 
 - Category: Accounts
 - Operation: Get Account Details
@@ -554,17 +554,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Get%20Account%20Details.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## accounts.update.account
 
-`PATCH /PasswordVault/API/Accounts/{accountID}` — **stub**
+`PATCH /PasswordVault/API/Accounts/{accountID}` — **partial**
 
 - Category: Accounts
 - Operation: Update Account
@@ -572,13 +572,13 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
 - Parameters: path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Update%20Account.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## accounts.set.dependent.linked.account.post.238
 
@@ -618,7 +618,7 @@ Request target verified against public client source. Required fields, response 
 
 ## accounts.get.account.activity.get.296
 
-`GET /PasswordVault/api/Accounts/{AccountID}/Activities` — **stub**
+`GET /PasswordVault/api/Accounts/{AccountID}/Activities` — **partial**
 
 - Category: Accounts
 - Operation: Get Account Activity
@@ -626,17 +626,17 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `AccountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Get-PASAccountActivity.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
 - Confidence: reference-only
 
-Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## accounts.stop.cpmtask.post.306
 
-`POST /PasswordVault/API/Accounts/{Accountid}/Cancel` — **stub**
+`POST /PasswordVault/API/Accounts/{Accountid}/Cancel` — **partial**
 
 - Category: Accounts
 - Operation: Stop CPMTask
@@ -644,17 +644,17 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `Accountid`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Stop-PASCPMTask.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
 - Confidence: reference-only
 
-Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## accounts.change.credentials.immediately
 
-`POST /PasswordVault/API/Accounts/{accountID}/Change` — **stub**
+`POST /PasswordVault/API/Accounts/{accountID}/Change` — **partial**
 
 - Category: Accounts
 - Operation: Change Credentials Immediately
@@ -662,17 +662,17 @@ Request target verified against public client source. Required fields, response 
 - Request media type: application/json
 - Request fields: `ChangeEntireGroup` (boolean)
 - Parameters: path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Change%20Credentials%20Immediately.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## accounts.check.in.an.exclusive.account
 
-`POST /PasswordVault/API/Accounts/{accountID}/CheckIn` — **stub**
+`POST /PasswordVault/API/Accounts/{accountID}/CheckIn` — **partial**
 
 - Category: Accounts
 - Operation: Check In an Exclusive Account
@@ -680,13 +680,13 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Check%20In%20an%20Exclusive%20Account.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## accounts.get.all.dependent.accounts.of.a.specific.account
 
@@ -942,7 +942,7 @@ HTTP contract from a public reference collection. Success response and required-
 
 ## accounts.get.password.value
 
-`POST /PasswordVault/API/Accounts/{accountID}/Password/Retrieve` — **stub**
+`POST /PasswordVault/API/Accounts/{accountID}/Password/Retrieve` — **partial**
 
 - Category: Accounts
 - Operation: Get Password Value
@@ -950,17 +950,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
 - Parameters: path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 string; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Get%20Password%20Value.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## accounts.change.credentials.in.the.vault
 
-`POST /PasswordVault/API/Accounts/{accountID}/Password/Update` — **stub**
+`POST /PasswordVault/API/Accounts/{accountID}/Password/Update` — **partial**
 
 - Category: Accounts
 - Operation: Change Credentials in the Vault
@@ -968,17 +968,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `NewCredentials` (string)
 - Parameters: path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Change%20Credentials%20in%20the%20Vault.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## accounts.connect.using.psm
 
-`POST /PasswordVault/API/Accounts/{accountID}/PSMConnect` — **stub**
+`POST /PasswordVault/API/Accounts/{accountID}/PSMConnect` — **partial**
 
 - Category: Accounts
 - Operation: Connect Using PSM
@@ -986,17 +986,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
 - Parameters: path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Connect%20Using%20PSM.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## accounts.reconcile.credentials
 
-`POST /PasswordVault/API/Accounts/{accountID}/Reconcile` — **stub**
+`POST /PasswordVault/API/Accounts/{accountID}/Reconcile` — **partial**
 
 - Category: Accounts
 - Operation: Reconcile Credentials
@@ -1004,17 +1004,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Reconcile%20Credentials.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## accounts.resume.cpmauto.management.post.301
 
-`POST /PasswordVault/API/Accounts/{Accountid}/Resume` — **stub**
+`POST /PasswordVault/API/Accounts/{Accountid}/Resume` — **partial**
 
 - Category: Accounts
 - Operation: Resume CPMAuto Management
@@ -1022,13 +1022,13 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `Accountid`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Accounts/Resume-PASCPMAutoManagement.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
 - Confidence: reference-only
 
-Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## accounts.revoke.just.in.time.access
 
@@ -1050,7 +1050,7 @@ HTTP contract from a public reference collection. Success response and required-
 
 ## accounts.generate.password
 
-`POST /PasswordVault/API/Accounts/{accountID}/Secret/Generate` — **stub**
+`POST /PasswordVault/API/Accounts/{accountID}/Secret/Generate` — **partial**
 
 - Category: Accounts
 - Operation: Generate Password
@@ -1058,17 +1058,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 string; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Generate%20Password.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## accounts.retrieve.private.ssh.key.account
 
-`POST /PasswordVault/API/Accounts/{accountID}/Secret/Retrieve` — **stub**
+`POST /PasswordVault/API/Accounts/{accountID}/Secret/Retrieve` — **partial**
 
 - Category: Accounts
 - Operation: Retrieve Private SSH Key Account
@@ -1076,17 +1076,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: Open schema; not fully verified.
 - Parameters: path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 string; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Retrieve%20Private%20SSH%20Key%20Account.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## accounts.get.secret.versions
 
-`GET /PasswordVault/API/Accounts/{accountID}/Secret/Versions` — **stub**
+`GET /PasswordVault/API/Accounts/{accountID}/Secret/Versions` — **partial**
 
 - Category: Accounts
 - Operation: Get Secret Versions
@@ -1094,17 +1094,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`, query `showTemporary`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Get%20Secret%20Versions.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## accounts.change.credentials.and.set.next.password
 
-`POST /PasswordVault/API/Accounts/{accountID}/SetNextPassword` — **stub**
+`POST /PasswordVault/API/Accounts/{accountID}/SetNextPassword` — **partial**
 
 - Category: Accounts
 - Operation: Change Credentials and Set Next Password
@@ -1112,17 +1112,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `ChangeImmediately` (boolean), `NewCredentials` (string)
 - Parameters: path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Change%20Credentials%20and%20Set%20Next%20Password.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## accounts.unlock.account
 
-`POST /PasswordVault/API/Accounts/{accountID}/Unlock` — **stub**
+`POST /PasswordVault/API/Accounts/{accountID}/Unlock` — **partial**
 
 - Category: Accounts
 - Operation: Unlock Account
@@ -1130,17 +1130,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Unlock%20Account.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## accounts.verify.credentials
 
-`POST /PasswordVault/API/Accounts/{accountID}/Verify` — **stub**
+`POST /PasswordVault/API/Accounts/{accountID}/Verify` — **partial**
 
 - Category: Accounts
 - Operation: Verify Credentials
@@ -1148,13 +1148,13 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `accountID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Verify%20Credentials.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## accounts.get.all.bulk.account.uploads.for.user
 
@@ -2832,7 +2832,7 @@ HTTP contract from a public reference collection. Success response and required-
 
 ## platforms.get.platforms
 
-`GET /PasswordVault/API/Platforms` — **stub**
+`GET /PasswordVault/API/Platforms` — **partial**
 
 - Category: Platforms
 - Operation: Get Platforms
@@ -2840,17 +2840,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `Active`, query `PlatformType`, query `PlatformName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Get%20Platforms.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.get.dependent.platforms
 
-`GET /PasswordVault/API/platforms/dependents` — **stub**
+`GET /PasswordVault/API/platforms/dependents` — **partial**
 
 - Category: Platforms
 - Operation: Get Dependent Platforms
@@ -2858,13 +2858,13 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `search`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Dependent%20Platforms/Get%20Dependent%20Platforms.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.export.platform.post.267
 
@@ -2886,7 +2886,7 @@ Request target verified against public client source. Required fields, response 
 
 ## platforms.delete.dependent.platform
 
-`DELETE /PasswordVault/API/platforms/dependents/{platformID}` — **stub**
+`DELETE /PasswordVault/API/platforms/dependents/{platformID}` — **partial**
 
 - Category: Platforms
 - Operation: Delete Dependent Platform
@@ -2894,17 +2894,17 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Dependent%20Platforms/Delete%20Dependent%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.duplicate.dependent.platforms
 
-`POST /PasswordVault/API/platforms/dependents/{platformID}/duplicate` — **stub**
+`POST /PasswordVault/API/platforms/dependents/{platformID}/duplicate` — **partial**
 
 - Category: Platforms
 - Operation: Duplicate Dependent Platforms
@@ -2912,17 +2912,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `Name` (string), `Description` (string)
 - Parameters: path `platformID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Dependent%20Platforms/Duplicate%20Dependent%20Platforms.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.get.group.platforms
 
-`GET /PasswordVault/API/platforms/groups` — **stub**
+`GET /PasswordVault/API/platforms/groups` — **partial**
 
 - Category: Platforms
 - Operation: Get Group Platforms
@@ -2930,17 +2930,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `search`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Group%20Platforms/Get%20Group%20Platforms.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.delete.group.platform
 
-`DELETE /PasswordVault/API/platforms/groups/{platformID}` — **stub**
+`DELETE /PasswordVault/API/platforms/groups/{platformID}` — **partial**
 
 - Category: Platforms
 - Operation: Delete Group Platform
@@ -2948,17 +2948,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Group%20Platforms/Delete%20Group%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.activate.group.platform
 
-`POST /PasswordVault/API/platforms/groups/{platformID}/activate` — **stub**
+`POST /PasswordVault/API/platforms/groups/{platformID}/activate` — **partial**
 
 - Category: Platforms
 - Operation: Activate Group Platform
@@ -2966,17 +2966,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Group%20Platforms/Activate%20Group%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.deactivate.group.platform
 
-`POST /PasswordVault/API/platforms/groups/{platformID}/deactivate` — **stub**
+`POST /PasswordVault/API/platforms/groups/{platformID}/deactivate` — **partial**
 
 - Category: Platforms
 - Operation: Deactivate Group Platform
@@ -2984,17 +2984,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Group%20Platforms/Deactivate%20Group%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.duplicate.group.platforms
 
-`POST /PasswordVault/API/platforms/groups/{platformID}/duplicate` — **stub**
+`POST /PasswordVault/API/platforms/groups/{platformID}/duplicate` — **partial**
 
 - Category: Platforms
 - Operation: Duplicate Group Platforms
@@ -3002,13 +3002,13 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `Name` (string), `Description` (string)
 - Parameters: path `platformID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Group%20Platforms/Duplicate%20Group%20Platforms.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.import.stored.platform.alongside.existing.platform
 
@@ -3048,7 +3048,7 @@ HTTP contract from a public reference collection. Success response and required-
 
 ## platforms.get.rotational.group.platforms
 
-`GET /PasswordVault/API/platforms/rotationalGroups` — **stub**
+`GET /PasswordVault/API/platforms/rotationalGroups` — **partial**
 
 - Category: Platforms
 - Operation: Get Rotational Group Platforms
@@ -3056,17 +3056,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `search`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Rotational%20Group%20Platforms/Get%20Rotational%20Group%20Platforms.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.delete.rotational.group.platform
 
-`DELETE /PasswordVault/API/platforms/rotationalGroups/{platformID}` — **stub**
+`DELETE /PasswordVault/API/platforms/rotationalGroups/{platformID}` — **partial**
 
 - Category: Platforms
 - Operation: Delete Rotational Group Platform
@@ -3074,17 +3074,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Rotational%20Group%20Platforms/Delete%20Rotational%20Group%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.activate.rotational.group.platform
 
-`POST /PasswordVault/API/platforms/rotationalGroups/{platformID}/activate` — **stub**
+`POST /PasswordVault/API/platforms/rotationalGroups/{platformID}/activate` — **partial**
 
 - Category: Platforms
 - Operation: Activate Rotational Group Platform
@@ -3092,17 +3092,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Rotational%20Group%20Platforms/Activate%20Rotational%20Group%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.deactivate.rotational.group.platform
 
-`POST /PasswordVault/API/platforms/rotationalGroups/{platformID}/deactivate` — **stub**
+`POST /PasswordVault/API/platforms/rotationalGroups/{platformID}/deactivate` — **partial**
 
 - Category: Platforms
 - Operation: Deactivate Rotational Group Platform
@@ -3110,17 +3110,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Rotational%20Group%20Platforms/Deactivate%20Rotational%20Group%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.duplicate.rotational.group.platforms
 
-`POST /PasswordVault/API/platforms/rotationalGroups/{platformID}/duplicate` — **stub**
+`POST /PasswordVault/API/platforms/rotationalGroups/{platformID}/duplicate` — **partial**
 
 - Category: Platforms
 - Operation: Duplicate Rotational Group Platforms
@@ -3128,13 +3128,13 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `Name` (string), `Description` (string)
 - Parameters: path `platformID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Rotational%20Group%20Platforms/Duplicate%20Rotational%20Group%20Platforms.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.export.platform.post.266
 
@@ -3192,7 +3192,7 @@ HTTP contract from a public reference collection. Success response and required-
 
 ## platforms.get.target.platforms
 
-`GET /PasswordVault/API/platforms/targets` — **stub**
+`GET /PasswordVault/API/platforms/targets` — **partial**
 
 - Category: Platforms
 - Operation: Get Target Platforms
@@ -3200,17 +3200,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `Filter`, query `search`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Target%20Platforms/Get%20Target%20Platforms.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.get.platform.summary.get.270
 
-`GET /PasswordVault/API/Platforms/Targets/SystemTypes` — **stub**
+`GET /PasswordVault/API/Platforms/Targets/SystemTypes` — **partial**
 
 - Category: Platforms
 - Operation: Get Platform Summary
@@ -3218,35 +3218,35 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Platforms/Get-PASPlatformSummary.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
 - Confidence: reference-only
 
-Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.rename.platform.put.272
 
-`PUT /PasswordVault/API/Platforms/targets/{ID}` — **stub**
+`PUT /PasswordVault/API/Platforms/targets/{ID}` — **partial**
 
 - Category: Platforms
 - Operation: Rename Platform
 - Authentication: token
-- Request media type: No body recorded
-- Request fields: None recorded; see confidence note.
+- Request media type: application/json
+- Request fields: Open schema; not fully verified.
 - Parameters: path `ID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Platforms/Rename-PASPlatform.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
 - Confidence: reference-only
 
-Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.get.platform.get.269
 
-`GET /PasswordVault/API/platforms/targets/{id}/settings` — **stub**
+`GET /PasswordVault/API/platforms/targets/{id}/settings` — **partial**
 
 - Category: Platforms
 - Operation: Get Platform
@@ -3254,17 +3254,17 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `id`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Platforms/Get-PASPlatform.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
 - Confidence: reference-only
 
-Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.delete.target.platform
 
-`DELETE /PasswordVault/API/Platforms/targets/{ID}` — **stub**
+`DELETE /PasswordVault/API/Platforms/targets/{ID}` — **partial**
 
 - Category: Platforms
 - Operation: Delete Target Platform
@@ -3272,17 +3272,17 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `ID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Target%20Platforms/Delete%20Target%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.activate.target.platform
 
-`POST /PasswordVault/API/platforms/targets/{platformID}/activate` — **stub**
+`POST /PasswordVault/API/platforms/targets/{platformID}/activate` — **partial**
 
 - Category: Platforms
 - Operation: Activate Target Platform
@@ -3290,17 +3290,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Target%20Platforms/Activate%20Target%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.deactivate.target.platform
 
-`POST /PasswordVault/API/platforms/targets/{platformID}/deactivate` — **stub**
+`POST /PasswordVault/API/platforms/targets/{platformID}/deactivate` — **partial**
 
 - Category: Platforms
 - Operation: Deactivate Target Platform
@@ -3308,17 +3308,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Target%20Platforms/Deactivate%20Target%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.duplicate.target.platforms
 
-`POST /PasswordVault/API/platforms/targets/{platformID}/duplicate` — **stub**
+`POST /PasswordVault/API/platforms/targets/{platformID}/duplicate` — **partial**
 
 - Category: Platforms
 - Operation: Duplicate Target Platforms
@@ -3326,13 +3326,13 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `Name` (string), `Description` (string)
 - Parameters: path `platformID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Target%20Platforms/Duplicate%20Target%20Platforms.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.export.platform
 
@@ -3354,7 +3354,7 @@ HTTP contract from a public reference collection. Success response and required-
 
 ## platforms.new.platform.secret.post.271
 
-`POST /PasswordVault/API/Platforms/{Platformid}/GenerateSecret` — **stub**
+`POST /PasswordVault/API/Platforms/{Platformid}/GenerateSecret` — **partial**
 
 - Category: Platforms
 - Operation: New Platform Secret
@@ -3362,13 +3362,13 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `Platformid`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 string; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/Platforms/New-PASPlatformSecret.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
 - Confidence: reference-only
 
-Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## platforms.update.platform.with.stored.platform
 
@@ -3390,7 +3390,7 @@ HTTP contract from a public reference collection. Success response and required-
 
 ## platforms.get.platform.details
 
-`GET /PasswordVault/API/Platforms/{platformName}` — **stub**
+`GET /PasswordVault/API/Platforms/{platformName}` — **partial**
 
 - Category: Platforms
 - Operation: Get Platform Details
@@ -3398,13 +3398,13 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Platforms/Get%20Platform%20Details.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## psm.import.connection.component
 
@@ -3426,7 +3426,7 @@ HTTP contract from a public reference collection. Success response and required-
 
 ## psm.get.session.management.policy.of.platform
 
-`GET /PasswordVault/API/Platforms/Targets/{platformId}/PrivilegedSessionManagement` — **stub**
+`GET /PasswordVault/API/Platforms/Targets/{platformId}/PrivilegedSessionManagement` — **partial**
 
 - Category: PSM
 - Operation: Get Session Management Policy of Platform
@@ -3434,17 +3434,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformId`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Session%20Management/Get%20Session%20Management%20Policy%20of%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## psm.update.session.management.policy.of.platform
 
-`PUT /PasswordVault/API/Platforms/Targets/{platformId}/PrivilegedSessionManagement` — **stub**
+`PUT /PasswordVault/API/Platforms/Targets/{platformId}/PrivilegedSessionManagement` — **partial**
 
 - Category: PSM
 - Operation: Update Session Management Policy of Platform
@@ -3452,17 +3452,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `PSMServerId` (string), `PSMServerName` (string), `PSMConnectors` (array)
 - Parameters: path `platformId`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Session%20Management/Update%20Session%20Management%20Policy%20of%20Platform.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## psm.get.all.connection.components
 
-`GET /PasswordVault/API/PSM/Connectors` — **stub**
+`GET /PasswordVault/API/PSM/Connectors` — **partial**
 
 - Category: PSM
 - Operation: Get All Connection Components
@@ -3470,17 +3470,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Session%20Management/Get%20All%20Connection%20Components.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## psm.get.all.psm.servers
 
-`GET /PasswordVault/API/PSM/Servers` — **stub**
+`GET /PasswordVault/API/PSM/Servers` — **partial**
 
 - Category: PSM
 - Operation: Get All PSM Servers
@@ -3488,13 +3488,13 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Session%20Management/Get%20All%20PSM%20Servers.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## pta.administration.get.pta.administration
 
@@ -4128,7 +4128,7 @@ HTTP contract from a public reference collection. Success response and required-
 
 ## safe.members.get.all.safe.members
 
-`GET /PasswordVault/API/Safes/{safeID}/Members` — **stub**
+`GET /PasswordVault/API/Safes/{safeID}/Members` — **partial**
 
 - Category: Safe Members
 - Operation: Get All Safe Members
@@ -4136,17 +4136,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `safeID`, query `filter`, query `search`, query `offset`, query `limit`, query `sort`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Safe%20Members/Get%20All%20Safe%20Members.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## safe.members.add.safe.member
 
-`POST /PasswordVault/API/Safes/{safeID}/Members` — **stub**
+`POST /PasswordVault/API/Safes/{safeID}/Members` — **partial**
 
 - Category: Safe Members
 - Operation: Add Safe Member
@@ -4154,17 +4154,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `memberName` (string), `searchIn` (string), `membershipExpirationDate` (integer), `permissions` (object), `MemberType` (string)
 - Parameters: path `safeID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Safe%20Members/Add%20Safe%20Member.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## safe.members.delete.safe.member
 
-`DELETE /PasswordVault/API/Safes/{safeID}/Members/{memberName}` — **stub**
+`DELETE /PasswordVault/API/Safes/{safeID}/Members/{memberName}` — **partial**
 
 - Category: Safe Members
 - Operation: Delete Safe Member
@@ -4172,17 +4172,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `safeID`, path `memberName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Safe%20Members/Delete%20Safe%20Member.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## safe.members.get.safe.member
 
-`GET /PasswordVault/API/Safes/{safeID}/Members/{memberName}` — **stub**
+`GET /PasswordVault/API/Safes/{safeID}/Members/{memberName}` — **partial**
 
 - Category: Safe Members
 - Operation: Get Safe Member
@@ -4190,17 +4190,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `safeID`, path `memberName`, query `useCache`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Safe%20Members/Get%20Safe%20Member.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## safe.members.update.safe.member
 
-`PUT /PasswordVault/API/Safes/{safeID}/Members/{memberName}` — **stub**
+`PUT /PasswordVault/API/Safes/{safeID}/Members/{memberName}` — **partial**
 
 - Category: Safe Members
 - Operation: Update Safe Member
@@ -4208,13 +4208,13 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `membershipExpirationDate` (integer), `permissions` (object)
 - Parameters: path `safeID`, path `memberName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Safe%20Members/Update%20Safe%20Member.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## safe.members.get.safe.member.get.318
 
@@ -4308,7 +4308,7 @@ Request target verified against public client source. Required fields, response 
 
 ## safes.get.safe.by.platform.id
 
-`GET /PasswordVault/API/Platforms/{platformID}/Safes` — **stub**
+`GET /PasswordVault/API/Platforms/{platformID}/Safes` — **partial**
 
 - Category: Safes
 - Operation: Get Safe by Platform ID
@@ -4316,17 +4316,17 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `platformID`, query `safeName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Get%20Safe%20by%20Platform%20ID.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## safes.get.all.safes
 
-`GET /PasswordVault/API/Safes` — **stub**
+`GET /PasswordVault/API/Safes` — **partial**
 
 - Category: Safes
 - Operation: Get All Safes
@@ -4334,35 +4334,35 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `search`, query `offset`, query `limit`, query `sort`, query `includeAccounts`, query `extendedDetails`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Get%20All%20Safes.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## safes.add.safe
 
-`POST /PasswordVault/API/Safes` — **stub**
+`POST /PasswordVault/API/Safes` — **partial**
 
 - Category: Safes
 - Operation: Add Safe
 - Authentication: token
 - Request media type: application/json
-- Request fields: `numberOfDaysRetention` (integer), `numberOfVersionsRetention` (string), `oLACEnabled` (boolean), `autoPurgeEnabled` (boolean), `managingCPM` (string), `safeName` (string), `description` (string), `location` (string)
+- Request fields: `numberOfDaysRetention` (integer), `numberOfVersionsRetention` (integer), `oLACEnabled` (boolean), `autoPurgeEnabled` (boolean), `managingCPM` (string), `safeName` (string), `description` (string), `location` (string)
 - Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Add%20Safe.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## safes.delete.safe
 
-`DELETE /PasswordVault/API/Safes/{safeID}` — **stub**
+`DELETE /PasswordVault/API/Safes/{safeID}` — **partial**
 
 - Category: Safes
 - Operation: Delete Safe
@@ -4370,17 +4370,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `safeID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Delete%20Safe.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## safes.get.safe.details
 
-`GET /PasswordVault/API/Safes/{safeID}` — **stub**
+`GET /PasswordVault/API/Safes/{safeID}` — **partial**
 
 - Category: Safes
 - Operation: Get Safe Details
@@ -4388,31 +4388,31 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `safeID`, query `includeAccounts`, query `useCache`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Get%20Safe%20Details.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## safes.update.safe
 
-`PUT /PasswordVault/API/Safes/{safeID}` — **stub**
+`PUT /PasswordVault/API/Safes/{safeID}` — **partial**
 
 - Category: Safes
 - Operation: Update Safe
 - Authentication: token
 - Request media type: application/json
-- Request fields: `safeName` (string), `safeNumber` (integer), `description` (string), `location` (string), `creator` (object), `olacEnabled` (boolean), `managingCPM` (string), `numberOfVersionsRetention` (string), `numberOfDaysRetention` (integer)
+- Request fields: `safeName` (string), `safeNumber` (integer), `description` (string), `location` (string), `creator` (object), `olacEnabled` (boolean), `managingCPM` (string), `numberOfVersionsRetention` (integer), `numberOfDaysRetention` (integer)
 - Parameters: path `safeID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Safes/Update%20Safe.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## safes.search.for.a.safe
 
@@ -5048,7 +5048,7 @@ HTTP contract from a public reference collection. Success response and required-
 
 `POST /PasswordVault/API/Platforms/Groups/{GroupPlatformID}/Export` — **stub**
 
-- Category: User Groups
+- Category: Platforms
 - Operation: Export Platform
 - Authentication: token
 - Request media type: No body recorded
@@ -5064,7 +5064,7 @@ Request target verified against public client source. Required fields, response 
 
 ## user.groups.get.groups
 
-`GET /PasswordVault/API/UserGroups` — **stub**
+`GET /PasswordVault/API/UserGroups` — **partial**
 
 - Category: User Groups
 - Operation: Get Groups
@@ -5072,17 +5072,17 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `filter`, query `search`, query `sort`, query `includeMembers`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Groups/Get%20Groups.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## user.groups.create.group
 
-`POST /PasswordVault/API/UserGroups` — **stub**
+`POST /PasswordVault/API/UserGroups` — **partial**
 
 - Category: User Groups
 - Operation: Create Group
@@ -5090,17 +5090,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `groupName` (string), `description` (string), `location` (string)
 - Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Groups/Create%20Group.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## user.groups.delete.group
 
-`DELETE /PasswordVault/API/UserGroups/{groupID}` — **stub**
+`DELETE /PasswordVault/API/UserGroups/{groupID}` — **partial**
 
 - Category: User Groups
 - Operation: Delete Group
@@ -5108,17 +5108,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `groupID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Groups/Delete%20Group.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## user.groups.get.group.details
 
-`GET /PasswordVault/API/UserGroups/{groupID}` — **stub**
+`GET /PasswordVault/API/UserGroups/{groupID}` — **partial**
 
 - Category: User Groups
 - Operation: Get Group Details
@@ -5126,17 +5126,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `groupID`, query `includeMembers`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Groups/Get%20Group%20Details.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## user.groups.update.group
 
-`PUT /PasswordVault/API/UserGroups/{groupID}` — **stub**
+`PUT /PasswordVault/API/UserGroups/{groupID}` — **partial**
 
 - Category: User Groups
 - Operation: Update Group
@@ -5144,17 +5144,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `groupName` (string)
 - Parameters: path `groupID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Groups/Update%20Group.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## user.groups.add.member.to.group
 
-`POST /PasswordVault/API/UserGroups/{groupID}/Members` — **stub**
+`POST /PasswordVault/API/UserGroups/{groupID}/Members` — **partial**
 
 - Category: User Groups
 - Operation: Add Member to Group
@@ -5162,17 +5162,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `memberId` (string), `memberType` (string), `domainName` (string)
 - Parameters: path `groupID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Groups/Add%20Member%20to%20Group.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## user.groups.remove.user.from.group
 
-`DELETE /PasswordVault/API/UserGroups/{groupID}/members/{memberName}` — **stub**
+`DELETE /PasswordVault/API/UserGroups/{groupID}/members/{memberName}` — **partial**
 
 - Category: User Groups
 - Operation: Remove User from Group
@@ -5180,13 +5180,13 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `groupID`, path `memberName`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Groups/Remove%20User%20from%20Group.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## user.groups.add.group.member.post.288
 
@@ -5208,7 +5208,7 @@ Request target verified against public client source. Required fields, response 
 
 ## users.get.logged.on.user.get.289
 
-`GET /PasswordVault/api/currentuser` — **stub**
+`GET /PasswordVault/api/currentuser` — **partial**
 
 - Category: Users
 - Operation: Get Logged On User
@@ -5216,17 +5216,17 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/User/Get-PASLoggedOnUser.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
 - Confidence: reference-only
 
-Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## users.get.user.login.info.get.290
 
-`GET /PasswordVault/api/LoginsInfo` — **stub**
+`GET /PasswordVault/api/LoginsInfo` — **partial**
 
 - Category: Users
 - Operation: Get User Login Info
@@ -5234,17 +5234,17 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/User/Get-PASUserLoginInfo.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
 - Confidence: reference-only
 
-Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## users.get.users
 
-`GET /PasswordVault/API/Users` — **stub**
+`GET /PasswordVault/API/Users` — **partial**
 
 - Category: Users
 - Operation: Get Users
@@ -5252,17 +5252,17 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: query `filter`, query `search`, query `ExtendedDetails`, query `sort`, query `pageOffset`, query `pageSize`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Users/Get%20Users.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## users.add.user
 
-`POST /PasswordVault/API/Users` — **stub**
+`POST /PasswordVault/API/Users` — **partial**
 
 - Category: Users
 - Operation: Add User
@@ -5270,13 +5270,13 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `username` (string), `userType` (string), `initialPassword` (string), `authenticationMethod` (array), `location` (string), `unAuthorizedInterfaces` (array), `expiryDate` (integer), `vaultAuthorization` (array), `enableUser` (boolean), `changePassOnNextLogon` (boolean), `passwordNeverExpires` (boolean), `description` (string), `businessAddress` (object), `internet` (object), `phones` (object), `personalDetails` (object)
 - Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 201 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Users/Add%20User.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## users.delete.an.mfa.caching.ssh.key
 
@@ -5334,7 +5334,7 @@ HTTP contract from a public reference collection. Success response and required-
 
 ## users.get.user.get.321
 
-`GET /PasswordVault/API/Users/{id}/safes` — **stub**
+`GET /PasswordVault/API/Users/{id}/safes` — **partial**
 
 - Category: Users
 - Operation: Get User
@@ -5342,17 +5342,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `id`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-client-reference](https://github.com/pspete/psPAS/blob/df2b7986421285eccb3a3454def15b99d2f99677/psPAS/Functions/User/Get-PASUser.ps1)
 - Source version: psPAS df2b7986421285eccb3a3454def15b99d2f99677; API version varies by operation
 - Confidence: reference-only
 
-Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## users.delete.user
 
-`DELETE /PasswordVault/API/Users/{userID}` — **stub**
+`DELETE /PasswordVault/API/Users/{userID}` — **partial**
 
 - Category: Users
 - Operation: Delete User
@@ -5360,17 +5360,17 @@ Request target verified against public client source. Required fields, response 
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `userID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Users/Delete%20User.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## users.get.user.details
 
-`GET /PasswordVault/API/Users/{userID}` — **stub**
+`GET /PasswordVault/API/Users/{userID}` — **partial**
 
 - Category: Users
 - Operation: Get User Details
@@ -5378,17 +5378,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `userID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Users/Get%20User%20Details.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## users.update.user
 
-`PUT /PasswordVault/API/Users/{userID}` — **stub**
+`PUT /PasswordVault/API/Users/{userID}` — **partial**
 
 - Category: Users
 - Operation: Update User
@@ -5396,17 +5396,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `enableUser` (boolean), `changePassOnNextLogon` (boolean), `expiryDate` (integer), `suspended` (boolean), `unAuthorizedInterfaces` (array), `authenticationMethod` (array), `passwordNeverExpires` (boolean), `distinguishedName` (string), `description` (string), `businessAddress` (object), `internet` (object), `phones` (object), `personalDetails` (object), `id` (integer), `username` (string), `source` (string), `userType` (string), `componentUser` (boolean), `vaultAuthorization` (array), `location` (string)
 - Parameters: path `userID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Users/Update%20User.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## users.activate.user
 
-`POST /PasswordVault/API/Users/{userID}/activate` — **stub**
+`POST /PasswordVault/API/Users/{userID}/activate` — **partial**
 
 - Category: Users
 - Operation: Activate User
@@ -5414,17 +5414,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `userID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Users/Activate%20User.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## users.disable.user
 
-`POST /PasswordVault/API/Users/{userID}/disable` — **stub**
+`POST /PasswordVault/API/Users/{userID}/disable` — **partial**
 
 - Category: Users
 - Operation: Disable User
@@ -5432,17 +5432,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `userID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Users/Disable%20User.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## users.enable.user
 
-`POST /PasswordVault/API/Users/{userID}/enable` — **stub**
+`POST /PasswordVault/API/Users/{userID}/enable` — **partial**
 
 - Category: Users
 - Operation: Enable User
@@ -5450,17 +5450,17 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: path `userID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Users/Enable%20User.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## users.reset.user.password
 
-`POST /PasswordVault/API/Users/{userID}/ResetPassword` — **stub**
+`POST /PasswordVault/API/Users/{userID}/ResetPassword` — **partial**
 
 - Category: Users
 - Operation: Reset User Password
@@ -5468,13 +5468,13 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: application/json
 - Request fields: `id` (string), `newPassword` (string)
 - Parameters: path `userID`
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 204 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Users/Reset%20User%20Password.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## users.delete.an.mfa.caching.ssh.key.for.another.user
 
@@ -5514,7 +5514,7 @@ HTTP contract from a public reference collection. Success response and required-
 
 ## users.get.user.types
 
-`GET /PasswordVault/API/UserTypes` — **stub**
+`GET /PasswordVault/API/UserTypes` — **partial**
 
 - Category: Users
 - Operation: Get User Types
@@ -5522,13 +5522,13 @@ HTTP contract from a public reference collection. Success response and required-
 - Request media type: No body recorded
 - Request fields: None recorded; see confidence note.
 - Parameters: 
-- Response contracts: 501 object; 401 object; default unspecified; 
+- Response contracts: 200 object; 400 object; 401 object; 403 object; 404 object; 409 object; 
 - Known errors: PAMMOCK001
 - Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/User%20Management/Users/Get%20User%20Types.bru)
 - Source version: 14.6 reference collection; reviewed 2026-10-03
 - Confidence: reference-only
 
-HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.
+Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
 
 ## users.get.logged.on.user.details
 

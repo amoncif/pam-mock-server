@@ -612,114 +612,739 @@
             ]
         },
         {
-            "name": "Account Groups",
-            "description": "Future implementation. See Swagger for all stub operations.",
-            "item": []
-        },
-        {
-            "name": "Accounts",
-            "description": "Future implementation. See Swagger for all stub operations.",
-            "item": []
-        },
-        {
-            "name": "Applications",
-            "description": "Future implementation. See Swagger for all stub operations.",
-            "item": []
-        },
-        {
-            "name": "Configuration",
-            "description": "Future implementation. See Swagger for all stub operations.",
-            "item": []
-        },
-        {
-            "name": "Discovery",
-            "description": "Future implementation. See Swagger for all stub operations.",
-            "item": []
-        },
-        {
-            "name": "LDAP Integration",
-            "description": "Future implementation. See Swagger for all stub operations.",
-            "item": []
-        },
-        {
-            "name": "Onboarding Rules",
-            "description": "Future implementation. See Swagger for all stub operations.",
-            "item": []
-        },
-        {
-            "name": "OPM Commands",
-            "description": "Future implementation. See Swagger for all stub operations.",
-            "item": []
-        },
-        {
-            "name": "Platforms",
-            "description": "Future implementation. See Swagger for all stub operations.",
-            "item": []
-        },
-        {
-            "name": "PSM",
-            "description": "Future implementation. See Swagger for all stub operations.",
-            "item": []
-        },
-        {
-            "name": "PTA Administration",
-            "description": "Future implementation. See Swagger for all stub operations.",
-            "item": []
-        },
-        {
-            "name": "Recordings",
-            "description": "Future implementation. See Swagger for all stub operations.",
-            "item": []
-        },
-        {
-            "name": "Reports and Tasks",
-            "description": "Future implementation. See Swagger for all stub operations.",
-            "item": []
-        },
-        {
-            "name": "Requests",
-            "description": "Future implementation. See Swagger for all stub operations.",
-            "item": []
-        },
-        {
-            "name": "Safe Members",
-            "description": "Future implementation. See Swagger for all stub operations.",
-            "item": []
-        },
-        {
-            "name": "Safes",
-            "description": "Future implementation. See Swagger for all stub operations.",
-            "item": []
-        },
-        {
-            "name": "Security",
-            "description": "Future implementation. See Swagger for all stub operations.",
-            "item": []
-        },
-        {
-            "name": "Sessions",
-            "description": "Future implementation. See Swagger for all stub operations.",
-            "item": []
-        },
-        {
-            "name": "System Health",
-            "description": "Future implementation. See Swagger for all stub operations.",
-            "item": []
-        },
-        {
-            "name": "User Groups",
-            "description": "Future implementation. See Swagger for all stub operations.",
-            "item": []
-        },
-        {
-            "name": "Users",
-            "description": "Future implementation. See Swagger for all stub operations.",
-            "item": []
-        },
-        {
-            "name": "Vault",
-            "description": "Future implementation. See Swagger for all stub operations.",
-            "item": []
+            "name": "Core modules",
+            "item": [
+                {
+                    "name": "Core logon",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/PasswordVault/API/auth/Cyberark/Logon",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"username\": \"{{username}}\",\n    \"password\": \"{{password}}\",\n    \"concurrentSession\": true\n}\n",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));",
+                                    "if (pm.response.code === 200) { const body = pm.response.json(); pm.environment.set(\"token\", typeof body === \"string\" ? body : (body.CyberArkLogonResult || body.LogonResult)); }"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get Accounts",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/Accounts",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get Account Details",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/Accounts/1_1",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get Account Activity",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/Accounts/1_1/Activities",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get Secret Versions",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/Accounts/1_1/Secret/Versions",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get Platforms",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/Platforms",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get Dependent Platforms",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/platforms/dependents",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get Group Platforms",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/platforms/groups",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get Rotational Group Platforms",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/platforms/rotationalGroups",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get Target Platforms",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/platforms/targets",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get Platform Summary",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/Platforms/Targets/SystemTypes",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get Platform",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/platforms/targets/1/settings",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get Platform Details",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/Platforms/1",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get Session Management Policy of Platform",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/Platforms/Targets/1/PrivilegedSessionManagement",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get All Connection Components",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/PSM/Connectors",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get All PSM Servers",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/PSM/Servers",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get All Safe Members",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/Safes/APP-PROD-WINDOWS/Members",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get Safe Member",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/Safes/APP-PROD-WINDOWS/Members/Auditors",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get Safe by Platform ID",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/Platforms/1/Safes",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get All Safes",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/Safes",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get Safe Details",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/Safes/APP-PROD-WINDOWS",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get Groups",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/UserGroups",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get Group Details",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/UserGroups/2",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get Logged On User",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/currentuser",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get User Login Info",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/LoginsInfo",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get Users",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/Users",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get User",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/Users/8/safes",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get User Details",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/Users/8",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get User Types",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/PasswordVault/API/UserTypes",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Core logoff",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/PasswordVault/API/Auth/Logoff",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "{{token}}"
+                            }
+                        ]
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text/javascript",
+                                "exec": [
+                                    "pm.test(\"Expected HTTP status\", () => pm.response.to.have.status(200));"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

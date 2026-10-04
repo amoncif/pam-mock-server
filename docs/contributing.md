@@ -31,4 +31,4 @@ vendor/bin/php-cs-fixer fix --dry-run --diff
 
 `doctrine:fixtures:load --no-interaction` replaces the local dataset. It is intentionally destructive only to this project's database. Tests truncate only the isolated `_test` database. Never point this application at a real environment.
 
-The backlog is prepared in `docs/backlog.json`. `python3 bin/publish-backlog.py --publish --repo owner/name` creates missing labels, the foundation milestone and issues via an authenticated GitHub CLI. Stable markers prevent duplicates. This command writes to GitHub and is never run by CI.
+The active backlog lives in [GitHub Issues](https://github.com/amoncif/pam-mock-server/issues). Keep compatibility limits and coverage in the manifest instead of maintaining a duplicate issue export.

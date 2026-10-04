@@ -1,0 +1,19 @@
+meta {
+  name: Get User Login Info
+  type: http
+  seq: 47
+}
+
+get {
+  url: {{baseUrl}}/PasswordVault/API/LoginsInfo
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}
+
+tests {
+  test("Expected HTTP status", function () { expect(res.getStatus()).to.equal(200); });
+}

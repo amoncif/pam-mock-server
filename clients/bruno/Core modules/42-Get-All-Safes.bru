@@ -1,0 +1,19 @@
+meta {
+  name: Get All Safes
+  type: http
+  seq: 42
+}
+
+get {
+  url: {{baseUrl}}/PasswordVault/API/Safes
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}
+
+tests {
+  test("Expected HTTP status", function () { expect(res.getStatus()).to.equal(200); });
+}
