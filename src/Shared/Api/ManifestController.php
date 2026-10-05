@@ -10,7 +10,7 @@ use Symfony\Component\HttpKernel\Attribute\AsController;
 #[AsController]
 final class ManifestController
 {
-    public function __construct(private readonly AuthenticationService $authentication, private readonly EndpointManifest $manifest)
+    public function __construct(private readonly AuthenticationService $authentication, private readonly EndpointManifest $manifest, private readonly \App\Pam\Core\CoreService $core)
     {
     }
 
@@ -21,7 +21,10 @@ final class ManifestController
             return $this->authentication->handle($request, $endpoint);
         }
         if ('none' !== $endpoint['authentication']) {
-            $this->authentication->validate($request);
+            $session = $this->authentication->validate($request);
+            if (isset($endpoint['handler']) && 'core' === $endpoint['handler']) {
+                return $this->core->handle($request, $session->user);
+            }
         }
         throw new PamException(501, 'PAMMOCK001', 'This CyberArk-compatible endpoint is documented but not implemented yet.');
     }

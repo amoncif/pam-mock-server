@@ -28,6 +28,10 @@ These choices are tested locally but must not be presented as verified vendor be
 
 Authentication-provider configuration, OIDC configuration, FIDO2 registration and SSH-key management are configuration/user operations. They remain stubs in this phase.
 
+## Core module profile
+
+79 core routes now execute persistent local workflows. Their PARTIAL status distinguishes a usable simulator from verified full vendor compatibility. See [supported operations and limits](core-modules.md), especially simplified administrator roles, package imports, legacy routes and PSM execution.
+
 ## Inventory boundaries
 
 The 320-operation manifest is a known-source inventory, not proof of all PAM 15.2 operations. Its core reference collection targets PVWA 14.6. A newer public psPAS revision adds additional self-hosted PVWA requests. Official current authentication pages were reviewed as version 15.2. Version applicability for many non-authentication operations remains open.

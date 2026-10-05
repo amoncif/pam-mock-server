@@ -1,0 +1,9 @@
+{
+  "url": "https://github.com/infamousjoeg/CyberArk-RESTAPI",
+  "revision": "1728f5c4b4ed796e0e89a0332e9fd4f9916d8fa2",
+  "file": "Postman Collections/CyberArk REST API [PUBLIC].postman_collection.json",
+  "sha256": "0bd95e1509f87004891951f0b54b1cf3494c913eeefbef2ba49f3799647129d5",
+  "license": "MIT",
+  "status": "Unofficial public reference, PAM v13.2; not current official documentation.",
+  "scope": "Self-Hosted / Privileged Access Manager subtree; sibling cloud and Conjur products excluded."
+}

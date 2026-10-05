@@ -1,0 +1,62 @@
+{
+  "Logon - CyberArk/LDAP/Radius/Windows Authentication": {
+    "source": "https://docs.cyberark.com/pam-self-hosted/latest/en/content/webservices/logon.htm",
+    "reason": "Remove the upstream JSON comment. Fields follow the documented credential request.",
+    "body": {
+      "username": "{{pasAPIUsername}}",
+      "password": "{{pasAPIPassword}}",
+      "concurrentSession": true
+    }
+  },
+  "Add Safe": {
+    "source": "https://docs.cyberark.com/pam-self-hosted/latest/en/content/webservices/add%20safe.htm",
+    "reason": "Use the documented second-generation field names; substitute only local values.",
+    "body": {
+      "safeName": "{{pasSafe}}",
+      "description": "ACME privileged accounts",
+      "oLACEnabled": false,
+      "managingCPM": "PasswordManager",
+      "numberOfDaysRetention": 7,
+      "numberOfVersionsRetention": null,
+      "autoPurgeEnabled": false,
+      "location": "\\"
+    }
+  },
+  "Update Session Management Policy of Platform": {
+    "source": "https://docs.cyberark.com/pam-self-hosted/latest/en/content/sdk/session%20mngmnt%20-%20update_session_management_policy_platform.htm",
+    "reason": "Only documented PSM policy fields are sent. Server and connector values use the local environment.",
+    "body": {
+      "PSMServerId": "{{pasPSMServerID}}",
+      "PSMServerName": "{{pasPSMServerName}}",
+      "PSMConnectors": [
+        {
+          "PSMConnectorID": "{{pasConnectionComponent}}",
+          "Enabled": true
+        }
+      ]
+    }
+  },
+  "Get Users": {
+    "source": "https://docs.cyberark.com/pam-self-hosted/latest/en/content/sdk/get-users-api.htm",
+    "reason": "Complete the documented userType filter with the fixture EPVUser value.",
+    "query_values": {
+      "filter": "userType eq EPVUser"
+    }
+  },
+  "Connect Using PSM": {
+    "source": "https://docs.cyberark.com/pam-self-hosted/latest/en/content/webservices/connectthroughpsm.htm",
+    "reason": "Replace the non-JSON placeholder template with the documented required component and optional reason.",
+    "body": {
+      "ConnectionComponent": "{{pasConnectionComponent}}",
+      "reason": "Validation locale"
+    }
+  },
+  "Get Password Value": {
+    "source": "https://docs.cyberark.com/pam-self-hosted/latest/en/content/webservices/getpasswordvaluev10.htm",
+    "reason": "Use the documented show action with an optional reason.",
+    "body": {
+      "reason": "Validation locale",
+      "ActionType": "show"
+    }
+  }
+}

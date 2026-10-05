@@ -12,6 +12,7 @@ $errors = [];
 $ids = [];
 $routes = [];
 $count = 0;
+$publishedCount = 0;
 $document = json_decode(file_get_contents($root.'/api/openapi.json'), false, 512, JSON_THROW_ON_ERROR);
 $schema = json_decode(file_get_contents($root.'/api/schema/openapi-3.1.json'), false, 512, JSON_THROW_ON_ERROR);
 // Resolve the OAS schema's local meta anchor explicitly for Opis compatibility.
@@ -97,8 +98,13 @@ foreach ($manifest as $endpoint) {
         }
     }
     $operation = $spec['paths'][$endpoint['path']][strtolower($endpoint['method'])] ?? [];
-    if (($operation['operationId'] ?? '') !== $id || ($operation['x-mock-status'] ?? '') !== $endpoint['status']) {
-        $errors[] = 'OpenAPI and manifest disagree: '.$id;
+    if (in_array($endpoint['status'], ['implemented', 'tested', 'partial'], true)) {
+        ++$publishedCount;
+        if (($operation['operationId'] ?? '') !== $id || ($operation['x-mock-status'] ?? '') !== $endpoint['status']) {
+            $errors[] = 'OpenAPI and manifest disagree: '.$id;
+        }
+    } elseif ([] !== $operation) {
+        $errors[] = 'Non-operational endpoint exposed in Swagger: '.$id;
     }
     ++$count;
 }
@@ -110,11 +116,11 @@ foreach ($spec['paths'] as $item) {
         }
     }
 }
-if ($operations !== $count) {
-    $errors[] = 'OpenAPI operation count differs from manifest.';
+if ($operations !== $publishedCount) {
+    $errors[] = 'OpenAPI operation count differs from the operational manifest subset.';
 }
 if ([] !== $errors) {
     fwrite(STDERR, implode("\n", $errors)."\n");
     exit(1);
 }
-echo "Validated $count sourced operations, compatibility test links, and OpenAPI 3.1 schema.\n";
+echo "Validated $count inventoried operations, $publishedCount operational OpenAPI operations, test links and schema.\n";

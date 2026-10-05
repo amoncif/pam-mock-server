@@ -1,0 +1,19 @@
+meta {
+  name: Get Platforms
+  type: http
+  seq: 28
+}
+
+get {
+  url: {{baseUrl}}/PasswordVault/API/Platforms
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}
+
+tests {
+  test("Expected HTTP status", function () { expect(res.getStatus()).to.equal(200); });
+}

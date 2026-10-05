@@ -18,8 +18,9 @@ final class LabFixtures extends Fixture
         $dataset = json_decode(file_get_contents($this->projectDir.'/fixtures/acme.json'), true, 512, JSON_THROW_ON_ERROR);
         foreach ($dataset['users'] as $u) {
             $manager->persist(new PamUser($u['username'], $u['provider'], $u['passwordHash'], $u['persona'], $u['state']));
+            $manager->persist(new LabObject('users.'.$u['id'], 'users', ['id' => $u['id'], 'username' => $u['username'], 'source' => $u['provider'], 'userType' => 'EPVUser', 'componentUser' => false, 'location' => '\\', 'description' => $u['persona']]));
         }
-        foreach (['safes', 'platforms', 'accounts', 'memberships'] as $kind) {
+        foreach (['safes', 'platforms', 'accounts', 'memberships', 'groups', 'servers', 'connectors'] as $kind) {
             foreach ($dataset[$kind] as $item) {
                 $manager->persist(new LabObject($kind.'.'.$item['id'], $kind, $item));
             }

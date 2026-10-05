@@ -1,6 +1,6 @@
 api_platform:
     title: PAM Mock Server
-    description: 'Independent CyberArk-compatible PAM mock API. See x-mock-status on each operation.'
+    description: 'Routes fonctionnelles du simulateur local. Commencez par Logon CyberArk, puis Authorize avec le jeton brut. Accounts contient PSMConnect et Show password. Compatibilité partielle : consultez la description des opérations.'
     version: 0.1.0
     formats:
         json: ['application/json']
@@ -9,3 +9,9 @@ api_platform:
         html: ['text/html']
     defaults:
         stateless: true
+    swagger:
+        swagger_ui_extra_configuration:
+            filter: true
+            docExpansion: list
+            displayRequestDuration: true
+            defaultModelsExpandDepth: -1

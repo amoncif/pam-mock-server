@@ -14,7 +14,7 @@ cd pam-mock-server
 docker compose up -d
 ```
 
-The first start builds PHP and installs the locked dependencies. It takes a few minutes. Then open [Swagger](http://localhost:8080/api/docs). The health check is at `http://localhost:8080/health`. To wait until initialization finishes, use `docker compose up -d --wait`.
+The first start builds PHP and installs the locked dependencies. It takes a few minutes. Then open [Swagger](http://localhost:8080/api/docs). Swagger displays only the 90 functional operations. In **Accounts**, start with **PSMConnect** or **Show password** using account `1_1`; both requests include ready-to-send examples. The full 320-operation inventory remains in the manifest and documentation. The health check is at `http://localhost:8080/health`. To wait until initialization finishes, use `docker compose up -d --wait`.
 
 Requirements: Docker Engine or Docker Desktop with Compose v2. Ports bind to localhost. The database has no published port by default.
 
@@ -36,7 +36,7 @@ curl -sS http://localhost:8080/mock/session -H "Authorization: $TOKEN"
 curl -sS -X POST http://localhost:8080/PasswordVault/API/Auth/Logoff -H "Authorization: $TOKEN"
 ```
 
-`/mock/session` is a project-only diagnostic route. It is not a CyberArk endpoint. After logoff the token returns 401. A valid token on Accounts, Safes or another stub returns 501 with `ErrorCode: PAMMOCK001`.
+`/mock/session` is a project-only diagnostic route. It is not a CyberArk endpoint. After logoff the token returns 401. The core APIs below accept the same token. Operations still marked STUB return 501 with `ErrorCode: PAMMOCK001`.
 
 ## Local users
 
@@ -53,7 +53,9 @@ These are public local development credentials. See [all fixture users](docs/dev
 
 ## Current scope
 
-The manifest contains 320 known operations. Eleven authentication routes are implemented. The other 309 are stubs. There are 13 users, 8 safes, 40 accounts, 8 project-created platforms and 26 memberships in the deterministic dataset. Seed data is not exposed through working Accounts or Safes APIs yet.
+The manifest contains 320 known operations: 11 authentication routes, 79 working core simulator routes (marked PARTIAL because vendor compatibility is not complete), and 230 explicit stubs. Users, user groups and members, safes and permissions, accounts and mock credential operations, platforms, PSM servers and connectors now persist changes. See [core module examples and limits](docs/core-modules.md).
+
+The deterministic ACME dataset includes 13 users, 6 groups, 8 safes, 40 accounts, 11 project-created platforms (8 targets plus dependent/group/rotational examples), 26 group-to-safe memberships, 3 PSM/PSMP servers and 8 connectors. No real infrastructure is contacted.
 
 Implemented authentication: CyberArk, LDAP, Windows credential logon, RADIUS credential logon, SAML fixture logon, shared logon, first-generation CyberArk logon and their logout routes. Password replacement is available for CyberArk and LDAP. Sessions use random opaque tokens, hashed storage and a 20-minute fixed lifetime.
 
@@ -81,9 +83,15 @@ For native PHP development, copy `.env.example` to `.env.local`, then start only
 
 ## Clients
 
-Import both files from [clients/postman](clients/postman), select the local environment and run the Authentication folder. Tokens are captured automatically. The collection includes invalid credentials and token reuse examples.
+Import [the CyberArk-shaped Postman collection](clients/postman/pam-mock.postman_collection.json) and [its local environment](clients/postman/cyberark-local.postman_environment.json). It preserves the 181-request **Self-Hosted / Privileged Access Manager** tree of the public CyberArk v13.2 reference. Run **Authentication → Logon - CyberArk/LDAP/Radius/Windows Authentication** first; its script captures the token.
 
-Open [clients/bruno](clients/bruno) as a collection and select `local`. Its Authentication folder is equivalent and executable. Both clients use `baseUrl`, `username`, `password` and `token`; provider-specific fixture variables are included. Future domains have their own folders. Swagger contains every known stub.
+- ✅ Route available in the mock; some vendor behavior remains partial.
+- ⏳ Route not implemented.
+- 📝 Upstream template needs values/valid JSON before sending.
+
+This historical public collection is explicitly unofficial and is not a current vendor specification. Unchanged bodies are source-preserved; the few reviewed corrections link directly to official documentation. No guessed payload is presented as verified. See [provenance and usage](docs/postman.md).
+
+For a runnable, non-destructive suite, use [the 52-request smoke collection](clients/postman/pam-mock-smoke.postman_collection.json) with [local.postman_environment.json](clients/postman/local.postman_environment.json). Bruno has the equivalent Authentication and Core modules folders. The full reference contains mutations and unsupported requests; do not run it wholesale as a smoke test.
 
 ## Contribute
 
