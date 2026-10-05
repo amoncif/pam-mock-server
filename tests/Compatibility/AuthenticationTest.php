@@ -281,15 +281,25 @@ final class AuthenticationTest extends WebTestCase
         }
     }
 
-    public function testSwaggerHasTheEntireManifest(): void
+    public function testSwaggerContainsOnlyOperationalRoutes(): void
     {
         $this->client->request('GET', '/api/docs.jsonopenapi');
         self::assertResponseIsSuccessful();
         $doc = json_decode($this->client->getResponse()->getContent(), true, 512, JSON_THROW_ON_ERROR);
         $manifest = self::getContainer()->get(\App\Shared\Api\EndpointManifest::class)->all();
         foreach ($manifest as $e) {
+            if ('stub' === $e['status']) {
+                self::assertArrayNotHasKey(strtolower($e['method']), $doc['paths'][$e['path']] ?? []);
+                continue;
+            }
             self::assertSame($e['status'], $doc['paths'][$e['path']][strtolower($e['method'])]['x-mock-status']);
         }
+        $psm = $doc['paths']['/PasswordVault/API/Accounts/{accountID}/PSMConnect']['post'];
+        self::assertSame('PSM-RDP', $psm['requestBody']['content']['application/json']['schema']['example']['ConnectionComponent']);
+        self::assertArrayHasKey('application/octet-stream', $psm['responses']['200']['content']);
+        $show = $doc['paths']['/PasswordVault/API/Accounts/{accountID}/Password/Retrieve']['post'];
+        self::assertSame('show', $show['requestBody']['content']['application/json']['schema']['example']['ActionType']);
+        self::assertSame('1_1', $show['parameters'][0]['schema']['example']);
         $this->client->request('GET', '/api/docs');
         self::assertResponseIsSuccessful();
     }

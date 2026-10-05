@@ -14,7 +14,7 @@ cd pam-mock-server
 docker compose up -d
 ```
 
-The first start builds PHP and installs the locked dependencies. It takes a few minutes. Then open [Swagger](http://localhost:8080/api/docs). The health check is at `http://localhost:8080/health`. To wait until initialization finishes, use `docker compose up -d --wait`.
+The first start builds PHP and installs the locked dependencies. It takes a few minutes. Then open [Swagger](http://localhost:8080/api/docs). Swagger displays only the 90 functional operations. In **Accounts**, start with **PSMConnect** or **Show password** using account `1_1`; both requests include ready-to-send examples. The full 320-operation inventory remains in the manifest and documentation. The health check is at `http://localhost:8080/health`. To wait until initialization finishes, use `docker compose up -d --wait`.
 
 Requirements: Docker Engine or Docker Desktop with Compose v2. Ports bind to localhost. The database has no published port by default.
 

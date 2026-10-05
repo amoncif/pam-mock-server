@@ -721,7 +721,7 @@ final class CoreService
                 }
             }
 
-            return new Response('full address:s:'.$server['Address']."\r\nusername:s:".$actor->username."\r\nalternate shell:s:psm /u ".$a['userName'].' /a '.$a['address'].' /c '.$connector.' /p '.$port."\r\n", 200, ['Content-Type' => 'application/rdp', 'Content-Disposition' => 'attachment; filename="mock-session.rdp"', 'X-PAM-Mock' => 'No remote session is opened']);
+            return new Response('full address:s:'.$server['Address']."\r\nusername:s:".$actor->username."\r\nalternate shell:s:psm /u ".$a['userName'].' /a '.$a['address'].' /c '.$connector.' /p '.$port."\r\n", 200, ['Content-Type' => 'application/octet-stream', 'ConnectionMethod' => 'RDPFile', 'Content-Disposition' => 'attachment; filename="mock-session.rdp"', 'X-PAM-Mock' => 'No remote session is opened']);
         }
         if (in_array($action, ['password/retrieve', 'secret/retrieve'], true)) {
             $secret = $a['_secret'];

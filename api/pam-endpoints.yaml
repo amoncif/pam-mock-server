@@ -5534,7 +5534,7 @@
     "id": "accounts.get.password.value",
     "domain": "accounts",
     "tag": "Accounts",
-    "name": "Get Password Value",
+    "name": "Show password — afficher le mot de passe",
     "method": "POST",
     "path": "/PasswordVault/API/Accounts/{accountID}/Password/Retrieve",
     "authentication": "token",
@@ -5545,13 +5545,46 @@
         "in": "path",
         "required": true,
         "schema": {
-          "type": "string"
+          "type": "string",
+          "example": "1_1"
         }
       }
     ],
     "request_schema": {
       "type": "object",
-      "additionalProperties": true
+      "properties": {
+        "reason": {
+          "type": "string"
+        },
+        "TicketingSystemName": {
+          "type": "string"
+        },
+        "TicketId": {
+          "type": "string"
+        },
+        "Version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "ActionType": {
+          "type": "string",
+          "enum": [
+            "show",
+            "copy",
+            "connect"
+          ]
+        },
+        "isUse": {
+          "type": "boolean"
+        },
+        "Machine": {
+          "type": "string"
+        }
+      },
+      "example": {
+        "reason": "Validation locale",
+        "ActionType": "show"
+      }
     },
     "responses": {
       "200": {
@@ -5651,22 +5684,18 @@
         }
       }
     },
-    "known_errors": [
-      "PAMMOCK001"
-    ],
+    "known_errors": [],
     "source": {
-      "type": "public-bruno-reference",
-      "url": "https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Get%20Password%20Value.bru",
-      "revision": "966d9e9e77bbcf684becc424f04227d111e0191a",
-      "license": "MIT"
+      "type": "official-documentation",
+      "url": "https://docs.cyberark.com/pam-self-hosted/latest/en/content/webservices/getpasswordvaluev10.htm"
     },
-    "source_version": "14.6 reference collection; reviewed 2026-10-03",
+    "source_version": "PAM Self-Hosted 15.2, reviewed 2026-10-05",
     "status": "partial",
     "tests": [
       "tests/Compatibility/CoreModulesTest.php"
     ],
-    "confidence": "reference-only",
-    "notes": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
+    "confidence": "official",
+    "notes": "Affiche le mot de passe fictif du compte sous forme de chaîne JSON. Exemple prêt : accountID = 1_1, ActionType = show. Nécessite retrieveAccounts sur le safe. Documentation : https://docs.cyberark.com/pam-self-hosted/latest/en/content/webservices/getpasswordvaluev10.htm",
     "handler": "core"
   },
   {
@@ -5816,7 +5845,7 @@
     "id": "accounts.connect.using.psm",
     "domain": "accounts",
     "tag": "Accounts",
-    "name": "Connect Using PSM",
+    "name": "PSMConnect — télécharger le fichier RDP",
     "method": "POST",
     "path": "/PasswordVault/API/Accounts/{accountID}/PSMConnect",
     "authentication": "token",
@@ -5827,20 +5856,57 @@
         "in": "path",
         "required": true,
         "schema": {
-          "type": "string"
+          "type": "string",
+          "example": "1_1"
         }
       }
     ],
     "request_schema": {
       "type": "object",
-      "additionalProperties": true,
+      "required": [
+        "ConnectionComponent"
+      ],
+      "properties": {
+        "ConnectionComponent": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "TicketingSystemName": {
+          "type": "string"
+        },
+        "TicketId": {
+          "type": "string"
+        },
+        "ConnectionParams": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "string"
+              },
+              "ShouldSave": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      },
       "example": {
-        "ConnectionComponent": "PSM-RDP"
+        "ConnectionComponent": "PSM-RDP",
+        "reason": "Validation locale"
       }
     },
     "responses": {
       "200": {
-        "description": "Local simulator result; compatibility limits are documented in docs/core-modules.md."
+        "description": "Mock RDP file. No remote session is opened.",
+        "media_type": "application/octet-stream",
+        "schema": {
+          "type": "string",
+          "format": "binary"
+        }
       },
       "400": {
         "description": "Invalid input",
@@ -5933,22 +5999,18 @@
         }
       }
     },
-    "known_errors": [
-      "PAMMOCK001"
-    ],
+    "known_errors": [],
     "source": {
-      "type": "public-bruno-reference",
-      "url": "https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Connect%20Using%20PSM.bru",
-      "revision": "966d9e9e77bbcf684becc424f04227d111e0191a",
-      "license": "MIT"
+      "type": "official-documentation",
+      "url": "https://docs.cyberark.com/pam-self-hosted/latest/en/content/webservices/connectthroughpsm.htm"
     },
-    "source_version": "14.6 reference collection; reviewed 2026-10-03",
+    "source_version": "PAM Self-Hosted 15.2, reviewed 2026-10-05",
     "status": "partial",
     "tests": [
       "tests/Compatibility/CoreModulesTest.php"
     ],
-    "confidence": "reference-only",
-    "notes": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
+    "confidence": "official",
+    "notes": "Génère un fichier RDP de simulation pour le compte. Exemple prêt : accountID = 1_1, ConnectionComponent = PSM-RDP. Nécessite useAccounts sur le safe. Aucun serveur distant n’est contacté. Les paramètres de passerelle HTML5 et ConnectionParams ne sont pas exécutés par ce mock. Documentation : https://docs.cyberark.com/pam-self-hosted/latest/en/content/webservices/connectthroughpsm.htm",
     "handler": "core"
   },
   {

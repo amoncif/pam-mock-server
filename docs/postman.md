@@ -14,6 +14,8 @@ The only body replacements are explicit in `api/reference/postman-corrections.js
 
 The Get Users filter is also completed as the documented `userType eq EPVUser`, replacing the incomplete upstream `filter=userType`.
 
+The PSMConnect and Get Password Value bodies also use verified official fields with ready-to-send local examples (ConnectionComponent and ActionType=show).
+
 All other bodies, methods and URLs are compared against the pinned source in automated tests. These tests prove preservation, not current vendor certification. Unknown or legacy payloads are not silently rewritten. PSM connector and server responses expose the documented `Id`/`DisplayName` and `Id`/`Name`/`Address` fields; internal server type and fixture override metadata are private.
 
 Request variables such as `pasAccountID`, `pasSafe`, `pasUserID` and `pasPlatformName` default to actual local fixture objects. Change them before mutation requests. Some source requests also have their own path-variable defaults: inspect the Params tab before sending. Use the separate smoke collection for an automated run; the reference includes delete requests and unsupported PTA endpoints.

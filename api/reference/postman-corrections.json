@@ -42,5 +42,21 @@
     "query_values": {
       "filter": "userType eq EPVUser"
     }
+  },
+  "Connect Using PSM": {
+    "source": "https://docs.cyberark.com/pam-self-hosted/latest/en/content/webservices/connectthroughpsm.htm",
+    "reason": "Replace the non-JSON placeholder template with the documented required component and optional reason.",
+    "body": {
+      "ConnectionComponent": "{{pasConnectionComponent}}",
+      "reason": "Validation locale"
+    }
+  },
+  "Get Password Value": {
+    "source": "https://docs.cyberark.com/pam-self-hosted/latest/en/content/webservices/getpasswordvaluev10.htm",
+    "reason": "Use the documented show action with an optional reason.",
+    "body": {
+      "reason": "Validation locale",
+      "ActionType": "show"
+    }
   }
 }

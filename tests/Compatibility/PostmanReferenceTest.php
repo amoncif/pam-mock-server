@@ -50,7 +50,7 @@ final class PostmanReferenceTest extends TestCase
         $names = array_column($generated, 'name');
         self::assertContains('✅ Add Account', $names);
         self::assertContains('✅ Update Session Management Policy of Platform', $names);
-        self::assertContains('📝 Connect Using PSM', $names);
+        self::assertContains('✅ Connect Using PSM', $names);
         self::assertContains('⏳ Ad-Hoc Connect through PSM', $names);
         $policy = $changes['Update Session Management Policy of Platform']['body'];
         self::assertSame(['PSMServerId', 'PSMServerName', 'PSMConnectors'], array_keys($policy));

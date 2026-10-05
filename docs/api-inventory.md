@@ -945,18 +945,18 @@ HTTP contract from a public reference collection. Success response and required-
 `POST /PasswordVault/API/Accounts/{accountID}/Password/Retrieve` — **partial**
 
 - Category: Accounts
-- Operation: Get Password Value
+- Operation: Show password — afficher le mot de passe
 - Authentication: token
 - Request media type: application/json
-- Request fields: Open schema; not fully verified.
+- Request fields: `reason` (string), `TicketingSystemName` (string), `TicketId` (string), `Version` (integer), `ActionType` (string), `isUse` (boolean), `Machine` (string)
 - Parameters: path `accountID`
 - Response contracts: 200 string; 400 object; 401 object; 403 object; 404 object; 409 object;
-- Known errors: PAMMOCK001
-- Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Get%20Password%20Value.bru)
-- Source version: 14.6 reference collection; reviewed 2026-10-03
-- Confidence: reference-only
+- Known errors:
+- Source: [official-documentation](https://docs.cyberark.com/pam-self-hosted/latest/en/content/webservices/getpasswordvaluev10.htm)
+- Source version: PAM Self-Hosted 15.2, reviewed 2026-10-05
+- Confidence: official
 
-Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
+Affiche le mot de passe fictif du compte sous forme de chaîne JSON. Exemple prêt : accountID = 1_1, ActionType = show. Nécessite retrieveAccounts sur le safe. Documentation : https://docs.cyberark.com/pam-self-hosted/latest/en/content/webservices/getpasswordvaluev10.htm
 
 ## accounts.change.credentials.in.the.vault
 
@@ -981,18 +981,18 @@ Persistent local simulator. Supports the documented core workflow; see docs/core
 `POST /PasswordVault/API/Accounts/{accountID}/PSMConnect` — **partial**
 
 - Category: Accounts
-- Operation: Connect Using PSM
+- Operation: PSMConnect — télécharger le fichier RDP
 - Authentication: token
 - Request media type: application/json
-- Request fields: Open schema; not fully verified.
+- Request fields: `ConnectionComponent` (string), `reason` (string), `TicketingSystemName` (string), `TicketId` (string), `ConnectionParams` (object)
 - Parameters: path `accountID`
-- Response contracts: 200 unspecified; 400 object; 401 object; 403 object; 404 object; 409 object;
-- Known errors: PAMMOCK001
-- Source: [public-bruno-reference](https://github.com/IAM-Jah/CyberArk-REST-API-Bruno/blob/966d9e9e77bbcf684becc424f04227d111e0191a/CyberArk%20Self-Hosted%20REST%20API/CyberArk%20Self-Hosted%20REST%20API/Self-Hosted%20PAM/Accounts/Account%20Actions/Connect%20Using%20PSM.bru)
-- Source version: 14.6 reference collection; reviewed 2026-10-03
-- Confidence: reference-only
+- Response contracts: 200 string; 400 object; 401 object; 403 object; 404 object; 409 object;
+- Known errors:
+- Source: [official-documentation](https://docs.cyberark.com/pam-self-hosted/latest/en/content/webservices/connectthroughpsm.htm)
+- Source version: PAM Self-Hosted 15.2, reviewed 2026-10-05
+- Confidence: official
 
-Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.
+Génère un fichier RDP de simulation pour le compte. Exemple prêt : accountID = 1_1, ConnectionComponent = PSM-RDP. Nécessite useAccounts sur le safe. Aucun serveur distant n’est contacté. Les paramètres de passerelle HTML5 et ConnectionParams ne sont pas exécutés par ce mock. Documentation : https://docs.cyberark.com/pam-self-hosted/latest/en/content/webservices/connectthroughpsm.htm
 
 ## accounts.reconcile.credentials
 

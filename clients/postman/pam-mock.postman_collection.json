@@ -193,7 +193,7 @@
                                             "response": []
                                         },
                                         {
-                                            "name": "\ud83d\udcdd Connect Using PSM",
+                                            "name": "\u2705 Connect Using PSM",
                                             "request": {
                                                 "method": "POST",
                                                 "header": [
@@ -208,7 +208,12 @@
                                                 ],
                                                 "body": {
                                                     "mode": "raw",
-                                                    "raw": "{\n\t\"reason\":\"<Reason>\",\n\t\"TicketingSystemName\":\"<Ticketing system>\",\n\t\"TicketId\":\"<Ticketid>\",\n\t\"ConnectionComponent\":\"<Connection component id>\",\n\t\"ConnectionParams\": {\n\t\t\"<Connection parameter name>\": {\n\t\t\t\"value\":\"<Connection parameter value>\",\n\t\t\t\"ShouldSave\":<true\\false>\n\t\t},\n\t\t\"<Connection parameter name>\": {\n\t\t\t\"value\":\"<Connection parameter value>\",\n\t\t\t\"ShouldSave\":<true\\false>\n\t\t}\n\t}\n}"
+                                                    "raw": "{\n    \"ConnectionComponent\": \"{{pasConnectionComponent}}\",\n    \"reason\": \"Validation locale\"\n}\n",
+                                                    "options": {
+                                                        "raw": {
+                                                            "language": "json"
+                                                        }
+                                                    }
                                                 },
                                                 "url": {
                                                     "raw": "{{pasBaseURL}}/passwordvault/api/accounts/:pasAccountID/psmconnect",
@@ -229,7 +234,7 @@
                                                         }
                                                     ]
                                                 },
-                                                "description": "Template requires editing before sending (upstream placeholders are not valid JSON).\n\nMock: available (see documented compatibility limits).\n\nRequest body preserved from the pinned public v13.2 collection. Current official parity is not certified.\n\nThis method enables you to connect to an account through PSM (PSMConnect) using a connection method defined in the PVWA.\n\nA response header defines which connection method is returned.\n\nFor more information, refer to [Privileged Session Management Interface](https://docs.cyberark.com/Product-Doc/OnlineHelp/PAS/Latest/en/Content/PASIMP/Configuring-the-Privileged-Session-Management-Interface.htm)."
+                                                "description": "Mock: available (see documented compatibility limits).\n\nOfficial payload reference: https://docs.cyberark.com/pam-self-hosted/latest/en/content/webservices/connectthroughpsm.htm\nReplace the non-JSON placeholder template with the documented required component and optional reason.\n\nThis method enables you to connect to an account through PSM (PSMConnect) using a connection method defined in the PVWA.\n\nA response header defines which connection method is returned.\n\nFor more information, refer to [Privileged Session Management Interface](https://docs.cyberark.com/Product-Doc/OnlineHelp/PAS/Latest/en/Content/PASIMP/Configuring-the-Privileged-Session-Management-Interface.htm)."
                                             },
                                             "response": []
                                         },
@@ -301,7 +306,7 @@
                                             "response": []
                                         },
                                         {
-                                            "name": "\ud83d\udcdd Get Password Value",
+                                            "name": "\u2705 Get Password Value",
                                             "request": {
                                                 "method": "POST",
                                                 "header": [
@@ -312,7 +317,12 @@
                                                 ],
                                                 "body": {
                                                     "mode": "raw",
-                                                    "raw": "{\n    \"reason\": \"<Reason>\",\n    \"TicketingSystem\": \"<Ticketing system>\",\n    \"TicketId\": \"<Ticketid>\",\n    \"Version\": <version number>,\n    \"ActionType\": \"<action type - show\\copy\\connect>\",\n    \"isUse\": <true\\false>,\n    \"Machine\": \"<my remote machine address>\"\n}"
+                                                    "raw": "{\n    \"reason\": \"Validation locale\",\n    \"ActionType\": \"show\"\n}\n",
+                                                    "options": {
+                                                        "raw": {
+                                                            "language": "json"
+                                                        }
+                                                    }
                                                 },
                                                 "url": {
                                                     "raw": "{{pasBaseURL}}/passwordvault/api/accounts/:pasAccountID/password/retrieve",
@@ -334,7 +344,7 @@
                                                         }
                                                     ]
                                                 },
-                                                "description": "Template requires editing before sending (upstream placeholders are not valid JSON).\n\nMock: available (see documented compatibility limits).\n\nRequest body preserved from the pinned public v13.2 collection. Current official parity is not certified.\n\nThis method enables users to retrieve the password or SSH key of an existing account that is identified by its Account ID. It enables users to specify a reason and ticket ID, if required.\n\n**Note:** To retrieve a private SSH key account, see the [Retrieve private SSH key account](https://docs.cyberark.com/Product-Doc/OnlineHelp/PAS/Latest/en/Content/WebServices/Retrieve_Private_SSH_Key_Account.htm#Return) REST API.\n\nThe ability to retrieve credentials using this REST API is intended for human use only and is not recommended for applications or automated processes, where application-based authentication is required. For application or automated processes use cases, see the [Secrets Manager Credential Providers Docs](https://docs.cyberark.com/Product-Doc/OnlineHelp/AAM-CP/Latest/en/Default.htm)."
+                                                "description": "Mock: available (see documented compatibility limits).\n\nOfficial payload reference: https://docs.cyberark.com/pam-self-hosted/latest/en/content/webservices/getpasswordvaluev10.htm\nUse the documented show action with an optional reason.\n\nThis method enables users to retrieve the password or SSH key of an existing account that is identified by its Account ID. It enables users to specify a reason and ticket ID, if required.\n\n**Note:** To retrieve a private SSH key account, see the [Retrieve private SSH key account](https://docs.cyberark.com/Product-Doc/OnlineHelp/PAS/Latest/en/Content/WebServices/Retrieve_Private_SSH_Key_Account.htm#Return) REST API.\n\nThe ability to retrieve credentials using this REST API is intended for human use only and is not recommended for applications or automated processes, where application-based authentication is required. For application or automated processes use cases, see the [Secrets Manager Credential Providers Docs](https://docs.cyberark.com/Product-Doc/OnlineHelp/AAM-CP/Latest/en/Default.htm)."
                                             },
                                             "response": []
                                         },

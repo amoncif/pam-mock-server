@@ -150,6 +150,8 @@ final class CoreModulesTest extends WebTestCase
         $unsupported['PSMConnectors'][0]['OverrideUserParameters'] = [];
         $this->call('PUT', $path, $unsupported, 400);
         $rdp = $this->call('POST', 'Accounts/1_1/PSMConnect', ['ConnectionComponent' => 'PSM-RDP']);
+        self::assertResponseHeaderSame('content-type', 'application/octet-stream');
+        self::assertResponseHeaderSame('ConnectionMethod', 'RDPFile');
         self::assertStringContainsString('psm-02.corp.acme.example', $rdp);
         self::assertStringContainsString('/p 3389', $rdp);
         self::assertStringNotContainsString('ACME-Mock-Only', $rdp);
