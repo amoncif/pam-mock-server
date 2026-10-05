@@ -83,9 +83,15 @@ For native PHP development, copy `.env.example` to `.env.local`, then start only
 
 ## Clients
 
-Import both files from [clients/postman](clients/postman), select the local environment and run the Authentication folder. Tokens are captured automatically. The collection includes invalid credentials and token reuse examples.
+Import [the CyberArk-shaped Postman collection](clients/postman/pam-mock.postman_collection.json) and [its local environment](clients/postman/cyberark-local.postman_environment.json). It preserves the 181-request **Self-Hosted / Privileged Access Manager** tree of the public CyberArk v13.2 reference. Run **Authentication → Logon - CyberArk/LDAP/Radius/Windows Authentication** first; its script captures the token.
 
-Open [clients/bruno](clients/bruno) as a collection and select `local`. Its Authentication folder is equivalent and executable. Both clients use `baseUrl`, `username`, `password` and `token`; provider-specific fixture variables are included. The Core modules folder logs in and exercises the working read APIs. Swagger includes request examples for mutations and explicitly labels the remaining stubs.
+- ✅ Route available in the mock; some vendor behavior remains partial.
+- ⏳ Route not implemented.
+- 📝 Upstream template needs values/valid JSON before sending.
+
+This historical public collection is explicitly unofficial and is not a current vendor specification. Unchanged bodies are source-preserved; the few reviewed corrections link directly to official documentation. No guessed payload is presented as verified. See [provenance and usage](docs/postman.md).
+
+For a runnable, non-destructive suite, use [the 52-request smoke collection](clients/postman/pam-mock-smoke.postman_collection.json) with [local.postman_environment.json](clients/postman/local.postman_environment.json). Bruno has the equivalent Authentication and Core modules folders. The full reference contains mutations and unsupported requests; do not run it wholesale as a smoke test.
 
 ## Contribute
 

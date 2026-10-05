@@ -27,7 +27,7 @@ final class ManifestOpenApiFactory implements OpenApiFactoryInterface
             foreach ($e['responses'] as $status => $response) {
                 $responses[(string) $status] = new Model\Response(description: $response['description'], content: isset($response['schema']) ? new \ArrayObject(['application/json' => ['schema' => $response['schema']]]) : null);
             }
-            $operation = new Model\Operation(operationId: $e['id'], tags: [$e['tag']], summary: strtoupper($e['status']).' — '.$e['name'], description: $e['notes'], parameters: $params, requestBody: $body, responses: $responses, security: 'none' === $e['authentication'] ? [] : [['PamToken' => []]], extensionProperties: ['x-mock-status' => $e['status'], 'x-source' => $e['source'], 'x-contract-confidence' => $e['confidence']]);
+            $operation = new Model\Operation(operationId: $e['id'], tags: [$e['tag']], summary: ('stub' === $e['status'] ? '⏳ ' : '✅ ').strtoupper($e['status']).' — '.$e['name'], description: $e['notes'], parameters: $params, requestBody: $body, responses: $responses, security: 'none' === $e['authentication'] ? [] : [['PamToken' => []]], extensionProperties: ['x-mock-status' => $e['status'], 'x-source' => $e['source'], 'x-contract-confidence' => $e['confidence']]);
             $item = $paths->getPath($e['path']) ?? new Model\PathItem();
             $method = 'with'.ucfirst(strtolower($e['method']));
             $paths->addPath($e['path'], $item->$method($operation));

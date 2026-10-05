@@ -67,7 +67,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Account Group by Safe",
+                "summary": "\u23f3 STUB \u2014 Get Account Group by Safe",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -151,7 +151,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Add Account Group",
+                "summary": "\u23f3 STUB \u2014 Add Account Group",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "requestBody": {
@@ -245,7 +245,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Account Group Members",
+                "summary": "\u23f3 STUB \u2014 Get Account Group Members",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -329,7 +329,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Add Member to Account Group",
+                "summary": "\u23f3 STUB \u2014 Add Member to Account Group",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -430,7 +430,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Delete Member from Account Group",
+                "summary": "\u23f3 STUB \u2014 Delete Member from Account Group",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -528,7 +528,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get Account Group",
+                "summary": "\u23f3 STUB \u2014 Get Account Group",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -688,7 +688,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get Accounts",
+                "summary": "\u2705 PARTIAL \u2014 Get Accounts",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -918,7 +918,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Add Account",
+                "summary": "\u2705 PARTIAL \u2014 Add Account",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [],
                 "requestBody": {
@@ -978,8 +978,8 @@
                                 "example": {
                                     "userName": "svc.new",
                                     "address": "new.acme.example",
-                                    "safeName": "APP-PROD-WINDOWS",
-                                    "platformId": "MockWinDomain",
+                                    "safeName": "PAM-PRD-ERP-WIN",
+                                    "platformId": "ACME-WinDomain",
                                     "secret": "LocalMock123!"
                                 }
                             }
@@ -1057,7 +1057,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Ad-Hoc Connect Using PSM",
+                "summary": "\u23f3 STUB \u2014 Ad-Hoc Connect Using PSM",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [],
                 "requestBody": {
@@ -1141,7 +1141,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Advanced Search Properties",
+                "summary": "\u23f3 STUB \u2014 Get Advanced Search Properties",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -1299,7 +1299,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Stop CPMTask",
+                "summary": "\u23f3 STUB \u2014 Stop CPMTask",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -1372,7 +1372,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Unlock Account",
+                "summary": "\u23f3 STUB \u2014 Unlock Account",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -1445,7 +1445,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Set Linked Account",
+                "summary": "\u23f3 STUB \u2014 Set Linked Account",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -1518,7 +1518,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Resume CPMAuto Management",
+                "summary": "\u23f3 STUB \u2014 Resume CPMAuto Management",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -1591,7 +1591,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Clear Linked Account",
+                "summary": "\u23f3 STUB \u2014 Clear Linked Account",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -1664,7 +1664,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Unlock Account",
+                "summary": "\u23f3 STUB \u2014 Unlock Account",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -1737,7 +1737,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Resume Dependent Account",
+                "summary": "\u23f3 STUB \u2014 Resume Dependent Account",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -1876,7 +1876,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Stop CPMTask",
+                "summary": "\u2705 PARTIAL \u2014 Stop CPMTask",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -1962,7 +1962,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Stop CPMTask",
+                "summary": "\u23f3 STUB \u2014 Stop CPMTask",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -2126,7 +2126,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Resume CPMAuto Management",
+                "summary": "\u2705 PARTIAL \u2014 Resume CPMAuto Management",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -2286,7 +2286,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get Account Details",
+                "summary": "\u2705 PARTIAL \u2014 Get Account Details",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -2436,7 +2436,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Delete Account",
+                "summary": "\u2705 PARTIAL \u2014 Delete Account",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -2594,7 +2594,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Update Account",
+                "summary": "\u2705 PARTIAL \u2014 Update Account",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -2786,7 +2786,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Change Credentials Immediately",
+                "summary": "\u2705 PARTIAL \u2014 Change Credentials Immediately",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -2953,7 +2953,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Check In an Exclusive Account",
+                "summary": "\u2705 PARTIAL \u2014 Check In an Exclusive Account",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -3039,7 +3039,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Link an Account",
+                "summary": "\u23f3 STUB \u2014 Link an Account",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [
                     {
@@ -3136,7 +3136,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Unlink an Account",
+                "summary": "\u23f3 STUB \u2014 Unlink an Account",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -3300,7 +3300,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Connect Using PSM",
+                "summary": "\u2705 PARTIAL \u2014 Connect Using PSM",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -3473,7 +3473,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get Password Value",
+                "summary": "\u2705 PARTIAL \u2014 Get Password Value",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -3636,7 +3636,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Change Credentials in the Vault",
+                "summary": "\u2705 PARTIAL \u2014 Change Credentials in the Vault",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -3806,7 +3806,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Reconcile Credentials",
+                "summary": "\u2705 PARTIAL \u2014 Reconcile Credentials",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -3892,7 +3892,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Revoke Just in Time Access",
+                "summary": "\u23f3 STUB \u2014 Revoke Just in Time Access",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -4051,7 +4051,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Generate Password",
+                "summary": "\u2705 PARTIAL \u2014 Generate Password",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -4210,7 +4210,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Retrieve Private SSH Key Account",
+                "summary": "\u2705 PARTIAL \u2014 Retrieve Private SSH Key Account",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -4381,7 +4381,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get Secret Versions",
+                "summary": "\u2705 PARTIAL \u2014 Get Secret Versions",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -4545,7 +4545,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Change Credentials and Set Next Password",
+                "summary": "\u2705 PARTIAL \u2014 Change Credentials and Set Next Password",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -4718,7 +4718,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Unlock Account",
+                "summary": "\u2705 PARTIAL \u2014 Unlock Account",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -4870,7 +4870,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Verify Credentials",
+                "summary": "\u2705 PARTIAL \u2014 Verify Credentials",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -4956,7 +4956,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get All Dependent Accounts of a Specific Account",
+                "summary": "\u23f3 STUB \u2014 Get All Dependent Accounts of a Specific Account",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -5076,7 +5076,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Add Dependent Account",
+                "summary": "\u23f3 STUB \u2014 Add Dependent Account",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -5202,7 +5202,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Bulk Sync Dependent Account Secret",
+                "summary": "\u23f3 STUB \u2014 Bulk Sync Dependent Account Secret",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -5314,7 +5314,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Dependent Account Details",
+                "summary": "\u23f3 STUB \u2014 Get Dependent Account Details",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -5422,7 +5422,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Update Dependent Account",
+                "summary": "\u23f3 STUB \u2014 Update Dependent Account",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -5555,7 +5555,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Delete Dependent Account",
+                "summary": "\u23f3 STUB \u2014 Delete Dependent Account",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -5653,7 +5653,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Resume Dependent Account",
+                "summary": "\u23f3 STUB \u2014 Resume Dependent Account",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -5751,7 +5751,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Sync Dependent Account Secret",
+                "summary": "\u23f3 STUB \u2014 Sync Dependent Account Secret",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -5849,7 +5849,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Just in Time Access",
+                "summary": "\u23f3 STUB \u2014 Get Just in Time Access",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -5935,7 +5935,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Discovered Accounts",
+                "summary": "\u23f3 STUB \u2014 Get Discovered Accounts",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -6067,7 +6067,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Add Discovered Accounts",
+                "summary": "\u23f3 STUB \u2014 Add Discovered Accounts",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [],
                 "requestBody": {
@@ -6149,7 +6149,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Delete Discovered Accounts",
+                "summary": "\u23f3 STUB \u2014 Delete Discovered Accounts",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -6222,7 +6222,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Discovered Account Details",
+                "summary": "\u23f3 STUB \u2014 Get Discovered Account Details",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -6306,7 +6306,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Clear Discovered Account",
+                "summary": "\u23f3 STUB \u2014 Clear Discovered Account",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -6392,7 +6392,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get All Bulk Account Uploads for User",
+                "summary": "\u23f3 STUB \u2014 Get All Bulk Account Uploads for User",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -6488,7 +6488,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Create Bulk Upload of Accounts",
+                "summary": "\u23f3 STUB \u2014 Create Bulk Upload of Accounts",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "requestBody": {
@@ -6635,7 +6635,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Bulk Account Upload Result",
+                "summary": "\u23f3 STUB \u2014 Get Bulk Account Upload Result",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -6721,7 +6721,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get All Dependent Accounts in the System",
+                "summary": "\u23f3 STUB \u2014 Get All Dependent Accounts in the System",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -6855,7 +6855,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Add Account",
+                "summary": "\u23f3 STUB \u2014 Add Account",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -6928,7 +6928,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get Account",
+                "summary": "\u23f3 STUB \u2014 Get Account",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -7001,7 +7001,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get Account",
+                "summary": "\u23f3 STUB \u2014 Get Account",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -7085,7 +7085,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Set Account",
+                "summary": "\u23f3 STUB \u2014 Set Account",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -7169,7 +7169,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Remove Account",
+                "summary": "\u23f3 STUB \u2014 Remove Account",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -7255,7 +7255,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Account Activity",
+                "summary": "\u23f3 STUB \u2014 Get Account Activity",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -7341,7 +7341,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Add Pending Account",
+                "summary": "\u23f3 STUB \u2014 Add Pending Account",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -7414,7 +7414,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Add Personal Admin Account",
+                "summary": "\u23f3 STUB \u2014 Add Personal Admin Account",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -7561,7 +7561,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get Account Activity",
+                "summary": "\u2705 PARTIAL \u2014 Get Account Activity",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -7647,7 +7647,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Set Dependent Linked Account",
+                "summary": "\u23f3 STUB \u2014 Set Dependent Linked Account",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -7745,7 +7745,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Clear Dependent Linked Account",
+                "summary": "\u23f3 STUB \u2014 Clear Dependent Linked Account",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -7855,7 +7855,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Set Dependent Linked Account",
+                "summary": "\u23f3 STUB \u2014 Set Dependent Linked Account",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -7953,7 +7953,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Clear Dependent Linked Account",
+                "summary": "\u23f3 STUB \u2014 Clear Dependent Linked Account",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -8051,7 +8051,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Clear Discovered Account",
+                "summary": "\u23f3 STUB \u2014 Clear Discovered Account",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -8124,7 +8124,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Publish Discovered Account",
+                "summary": "\u23f3 STUB \u2014 Publish Discovered Account",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -8210,7 +8210,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get Linked Account",
+                "summary": "\u23f3 STUB \u2014 Get Linked Account",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -8296,7 +8296,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get Account Detail",
+                "summary": "\u23f3 STUB \u2014 Get Account Detail",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -8382,7 +8382,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Applications",
+                "summary": "\u23f3 STUB \u2014 Get Applications",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -8478,7 +8478,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Add Application",
+                "summary": "\u23f3 STUB \u2014 Add Application",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [],
                 "requestBody": {
@@ -8562,7 +8562,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Application Details",
+                "summary": "\u23f3 STUB \u2014 Get Application Details",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -8646,7 +8646,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Delete Application",
+                "summary": "\u23f3 STUB \u2014 Delete Application",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -8732,7 +8732,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Application Authentication Methods",
+                "summary": "\u23f3 STUB \u2014 Get Application Authentication Methods",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -8816,7 +8816,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Add Application Authentication Method",
+                "summary": "\u23f3 STUB \u2014 Add Application Authentication Method",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [
                     {
@@ -8913,7 +8913,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Delete Application Authentication Method",
+                "summary": "\u23f3 STUB \u2014 Delete Application Authentication Method",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -9062,7 +9062,7 @@
                         }
                     }
                 },
-                "summary": "IMPLEMENTED \u2014 Logoff session",
+                "summary": "\u2705 IMPLEMENTED \u2014 Logoff session",
                 "description": "Local fixture authentication; no external identity service. Error text and policy choices are documented in docs/compatibility.md.",
                 "parameters": [],
                 "security": [
@@ -9206,7 +9206,7 @@
                         }
                     }
                 },
-                "summary": "IMPLEMENTED \u2014 Logon CyberArk",
+                "summary": "\u2705 IMPLEMENTED \u2014 Logon CyberArk",
                 "description": "Local fixture authentication; no external identity service. Error text and policy choices are documented in docs/compatibility.md.",
                 "parameters": [],
                 "requestBody": {
@@ -9378,7 +9378,7 @@
                         }
                     }
                 },
-                "summary": "IMPLEMENTED \u2014 Logon LDAP",
+                "summary": "\u2705 IMPLEMENTED \u2014 Logon LDAP",
                 "description": "Local fixture authentication; no external identity service. Error text and policy choices are documented in docs/compatibility.md.",
                 "parameters": [],
                 "requestBody": {
@@ -9550,7 +9550,7 @@
                         }
                     }
                 },
-                "summary": "IMPLEMENTED \u2014 Logon RADIUS",
+                "summary": "\u2705 IMPLEMENTED \u2014 Logon RADIUS",
                 "description": "Local fixture authentication; no external identity service. Error text and policy choices are documented in docs/compatibility.md.",
                 "parameters": [],
                 "requestBody": {
@@ -9696,7 +9696,7 @@
                         }
                     }
                 },
-                "summary": "IMPLEMENTED \u2014 Logoff SAML",
+                "summary": "\u2705 IMPLEMENTED \u2014 Logoff SAML",
                 "description": "Local fixture authentication; no external identity service. Error text and policy choices are documented in docs/compatibility.md. SAML-specific logout response is a local assumption; use common Auth/Logoff for the official verified contract.",
                 "parameters": [],
                 "security": [
@@ -9841,7 +9841,7 @@
                         }
                     }
                 },
-                "summary": "IMPLEMENTED \u2014 Logon SAML",
+                "summary": "\u2705 IMPLEMENTED \u2014 Logon SAML",
                 "description": "Local fixture authentication; no external identity service. Error text and policy choices are documented in docs/compatibility.md.",
                 "parameters": [],
                 "requestBody": {
@@ -10010,7 +10010,7 @@
                         }
                     }
                 },
-                "summary": "IMPLEMENTED \u2014 Logon Windows",
+                "summary": "\u2705 IMPLEMENTED \u2014 Logon Windows",
                 "description": "Local fixture authentication; no external identity service. Error text and policy choices are documented in docs/compatibility.md.",
                 "parameters": [],
                 "requestBody": {
@@ -10149,7 +10149,7 @@
                         }
                     }
                 },
-                "summary": "IMPLEMENTED \u2014 Logoff CyberArk",
+                "summary": "\u2705 IMPLEMENTED \u2014 Logoff CyberArk",
                 "description": "Local fixture authentication; no external identity service. Error text and policy choices are documented in docs/compatibility.md.",
                 "parameters": [],
                 "security": [
@@ -10301,7 +10301,7 @@
                         }
                     }
                 },
-                "summary": "IMPLEMENTED \u2014 Logon CyberArk",
+                "summary": "\u2705 IMPLEMENTED \u2014 Logon CyberArk",
                 "description": "Local fixture authentication; no external identity service. Error text and policy choices are documented in docs/compatibility.md.",
                 "parameters": [],
                 "requestBody": {
@@ -10456,7 +10456,7 @@
                         }
                     }
                 },
-                "summary": "IMPLEMENTED \u2014 Logoff Shared",
+                "summary": "\u2705 IMPLEMENTED \u2014 Logoff Shared",
                 "description": "Local fixture authentication; no external identity service. Error text and policy choices are documented in docs/compatibility.md.",
                 "parameters": [],
                 "security": [
@@ -10586,7 +10586,7 @@
                         }
                     }
                 },
-                "summary": "IMPLEMENTED \u2014 Logon Shared",
+                "summary": "\u2705 IMPLEMENTED \u2014 Logon Shared",
                 "description": "Local fixture authentication; no external identity service. Error text and policy choices are documented in docs/compatibility.md.",
                 "parameters": [],
                 "security": [],
@@ -10653,7 +10653,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get Theme",
+                "summary": "\u23f3 STUB \u2014 Get Theme",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -10724,7 +10724,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Enable Theme",
+                "summary": "\u23f3 STUB \u2014 Enable Theme",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -10795,7 +10795,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Reset Theme",
+                "summary": "\u23f3 STUB \u2014 Reset Theme",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -10868,7 +10868,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Export Theme Image",
+                "summary": "\u23f3 STUB \u2014 Export Theme Image",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -10954,7 +10954,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get Master Policy",
+                "summary": "\u23f3 STUB \u2014 Get Master Policy",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -11038,7 +11038,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Set Master Policy",
+                "summary": "\u23f3 STUB \u2014 Set Master Policy",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -11124,7 +11124,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get Theme",
+                "summary": "\u23f3 STUB \u2014 Get Theme",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -11195,7 +11195,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 New Theme",
+                "summary": "\u23f3 STUB \u2014 New Theme",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -11268,7 +11268,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get Theme",
+                "summary": "\u23f3 STUB \u2014 Get Theme",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -11352,7 +11352,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Set Theme",
+                "summary": "\u23f3 STUB \u2014 Set Theme",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -11436,7 +11436,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Remove Theme",
+                "summary": "\u23f3 STUB \u2014 Remove Theme",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -11522,7 +11522,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Publish Theme",
+                "summary": "\u23f3 STUB \u2014 Publish Theme",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -11608,7 +11608,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Add Auth Methods to Users",
+                "summary": "\u23f3 STUB \u2014 Add Auth Methods to Users",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [],
                 "requestBody": {
@@ -11692,7 +11692,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Delete Auth Methods to Users",
+                "summary": "\u23f3 STUB \u2014 Delete Auth Methods to Users",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [],
                 "requestBody": {
@@ -11776,7 +11776,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Remove FIDO2 Device",
+                "summary": "\u23f3 STUB \u2014 Remove FIDO2 Device",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -11862,7 +11862,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Register FIDO2 Device",
+                "summary": "\u23f3 STUB \u2014 Register FIDO2 Device",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "requestBody": {
@@ -11976,7 +11976,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Start FIDO2 Registration",
+                "summary": "\u23f3 STUB \u2014 Start FIDO2 Registration",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "requestBody": {
@@ -12064,7 +12064,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Remove Own FIDO2 Device",
+                "summary": "\u23f3 STUB \u2014 Remove Own FIDO2 Device",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -12150,7 +12150,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Register Own FIDO2 Device",
+                "summary": "\u23f3 STUB \u2014 Register Own FIDO2 Device",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "requestBody": {
@@ -12338,7 +12338,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get Platform",
+                "summary": "\u2705 PARTIAL \u2014 Get Platform",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -12422,7 +12422,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Set Platform",
+                "summary": "\u23f3 STUB \u2014 Set Platform",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -12508,7 +12508,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Allowed Referrer",
+                "summary": "\u23f3 STUB \u2014 Get Allowed Referrer",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -12579,7 +12579,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Add Allowed Referrer",
+                "summary": "\u23f3 STUB \u2014 Add Allowed Referrer",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [],
                 "requestBody": {
@@ -12663,7 +12663,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Auth Methods",
+                "summary": "\u23f3 STUB \u2014 Get Auth Methods",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -12734,7 +12734,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Add Auth Method",
+                "summary": "\u23f3 STUB \u2014 Add Auth Method",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [],
                 "requestBody": {
@@ -12818,7 +12818,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Specific Auth Method",
+                "summary": "\u23f3 STUB \u2014 Get Specific Auth Method",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -12902,7 +12902,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Update Auth Method",
+                "summary": "\u23f3 STUB \u2014 Update Auth Method",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [
                     {
@@ -12997,7 +12997,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Delete Auth Method",
+                "summary": "\u23f3 STUB \u2014 Delete Auth Method",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -13080,7 +13080,7 @@
                         }
                     }
                 },
-                "summary": "STUB \u2014 List OAuth providers",
+                "summary": "\u23f3 STUB \u2014 List OAuth providers",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -13148,7 +13148,7 @@
                         }
                     }
                 },
-                "summary": "STUB \u2014 Add OAuth provider",
+                "summary": "\u23f3 STUB \u2014 Add OAuth provider",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "requestBody": {
@@ -13229,7 +13229,7 @@
                         }
                     }
                 },
-                "summary": "STUB \u2014 Update OAuth provider",
+                "summary": "\u23f3 STUB \u2014 Update OAuth provider",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -13321,7 +13321,7 @@
                         }
                     }
                 },
-                "summary": "STUB \u2014 Delete OAuth provider",
+                "summary": "\u23f3 STUB \u2014 Delete OAuth provider",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -13407,7 +13407,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get All OpenID Connect Identity Providers",
+                "summary": "\u23f3 STUB \u2014 Get All OpenID Connect Identity Providers",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -13478,7 +13478,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Add OpenID Connect Identity Provider",
+                "summary": "\u23f3 STUB \u2014 Add OpenID Connect Identity Provider",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [],
                 "requestBody": {
@@ -13562,7 +13562,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Specific OpenID Connect Identity Provider",
+                "summary": "\u23f3 STUB \u2014 Get Specific OpenID Connect Identity Provider",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -13646,7 +13646,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Update OpenID Connect Identity Provider",
+                "summary": "\u23f3 STUB \u2014 Update OpenID Connect Identity Provider",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [
                     {
@@ -13741,7 +13741,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Delete OpenID Connect Identity Provider",
+                "summary": "\u23f3 STUB \u2014 Delete OpenID Connect Identity Provider",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -13827,7 +13827,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get Session Timeout",
+                "summary": "\u23f3 STUB \u2014 Get Session Timeout",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -13900,7 +13900,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get Discovery Scan",
+                "summary": "\u23f3 STUB \u2014 Get Discovery Scan",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -13971,7 +13971,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Add Discovery Scan",
+                "summary": "\u23f3 STUB \u2014 Add Discovery Scan",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -14044,7 +14044,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get Discovery Scan",
+                "summary": "\u23f3 STUB \u2014 Get Discovery Scan",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -14128,7 +14128,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Remove Discovery Scan",
+                "summary": "\u23f3 STUB \u2014 Remove Discovery Scan",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -14214,7 +14214,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Stop Discovery Scan",
+                "summary": "\u23f3 STUB \u2014 Stop Discovery Scan",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -14300,7 +14300,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Directories",
+                "summary": "\u23f3 STUB \u2014 Get Directories",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -14371,7 +14371,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Create Directory",
+                "summary": "\u23f3 STUB \u2014 Create Directory",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "requestBody": {
@@ -14491,7 +14491,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Directory Details",
+                "summary": "\u23f3 STUB \u2014 Get Directory Details",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -14575,7 +14575,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Delete Directory",
+                "summary": "\u23f3 STUB \u2014 Delete Directory",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -14661,7 +14661,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Directory Mapping List",
+                "summary": "\u23f3 STUB \u2014 Get Directory Mapping List",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -14745,7 +14745,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Create Directory Mapping",
+                "summary": "\u23f3 STUB \u2014 Create Directory Mapping",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [
                     {
@@ -14842,7 +14842,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Reorder Directory Mappings",
+                "summary": "\u23f3 STUB \u2014 Reorder Directory Mappings",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [
                     {
@@ -14939,7 +14939,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Mapping Details",
+                "summary": "\u23f3 STUB \u2014 Get Mapping Details",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -15035,7 +15035,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Edit Directory Mapping",
+                "summary": "\u23f3 STUB \u2014 Edit Directory Mapping",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -15203,7 +15203,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Delete Directory Mapping",
+                "summary": "\u23f3 STUB \u2014 Delete Directory Mapping",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -15301,7 +15301,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get Directory ID",
+                "summary": "\u23f3 STUB \u2014 Get Directory ID",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -15374,7 +15374,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get Account ACL",
+                "summary": "\u23f3 STUB \u2014 Get Account ACL",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -15482,7 +15482,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Add Account ACL",
+                "summary": "\u23f3 STUB \u2014 Add Account ACL",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -15592,7 +15592,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Remove Account ACL",
+                "summary": "\u23f3 STUB \u2014 Remove Account ACL",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -15714,7 +15714,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get OPM Account Commands",
+                "summary": "\u23f3 STUB \u2014 Get OPM Account Commands",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -15798,7 +15798,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Add OPM Account Commands",
+                "summary": "\u23f3 STUB \u2014 Add OPM Account Commands",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [
                     {
@@ -15895,7 +15895,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Delete OPM Account Commands",
+                "summary": "\u23f3 STUB \u2014 Delete OPM Account Commands",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -15993,7 +15993,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get OPM Rules",
+                "summary": "\u23f3 STUB \u2014 Get OPM Rules",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -16077,7 +16077,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Add OPM Policy",
+                "summary": "\u23f3 STUB \u2014 Add OPM Policy",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [
                     {
@@ -16174,7 +16174,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Delete OPM Policy",
+                "summary": "\u23f3 STUB \u2014 Delete OPM Policy",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -16272,7 +16272,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Onboarding Rule",
+                "summary": "\u23f3 STUB \u2014 Get Onboarding Rule",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -16356,7 +16356,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Add Onboarding Rule",
+                "summary": "\u23f3 STUB \u2014 Add Onboarding Rule",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [],
                 "requestBody": {
@@ -16440,7 +16440,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Update Onboarding Rule",
+                "summary": "\u23f3 STUB \u2014 Update Onboarding Rule",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [
                     {
@@ -16535,7 +16535,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Delete Onboarding Rule",
+                "summary": "\u23f3 STUB \u2014 Delete Onboarding Rule",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -16621,7 +16621,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Import Connection Component",
+                "summary": "\u23f3 STUB \u2014 Import Connection Component",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [],
                 "requestBody": {
@@ -16779,7 +16779,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get All Connection Components",
+                "summary": "\u2705 PARTIAL \u2014 Get All Connection Components",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [],
                 "security": [
@@ -16926,7 +16926,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get All PSM Servers",
+                "summary": "\u2705 PARTIAL \u2014 Get All PSM Servers",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [],
                 "security": [
@@ -17073,7 +17073,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get Session Management Policy of Platform",
+                "summary": "\u2705 PARTIAL \u2014 Get Session Management Policy of Platform",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -17231,7 +17231,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Update Session Management Policy of Platform",
+                "summary": "\u2705 PARTIAL \u2014 Update Session Management Policy of Platform",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -17269,34 +17269,6 @@
                                                 },
                                                 "Enabled": {
                                                     "type": "boolean"
-                                                },
-                                                "OverrideUserParameters": {
-                                                    "type": "array",
-                                                    "description": "Mock extension: per-connector overrides. Port is used in generated mock RDP files.",
-                                                    "items": {
-                                                        "type": "object",
-                                                        "required": [
-                                                            "Name",
-                                                            "Value"
-                                                        ],
-                                                        "properties": {
-                                                            "Name": {
-                                                                "type": "string"
-                                                            },
-                                                            "Value": {
-                                                                "type": "string"
-                                                            },
-                                                            "Visible": {
-                                                                "type": "boolean"
-                                                            },
-                                                            "Required": {
-                                                                "type": "boolean"
-                                                            },
-                                                            "UserParameter": {
-                                                                "type": "boolean"
-                                                            }
-                                                        }
-                                                    }
                                                 }
                                             }
                                         }
@@ -17307,14 +17279,7 @@
                                     "PSMConnectors": [
                                         {
                                             "PSMConnectorID": "PSM-RDP",
-                                            "Enabled": true,
-                                            "OverrideUserParameters": [
-                                                {
-                                                    "Name": "Port",
-                                                    "Value": "3389",
-                                                    "Visible": true
-                                                }
-                                            ]
+                                            "Enabled": true
                                         }
                                     ]
                                 }
@@ -17393,7 +17358,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Global Catalog Connectivity Details",
+                "summary": "\u23f3 STUB \u2014 Get Global Catalog Connectivity Details",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -17464,7 +17429,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Add Global Catalog Connectivity Details",
+                "summary": "\u23f3 STUB \u2014 Add Global Catalog Connectivity Details",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "requestBody": {
@@ -17575,7 +17540,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get PTA Administration",
+                "summary": "\u23f3 STUB \u2014 Get PTA Administration",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -17648,7 +17613,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Update PTA Administration Property",
+                "summary": "\u23f3 STUB \u2014 Update PTA Administration Property",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -17734,7 +17699,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Delete PTA Administration Property",
+                "summary": "\u23f3 STUB \u2014 Delete PTA Administration Property",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -17832,7 +17797,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Set PTASMTP",
+                "summary": "\u23f3 STUB \u2014 Set PTASMTP",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -17905,7 +17870,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Add PTAExcluded Target",
+                "summary": "\u23f3 STUB \u2014 Add PTAExcluded Target",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -17978,7 +17943,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Add PTAIncluded Target",
+                "summary": "\u23f3 STUB \u2014 Add PTAIncluded Target",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -18051,7 +18016,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Remove PTAIncluded Target",
+                "summary": "\u23f3 STUB \u2014 Remove PTAIncluded Target",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -18137,7 +18102,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Add PTASyslog",
+                "summary": "\u23f3 STUB \u2014 Add PTASyslog",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -18210,7 +18175,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Remove PTASyslog",
+                "summary": "\u23f3 STUB \u2014 Remove PTASyslog",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -18370,7 +18335,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get Platforms",
+                "summary": "\u2705 PARTIAL \u2014 Get Platforms",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -18480,7 +18445,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Export Platform",
+                "summary": "\u23f3 STUB \u2014 Export Platform",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -18566,7 +18531,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Import Platform",
+                "summary": "\u23f3 STUB \u2014 Import Platform",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [],
                 "requestBody": {
@@ -18648,7 +18613,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Import Stored Platform Alongside Existing Platform",
+                "summary": "\u23f3 STUB \u2014 Import Stored Platform Alongside Existing Platform",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [],
                 "requestBody": {
@@ -18732,7 +18697,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Stored Platform Details",
+                "summary": "\u23f3 STUB \u2014 Get Stored Platform Details",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -18803,7 +18768,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Delete Stored Platform",
+                "summary": "\u23f3 STUB \u2014 Delete Stored Platform",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -18950,7 +18915,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get Platform Summary",
+                "summary": "\u2705 PARTIAL \u2014 Get Platform Summary",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [],
                 "security": [
@@ -19097,7 +19062,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Rename Platform",
+                "summary": "\u2705 PARTIAL \u2014 Rename Platform",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -19261,7 +19226,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Delete Target Platform",
+                "summary": "\u2705 PARTIAL \u2014 Delete Target Platform",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -19420,7 +19385,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 New Platform Secret",
+                "summary": "\u2705 PARTIAL \u2014 New Platform Secret",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -19506,7 +19471,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Export Platform",
+                "summary": "\u23f3 STUB \u2014 Export Platform",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -19592,7 +19557,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Update Platform with Stored Platform",
+                "summary": "\u23f3 STUB \u2014 Update Platform with Stored Platform",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -19752,7 +19717,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get Platform Details",
+                "summary": "\u2705 PARTIAL \u2014 Get Platform Details",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -19912,7 +19877,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get Dependent Platforms",
+                "summary": "\u2705 PARTIAL \u2014 Get Dependent Platforms",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -20064,7 +20029,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Delete Dependent Platform",
+                "summary": "\u2705 PARTIAL \u2014 Delete Dependent Platform",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -20224,7 +20189,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Duplicate Dependent Platforms",
+                "summary": "\u2705 PARTIAL \u2014 Duplicate Dependent Platforms",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -20405,7 +20370,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get Group Platforms",
+                "summary": "\u2705 PARTIAL \u2014 Get Group Platforms",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -20557,7 +20522,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Delete Group Platform",
+                "summary": "\u2705 PARTIAL \u2014 Delete Group Platform",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -20717,7 +20682,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Activate Group Platform",
+                "summary": "\u2705 PARTIAL \u2014 Activate Group Platform",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -20877,7 +20842,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Deactivate Group Platform",
+                "summary": "\u2705 PARTIAL \u2014 Deactivate Group Platform",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -21037,7 +21002,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Duplicate Group Platforms",
+                "summary": "\u2705 PARTIAL \u2014 Duplicate Group Platforms",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -21218,7 +21183,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get Rotational Group Platforms",
+                "summary": "\u2705 PARTIAL \u2014 Get Rotational Group Platforms",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -21370,7 +21335,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Delete Rotational Group Platform",
+                "summary": "\u2705 PARTIAL \u2014 Delete Rotational Group Platform",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -21530,7 +21495,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Activate Rotational Group Platform",
+                "summary": "\u2705 PARTIAL \u2014 Activate Rotational Group Platform",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -21690,7 +21655,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Deactivate Rotational Group Platform",
+                "summary": "\u2705 PARTIAL \u2014 Deactivate Rotational Group Platform",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -21850,7 +21815,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Duplicate Rotational Group Platforms",
+                "summary": "\u2705 PARTIAL \u2014 Duplicate Rotational Group Platforms",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -22031,7 +21996,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get Target Platforms",
+                "summary": "\u2705 PARTIAL \u2014 Get Target Platforms",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -22203,7 +22168,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Activate Target Platform",
+                "summary": "\u2705 PARTIAL \u2014 Activate Target Platform",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -22363,7 +22328,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Deactivate Target Platform",
+                "summary": "\u2705 PARTIAL \u2014 Deactivate Target Platform",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -22523,7 +22488,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Duplicate Target Platforms",
+                "summary": "\u2705 PARTIAL \u2014 Duplicate Target Platforms",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -22630,7 +22595,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Export Platform",
+                "summary": "\u23f3 STUB \u2014 Export Platform",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -22716,7 +22681,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Export Platform",
+                "summary": "\u23f3 STUB \u2014 Export Platform",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -22802,7 +22767,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Test PSMRecording",
+                "summary": "\u23f3 STUB \u2014 Test PSMRecording",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -22888,7 +22853,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Recordings",
+                "summary": "\u23f3 STUB \u2014 Get Recordings",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -23058,7 +23023,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Recording Details",
+                "summary": "\u23f3 STUB \u2014 Get Recording Details",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -23144,7 +23109,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Play Recording",
+                "summary": "\u23f3 STUB \u2014 Play Recording",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -23230,7 +23195,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Recording Activities",
+                "summary": "\u23f3 STUB \u2014 Get Recording Activities",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -23316,7 +23281,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Recording Properties",
+                "summary": "\u23f3 STUB \u2014 Get Recording Properties",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -23402,7 +23367,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Download Report",
+                "summary": "\u23f3 STUB \u2014 Download Report",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -23488,7 +23453,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Reports",
+                "summary": "\u23f3 STUB \u2014 Get Reports",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -23586,7 +23551,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Tasks",
+                "summary": "\u23f3 STUB \u2014 Get Tasks",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -23682,7 +23647,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Create Task",
+                "summary": "\u23f3 STUB \u2014 Create Task",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "requestBody": {
@@ -23841,7 +23806,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get Report Task",
+                "summary": "\u23f3 STUB \u2014 Get Report Task",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -23925,7 +23890,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Set Report Task",
+                "summary": "\u23f3 STUB \u2014 Set Report Task",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -24009,7 +23974,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Remove Report Task",
+                "summary": "\u23f3 STUB \u2014 Remove Report Task",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -24095,7 +24060,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Incoming Request List",
+                "summary": "\u23f3 STUB \u2014 Get Incoming Request List",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -24193,7 +24158,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get My Requests",
+                "summary": "\u23f3 STUB \u2014 Get My Requests",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -24289,7 +24254,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Create an Access Request",
+                "summary": "\u23f3 STUB \u2014 Create an Access Request",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [],
                 "requestBody": {
@@ -24373,7 +24338,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Multiple Account Access Status",
+                "summary": "\u23f3 STUB \u2014 Get Multiple Account Access Status",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -24528,7 +24493,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Confirm Request in Bulk",
+                "summary": "\u23f3 STUB \u2014 Confirm Request in Bulk",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [],
                 "requestBody": {
@@ -24612,7 +24577,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Reject Request in Bulk",
+                "summary": "\u23f3 STUB \u2014 Reject Request in Bulk",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation. Reference request example could not be parsed; schema intentionally open.",
                 "parameters": [],
                 "requestBody": {
@@ -24696,7 +24661,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Confirmation Request Details",
+                "summary": "\u23f3 STUB \u2014 Get Confirmation Request Details",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -24782,7 +24747,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Confirm Request",
+                "summary": "\u23f3 STUB \u2014 Confirm Request",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -24883,7 +24848,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Reject Request",
+                "summary": "\u23f3 STUB \u2014 Reject Request",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -24984,7 +24949,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Details of My Requests",
+                "summary": "\u23f3 STUB \u2014 Get Details of My Requests",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -25068,7 +25033,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Delete My Request",
+                "summary": "\u23f3 STUB \u2014 Delete My Request",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -25228,7 +25193,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get All Safe Members",
+                "summary": "\u2705 PARTIAL \u2014 Get All Safe Members",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -25446,7 +25411,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Add Safe Member",
+                "summary": "\u2705 PARTIAL \u2014 Add Safe Member",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -25708,7 +25673,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get Safe Member",
+                "summary": "\u2705 PARTIAL \u2014 Get Safe Member",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -25890,7 +25855,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Update Safe Member",
+                "summary": "\u2705 PARTIAL \u2014 Update Safe Member",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -26144,7 +26109,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Delete Safe Member",
+                "summary": "\u2705 PARTIAL \u2014 Delete Safe Member",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -26242,7 +26207,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get Safe Member",
+                "summary": "\u23f3 STUB \u2014 Get Safe Member",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -26326,7 +26291,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Add Safe Member",
+                "summary": "\u23f3 STUB \u2014 Add Safe Member",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -26412,7 +26377,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get Safe Member",
+                "summary": "\u23f3 STUB \u2014 Get Safe Member",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -26508,7 +26473,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Set Safe Member",
+                "summary": "\u23f3 STUB \u2014 Set Safe Member",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -26604,7 +26569,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Remove Safe Member",
+                "summary": "\u23f3 STUB \u2014 Remove Safe Member",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -26776,7 +26741,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get Safe by Platform ID",
+                "summary": "\u2705 PARTIAL \u2014 Get Safe by Platform ID",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -26948,7 +26913,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get All Safes",
+                "summary": "\u2705 PARTIAL \u2014 Get All Safes",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -27166,7 +27131,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Add Safe",
+                "summary": "\u2705 PARTIAL \u2014 Add Safe",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [],
                 "requestBody": {
@@ -27353,7 +27318,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get Safe Details",
+                "summary": "\u2705 PARTIAL \u2014 Get Safe Details",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -27535,7 +27500,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Update Safe",
+                "summary": "\u2705 PARTIAL \u2014 Update Safe",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -27736,7 +27701,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Delete Safe",
+                "summary": "\u2705 PARTIAL \u2014 Delete Safe",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -27822,7 +27787,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Search for a Safe",
+                "summary": "\u23f3 STUB \u2014 Search for a Safe",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -27906,7 +27871,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Add Safe",
+                "summary": "\u23f3 STUB \u2014 Add Safe",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -27979,7 +27944,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get Safe",
+                "summary": "\u23f3 STUB \u2014 Get Safe",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -28063,7 +28028,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Set Safe",
+                "summary": "\u23f3 STUB \u2014 Set Safe",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -28147,7 +28112,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Remove Safe",
+                "summary": "\u23f3 STUB \u2014 Remove Safe",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -28233,7 +28198,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Security Events",
+                "summary": "\u23f3 STUB \u2014 Get Security Events",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -28343,7 +28308,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Update Security Event Status",
+                "summary": "\u23f3 STUB \u2014 Update Security Event Status",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -28450,7 +28415,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Update Risk Event Status",
+                "summary": "\u23f3 STUB \u2014 Update Risk Event Status",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -28557,7 +28522,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Risk Events",
+                "summary": "\u23f3 STUB \u2014 Get Risk Events",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -28679,7 +28644,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Risk Summary",
+                "summary": "\u23f3 STUB \u2014 Get Risk Summary",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -28752,7 +28717,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Security Settings",
+                "summary": "\u23f3 STUB \u2014 Get Security Settings",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -28825,7 +28790,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Update Security Remediation Settings",
+                "summary": "\u23f3 STUB \u2014 Update Security Remediation Settings",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -28898,7 +28863,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Update Suspicious Activity Rule",
+                "summary": "\u23f3 STUB \u2014 Update Suspicious Activity Rule",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "requestBody": {
@@ -29035,7 +29000,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Add Suspicious Activities Rule",
+                "summary": "\u23f3 STUB \u2014 Add Suspicious Activities Rule",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "requestBody": {
@@ -29171,7 +29136,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get PTA Security Configuration",
+                "summary": "\u23f3 STUB \u2014 Get PTA Security Configuration",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -29244,7 +29209,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get PTASecurity Configuration Category",
+                "summary": "\u23f3 STUB \u2014 Get PTASecurity Configuration Category",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -29317,7 +29282,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get PTASecurity Configuration Category",
+                "summary": "\u23f3 STUB \u2014 Get PTASecurity Configuration Category",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -29403,7 +29368,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Add PTAPrivileged Group",
+                "summary": "\u23f3 STUB \u2014 Add PTAPrivileged Group",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -29476,7 +29441,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Remove PTAPrivileged Group",
+                "summary": "\u23f3 STUB \u2014 Remove PTAPrivileged Group",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -29562,7 +29527,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Add PTAPrivileged User",
+                "summary": "\u23f3 STUB \u2014 Add PTAPrivileged User",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -29635,7 +29600,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Remove PTAPrivileged User",
+                "summary": "\u23f3 STUB \u2014 Remove PTAPrivileged User",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -29721,7 +29686,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Reset PTASecurity Configuration Category",
+                "summary": "\u23f3 STUB \u2014 Reset PTASecurity Configuration Category",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -29807,7 +29772,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Update PTA Security Configuration Property",
+                "summary": "\u23f3 STUB \u2014 Update PTA Security Configuration Property",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -29893,7 +29858,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Delete PTA Security Configuration Property",
+                "summary": "\u23f3 STUB \u2014 Delete PTA Security Configuration Property",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -29991,7 +29956,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Remove PTAExcluded Target",
+                "summary": "\u23f3 STUB \u2014 Remove PTAExcluded Target",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -30077,7 +30042,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Active Sessions",
+                "summary": "\u23f3 STUB \u2014 Get Active Sessions",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -30247,7 +30212,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Monitor an Active Session",
+                "summary": "\u23f3 STUB \u2014 Monitor an Active Session",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -30333,7 +30298,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Suspend session",
+                "summary": "\u23f3 STUB \u2014 Suspend session",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -30419,7 +30384,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Terminate an Active Session",
+                "summary": "\u23f3 STUB \u2014 Terminate an Active Session",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -30505,7 +30470,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Active Session",
+                "summary": "\u23f3 STUB \u2014 Get Active Session",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -30591,7 +30556,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Active Session Activities",
+                "summary": "\u23f3 STUB \u2014 Get Active Session Activities",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -30677,7 +30642,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Active Session Properties",
+                "summary": "\u23f3 STUB \u2014 Get Active Session Properties",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -30763,7 +30728,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Resume PSMSession",
+                "summary": "\u23f3 STUB \u2014 Resume PSMSession",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -30849,7 +30814,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 PAM - Self-Hosted System Health Details",
+                "summary": "\u23f3 STUB \u2014 PAM - Self-Hosted System Health Details",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -30935,7 +30900,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 PAM - Self-Hosted System Health Summary",
+                "summary": "\u23f3 STUB \u2014 PAM - Self-Hosted System Health Summary",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -31082,7 +31047,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get Groups",
+                "summary": "\u2705 PARTIAL \u2014 Get Groups",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -31276,7 +31241,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Create Group",
+                "summary": "\u2705 PARTIAL \u2014 Create Group",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [],
                 "requestBody": {
@@ -31447,7 +31412,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get Group Details",
+                "summary": "\u2705 PARTIAL \u2014 Get Group Details",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -31617,7 +31582,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Update Group",
+                "summary": "\u2705 PARTIAL \u2014 Update Group",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -31785,7 +31750,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Delete Group",
+                "summary": "\u2705 PARTIAL \u2014 Delete Group",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -31945,7 +31910,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Add Member to Group",
+                "summary": "\u2705 PARTIAL \u2014 Add Member to Group",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -32122,7 +32087,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Remove User from Group",
+                "summary": "\u2705 PARTIAL \u2014 Remove User from Group",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -32220,7 +32185,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Add Group Member",
+                "summary": "\u23f3 STUB \u2014 Add Group Member",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -32380,7 +32345,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get User Types",
+                "summary": "\u2705 PARTIAL \u2014 Get User Types",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [],
                 "security": [
@@ -32527,7 +32492,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get Users",
+                "summary": "\u2705 PARTIAL \u2014 Get Users",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -32745,7 +32710,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Add User",
+                "summary": "\u2705 PARTIAL \u2014 Add User",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [],
                 "requestBody": {
@@ -32977,7 +32942,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Generate an MFA Caching SSH Key",
+                "summary": "\u23f3 STUB \u2014 Generate an MFA Caching SSH Key",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "requestBody": {
@@ -33063,7 +33028,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Delete an MFA Caching SSH key",
+                "summary": "\u23f3 STUB \u2014 Delete an MFA Caching SSH key",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -33136,7 +33101,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Delete All MFA Caching SSH Keys",
+                "summary": "\u23f3 STUB \u2014 Delete All MFA Caching SSH Keys",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -33209,7 +33174,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Generate an MFA Caching SSH Key for Another User",
+                "summary": "\u23f3 STUB \u2014 Generate an MFA Caching SSH Key for Another User",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -33311,7 +33276,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Delete an MFA Caching SSH Key for Another User",
+                "summary": "\u23f3 STUB \u2014 Delete an MFA Caching SSH Key for Another User",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -33471,7 +33436,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get User",
+                "summary": "\u2705 PARTIAL \u2014 Get User",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -33631,7 +33596,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get User Details",
+                "summary": "\u2705 PARTIAL \u2014 Get User Details",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -33789,7 +33754,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Update User",
+                "summary": "\u2705 PARTIAL \u2014 Update User",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -34109,7 +34074,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Delete User",
+                "summary": "\u2705 PARTIAL \u2014 Delete User",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -34261,7 +34226,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Reset User Password",
+                "summary": "\u2705 PARTIAL \u2014 Reset User Password",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -34434,7 +34399,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Activate User",
+                "summary": "\u2705 PARTIAL \u2014 Activate User",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -34586,7 +34551,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Disable User",
+                "summary": "\u2705 PARTIAL \u2014 Disable User",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -34738,7 +34703,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Enable User",
+                "summary": "\u2705 PARTIAL \u2014 Enable User",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [
                     {
@@ -34824,7 +34789,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Logged On User Details",
+                "summary": "\u23f3 STUB \u2014 Get Logged On User Details",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -34897,7 +34862,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 New User",
+                "summary": "\u23f3 STUB \u2014 New User",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -34970,7 +34935,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get User",
+                "summary": "\u23f3 STUB \u2014 Get User",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -35054,7 +35019,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Set User",
+                "summary": "\u23f3 STUB \u2014 Set User",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -35138,7 +35103,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Remove User",
+                "summary": "\u23f3 STUB \u2014 Remove User",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [
                     {
@@ -35224,7 +35189,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Get Public SSH Key",
+                "summary": "\u23f3 STUB \u2014 Get Public SSH Key",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -35308,7 +35273,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Add a Public SSH Key",
+                "summary": "\u23f3 STUB \u2014 Add a Public SSH Key",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -35409,7 +35374,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Delete Public SSH Key",
+                "summary": "\u23f3 STUB \u2014 Delete Public SSH Key",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -35581,7 +35546,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get User Login Info",
+                "summary": "\u2705 PARTIAL \u2014 Get User Login Info",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [],
                 "security": [
@@ -35728,7 +35693,7 @@
                         }
                     }
                 },
-                "summary": "PARTIAL \u2014 Get Logged On User",
+                "summary": "\u2705 PARTIAL \u2014 Get Logged On User",
                 "description": "Persistent local simulator. Supports the documented core workflow; see docs/core-modules.md for supported fields, simplified permissions and mock-only PSM behavior. Legacy APIs, package imports and external CPM/PSM execution are not simulated.",
                 "parameters": [],
                 "security": [
@@ -35801,7 +35766,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get Server Web Service",
+                "summary": "\u23f3 STUB \u2014 Get Server Web Service",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -35874,7 +35839,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Logo",
+                "summary": "\u23f3 STUB \u2014 Logo",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [
                     {
@@ -35960,7 +35925,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Server",
+                "summary": "\u23f3 STUB \u2014 Server",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -36033,7 +35998,7 @@
                         "description": "Target success/error response is not yet verified. Runtime returns the explicit 501 response after authentication."
                     }
                 },
-                "summary": "STUB \u2014 Verify",
+                "summary": "\u23f3 STUB \u2014 Verify",
                 "description": "HTTP contract from a public reference collection. Success response and required-field details need official verification before implementation.",
                 "parameters": [],
                 "security": [
@@ -36106,7 +36071,7 @@
                         "description": "Target response contract not yet verified."
                     }
                 },
-                "summary": "STUB \u2014 Get Server",
+                "summary": "\u23f3 STUB \u2014 Get Server",
                 "description": "Request target verified against public client source. Required fields, response contract and exact product version need official verification before implementation.",
                 "parameters": [],
                 "security": [

@@ -7,10 +7,10 @@ Log in as `pamadmin` / `PamAdmin123!` and paste the returned raw token into Swag
 | Request | Example |
 |---|---|
 | Users and details | `GET /PasswordVault/API/Users`, `GET /PasswordVault/API/Users/1` |
-| User groups and membership | `GET /PasswordVault/API/UserGroups/3` (Windows Operators) |
+| User groups and membership | `GET /PasswordVault/API/UserGroups/3` (GG_PAM_PRD_WINDOWS_OPERATORS) |
 | Safes | `GET /PasswordVault/API/Safes` |
-| Safe members and permissions | `GET /PasswordVault/API/Safes/APP-PROD-WINDOWS/Members` |
-| Accounts | `GET /PasswordVault/API/Accounts?filter=safeName%20eq%20APP-PROD-WINDOWS` |
+| Safe members and permissions | `GET /PasswordVault/API/Safes/PAM-PRD-ERP-WIN/Members` |
+| Accounts | `GET /PasswordVault/API/Accounts?filter=safeName%20eq%20PAM-PRD-ERP-WIN` |
 | Account and fictional password | `GET /PasswordVault/API/Accounts/1_1`, `POST /PasswordVault/API/Accounts/1_1/Password/Retrieve` |
 | Platforms | `GET /PasswordVault/API/Platforms/targets` |
 | Platform PSM policy | `GET /PasswordVault/API/Platforms/Targets/1/PrivilegedSessionManagement` |
@@ -22,40 +22,19 @@ Accounts support JSON Patch for `name`, `address`, `userName`, `platformAccountP
 
 Platforms support lists by category, details, settings reads, rename, activation/deactivation, duplicate, unused-platform deletion and generated fictional secrets. Eight target platforms cover Windows domain/local, Unix SSH, Linux services, Oracle, SQL Server, application and network accounts. Three extra platform examples cover dependent, group and rotational categories.
 
-## PSM and user parameter overrides
+## PSM policy and fixture configuration
 
-Two PSM servers and one PSMP server are defined on reserved `.example` addresses. Connectors include RDP, SSH, WinSCP, SQL Server Management Studio, Oracle, and illustrative web/VNC connectors. These are metadata examples, not executable vendor packages. `SSH` is associated with PSMP; desktop connectors use PSM.
+Two PSM servers and one PSMP server are defined on reserved `.corp.acme.example` addresses. Connectors include RDP, SSH, WinSCP, SQL Server Management Studio, Oracle and illustrative web/VNC metadata. These are not executable vendor packages.
 
-Replace a platform's PSM policy with:
+The public policy PUT/GET uses only `PSMServerId`, optional request `PSMServerName`, and `PSMConnectors` entries with `PSMConnectorID` and `Enabled`, as documented by CyberArk. The reference collection contains that exact field structure with environment variables for local values. Unknown connector-policy fields are rejected.
 
-```http
-PUT /PasswordVault/API/Platforms/Targets/1/PrivilegedSessionManagement
-Content-Type: application/json
-Authorization: <raw token>
-```
-
-```json
-{
-  "PSMServerId": "PSM-LAB-02",
-  "PSMConnectors": [
-    {
-      "PSMConnectorID": "PSM-RDP",
-      "Enabled": true,
-      "OverrideUserParameters": [
-        { "Name": "Port", "Value": "3390", "Visible": true, "Required": false }
-      ]
-    }
-  ]
-}
-```
-
-The server and connector IDs must exist, associations must be compatible, flags must be booleans and override names must be unique. PUT replaces the connector list. GET returns persisted overrides. `OverrideUserParameters` is an explicitly **mock-specific extension** of the reviewed public PSM policy contract; no vendor compatibility claim is made for that extension. A Port override is reflected in the mock RDP descriptor returned by `POST /Accounts/1_1/PSMConnect` with `{"ConnectionComponent":"PSM-RDP"}`. No session is opened. PSMP uses SSH and does not produce an RDP file; attempting it returns 400. Other override metadata is persisted, not executed.
+Per-connector user parameter overrides are stored separately in the private `_overrideUserParameters` fixture configuration. They are **not** inserted into a CyberArk API request or response: the reviewed public policy endpoint does not document them. The configured Port is used in the mock RDP descriptor. No session is opened. PSMP uses an SSH client and cannot produce a PSM RDP descriptor.
 
 ## Permissions and limits
 
 - `pamadmin` and `vaultadmin` are fixed simulator administrators. They manage the identity/platform catalog and bypass safe permissions. Built-in administrators cannot be deleted or disabled. `vaultAuthorization` does not grant administrator status in this mock.
 - Other users receive safe permissions through direct membership or user groups. Permissions combine by union; expiration is honored. Group membership changes affect access immediately. Group nesting and external directory membership are not modeled.
-- Safe Owners manage all eight safes. Auditors can list accounts, members and activity but cannot retrieve secrets. Windows/Linux/Database/Application operator groups only see their relevant safes. Disabled, locked and expired fixture users remain authentication test cases.
+- GG_PAM_SAFE_OWNERS manage all eight safes. GG_PAM_AUDITORS can list accounts, members and activity but cannot retrieve secrets. Windows/Linux/Database/Application operator groups only see their relevant safes. Disabled, locked and expired fixture users remain authentication test cases.
 - Lists accept `search`, `sort`, `offset`/`limit` (or `pageOffset`/`pageSize`) and simple `field eq value` filters joined with `and`. The default page size is 100, maximum 1000; size zero returns all local records. Count is the total after filtering.
 - Password accounts are supported. SSH-key credentials, bulk/dependent account workflows, discovery/onboarding, package import/export, legacy CRUD, platform settings PATCH and connection-component import remain explicit 501 stubs. They are visible in the inventory and are not reported as implemented.
 - Request/response support is a local subset. The 79 working routes remain marked PARTIAL until broader vendor-contract verification. Errors use the shared `ErrorCode`/`ErrorMessage` format. Most non-authentication codes and status details are project-defined.

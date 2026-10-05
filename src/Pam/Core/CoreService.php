@@ -551,6 +551,9 @@ final class CoreService
             }
         }
         unset($account['secret']);
+        if ([] === ($account['platformAccountProperties'] ?? null)) {
+            $account['platformAccountProperties'] = (object) [];
+        }
 
         return $account;
     }
@@ -579,7 +582,7 @@ final class CoreService
             if (isset($b['secretType']) && 'password' !== $b['secretType']) {
                 $this->bad('Only password accounts are supported.');
             }
-            $a = ['id' => '99_'.bin2hex(random_bytes(6)), 'name' => $b['name'] ?? $address.'-'.$username, 'address' => $address, 'userName' => $username, 'platformId' => $platform['platformID'], 'safeName' => $safe['safeName'], 'secretType' => 'password', 'platformAccountProperties' => $b['platformAccountProperties'] ?? [], 'secretManagement' => $b['secretManagement'] ?? ['automaticManagementEnabled' => true], 'createdTime' => time(), 'modifiedTime' => time(), '_secret' => $this->required($b, 'secret'), '_versions' => [], '_activities' => [], '_lockedBy' => null];
+            $a = ['id' => '99_'.bin2hex(random_bytes(6)), 'name' => $b['name'] ?? $address.'-'.$username, 'address' => $address, 'userName' => $username, 'platformId' => $platform['platformID'], 'safeName' => $safe['safeName'], 'secretType' => 'password', 'remoteMachinesAccess' => $b['remoteMachinesAccess'] ?? ['remoteMachines' => '', 'accessRestrictedToRemoteMachines' => false], 'platformAccountProperties' => $b['platformAccountProperties'] ?? [], 'secretManagement' => $b['secretManagement'] ?? ['automaticManagementEnabled' => true], 'createdTime' => time(), 'modifiedTime' => time(), '_secret' => $this->required($b, 'secret'), '_versions' => [], '_activities' => [], '_lockedBy' => null];
             $this->validateAccount($a);
             $this->store->save('accounts', $a);
 
@@ -711,7 +714,7 @@ final class CoreService
                 if ($component['PSMConnectorID'] !== $connector) {
                     continue;
                 }
-                foreach ($component['OverrideUserParameters'] ?? [] as $parameter) {
+                foreach ($platform['_overrideUserParameters'][$connector] ?? [] as $parameter) {
                     if ('Port' === $parameter['Name']) {
                         $port = $parameter['Value'];
                     }
@@ -784,17 +787,15 @@ final class CoreService
         $this->requireAdmin($actor);
         if ('psm' === $kind) {
             $rows = $this->store->all('servers' === strtolower($p[0]) ? 'servers' : 'connectors');
-            $rows = array_map(static function (array $row): array {
-                $row['Id'] = $row['id'];
-                unset($row['id'], $row['ID'], $row['_protocols']);
+            $isServers = 'servers' === strtolower($p[0]);
+            $rows = array_map(static fn (array $row): array => $isServers
+                ? ['Id' => $row['id'], 'Name' => $row['Name'], 'Address' => $row['Address']]
+                : ['Id' => $row['id'], 'DisplayName' => $row['DisplayName']], $rows);
 
-                return $row;
-            }, $rows);
-
-            return new JsonResponse(['PSM'.ucfirst(strtolower($p[0])) => $rows, 'Total' => count($rows)]);
+            return new JsonResponse($isServers ? ['PSMServers' => $rows] : ['PSMConnectors' => $rows, 'Total' => count($rows)]);
         }
         if ([] === $p) {
-            return $this->listing($r, array_map($this->platformView(...), $this->store->all('platforms')), 'Platforms', 'Total');
+            return new JsonResponse(['Platforms' => array_map(static fn (array $platform): array => ['general' => ['id' => $platform['platformID'], 'name' => $platform['name'], 'systemType' => $platform['systemType'], 'active' => $platform['active'], 'description' => '', 'platformBaseID' => $platform['platformID'], 'platformType' => 'targets' === $platform['category'] ? 'regular' : 'group']], $this->store->all('platforms'))]);
         }
         $category = strtolower($p[0]);
         if (in_array($category, ['targets', 'dependents', 'groups', 'rotationalgroups'], true)) {
@@ -838,7 +839,9 @@ final class CoreService
                     $this->bad('Duplicate, incomplete or incompatible connector/server association.');
                 }
                 $seen[$id] = true;
-                $this->validateOverrides($connector['OverrideUserParameters'] ?? []);
+                if (array_diff(array_keys($connector), ['PSMConnectorID', 'Enabled'])) {
+                    $this->bad('Connector policy accepts only PSMConnectorID and Enabled.');
+                }
             }
             $platform['psm'] = ['PSMServerId' => $server['id'], 'PSMConnectors' => $b['PSMConnectors']];
             $this->store->save('platforms', $platform);
@@ -887,35 +890,10 @@ final class CoreService
         } elseif ('PUT' === $method) {
             $platform['name'] = $this->required($b, 'Name');
         } elseif ('GET' === $method) {
-            return new JsonResponse($this->platformView($platform));
+            return new JsonResponse(['PlatformID' => $platform['platformID'], 'Properties' => (object) ['PolicyID' => $platform['platformID']], 'Active' => $platform['active']]);
         }
         $this->store->save('platforms', $platform);
 
         return new JsonResponse($this->platformView($platform), 'duplicate' === $action ? 201 : 200);
-    }
-
-    private function validateOverrides(mixed $overrides): void
-    {
-        if (!is_array($overrides) || !array_is_list($overrides)) {
-            $this->bad('OverrideUserParameters must be an array.');
-        }
-        $names = [];
-        foreach ($overrides as $parameter) {
-            if (!is_array($parameter)) {
-                $this->bad('Invalid override parameter.');
-            }
-            $name = $this->required($parameter, 'Name');
-            if (isset($names[$name]) || !is_string($parameter['Value'] ?? null)) {
-                $this->bad('Override names must be unique and values must be strings.');
-            }
-            if ('Port' === $name && (!ctype_digit($parameter['Value']) || (int) $parameter['Value'] < 1 || (int) $parameter['Value'] > 65535)) {
-                $this->bad('Port must be between 1 and 65535.');
-            }
-            if (preg_match('/[\x00-\x1f]/', $parameter['Value'])) {
-                $this->bad('Override values cannot contain control characters.');
-            }
-            $this->booleans($parameter, ['UserParameter', 'Visible', 'Required']);
-            $names[$name] = true;
-        }
     }
 }

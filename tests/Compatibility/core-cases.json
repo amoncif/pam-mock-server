@@ -13,8 +13,8 @@
     "body": {
       "userName": "svc.new",
       "address": "new.acme.example",
-      "safeName": "APP-PROD-WINDOWS",
-      "platformId": "MockWinDomain",
+      "safeName": "PAM-PRD-ERP-WIN",
+      "platformId": "ACME-WinDomain",
       "secret": "LocalMock123!"
     },
     "status": 201
@@ -374,14 +374,14 @@
   {
     "id": "safe.members.get.all.safe.members",
     "method": "GET",
-    "path": "Safes/APP-PROD-WINDOWS/Members",
+    "path": "Safes/PAM-PRD-ERP-WIN/Members",
     "body": null,
     "status": 200
   },
   {
     "id": "safe.members.add.safe.member",
     "method": "POST",
-    "path": "Safes/APP-PROD-WINDOWS/Members",
+    "path": "Safes/PAM-PRD-ERP-WIN/Members",
     "body": {
       "permissions": {
         "listAccounts": true,
@@ -394,21 +394,21 @@
   {
     "id": "safe.members.delete.safe.member",
     "method": "DELETE",
-    "path": "Safes/APP-PROD-WINDOWS/Members/Auditors",
+    "path": "Safes/PAM-PRD-ERP-WIN/Members/GG_PAM_AUDITORS",
     "body": null,
     "status": 204
   },
   {
     "id": "safe.members.get.safe.member",
     "method": "GET",
-    "path": "Safes/APP-PROD-WINDOWS/Members/Auditors",
+    "path": "Safes/PAM-PRD-ERP-WIN/Members/GG_PAM_AUDITORS",
     "body": null,
     "status": 200
   },
   {
     "id": "safe.members.update.safe.member",
     "method": "PUT",
-    "path": "Safes/APP-PROD-WINDOWS/Members/Auditors",
+    "path": "Safes/PAM-PRD-ERP-WIN/Members/GG_PAM_AUDITORS",
     "body": {
       "permissions": {
         "listAccounts": true,
@@ -443,21 +443,21 @@
   {
     "id": "safes.delete.safe",
     "method": "DELETE",
-    "path": "Safes/APP-PROD-WINDOWS",
+    "path": "Safes/PAM-PRD-ERP-WIN",
     "body": null,
     "status": 409
   },
   {
     "id": "safes.get.safe.details",
     "method": "GET",
-    "path": "Safes/APP-PROD-WINDOWS",
+    "path": "Safes/PAM-PRD-ERP-WIN",
     "body": null,
     "status": 200
   },
   {
     "id": "safes.update.safe",
     "method": "PUT",
-    "path": "Safes/APP-PROD-WINDOWS",
+    "path": "Safes/PAM-PRD-ERP-WIN",
     "body": {
       "description": "Changed safe"
     },

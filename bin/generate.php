@@ -138,7 +138,7 @@ foreach ($postman as $folder => $items) {
     $folders[] = ['name' => $folder, 'item' => $items];
     writeArtifact('clients/bruno/'.$folder.'/folder.bru', "meta {\n  name: $folder\n  seq: ".count($folders)."\n}\n");
 }
-writeArtifact('clients/postman/pam-mock.postman_collection.json', encode(['info' => ['name' => 'PAM Mock Server', 'schema' => 'https://schema.getpostman.com/json/collection/v2.1.0/collection.json', 'description' => 'Independent local mock. Generated from the project contract; not copied from a vendor collection.'], 'item' => $folders]));
+writeArtifact('clients/postman/pam-mock-smoke.postman_collection.json', encode(['info' => ['name' => 'PAM Mock Server', 'schema' => 'https://schema.getpostman.com/json/collection/v2.1.0/collection.json', 'description' => 'Independent local mock. Generated from the project contract; not copied from a vendor collection.'], 'item' => $folders]));
 writeArtifact('clients/postman/local.postman_environment.json', encode(['name' => 'PAM Mock local', 'values' => array_map(fn ($key, $value) => ['key' => $key, 'value' => $value, 'enabled' => true, 'type' => 'default'], array_keys($env), $env)]));
 writeArtifact('clients/bruno/bruno.json', encode(['version' => '1', 'name' => 'PAM Mock Server', 'type' => 'collection', 'ignore' => ['node_modules', '.git']]));
 $bruEnv = "vars {\n";
@@ -147,3 +147,5 @@ foreach ($env as $key => $value) {
 } $bruEnv .= "}\n";
 writeArtifact('clients/bruno/environments/local.bru', $bruEnv);
 echo "Generated inventory, coverage, and client collections from $total operations.\n";
+
+require __DIR__.'/generate-postman.php';

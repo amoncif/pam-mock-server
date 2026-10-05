@@ -69,7 +69,7 @@ final class CoreModulesTest extends WebTestCase
         $this->call('POST', 'UserGroups/'.$g['id'].'/Members', ['memberId' => (string) $u['id'], 'memberType' => 'vault'], 201);
         $safe = $this->call('POST', 'Safes', ['safeName' => 'SCENARIO', 'numberOfVersionsRetention' => 5], 201);
         $this->call('POST', 'Safes/SCENARIO/Members', ['memberName' => $g['groupName'], 'MemberType' => 'Group', 'permissions' => ['listAccounts' => true, 'retrieveAccounts' => true]], 201);
-        $a = $this->call('POST', 'Accounts', ['name' => 'Scenario', 'userName' => 'svc.test', 'address' => 'test.acme.example', 'safeName' => 'SCENARIO', 'platformId' => 'MockWinDomain', 'secret' => 'FictionalSecret123!'], 201);
+        $a = $this->call('POST', 'Accounts', ['name' => 'Scenario', 'userName' => 'svc.test', 'address' => 'test.acme.example', 'safeName' => 'SCENARIO', 'platformId' => 'ACME-WinDomain', 'secret' => 'FictionalSecret123!'], 201);
         self::assertArrayNotHasKey('_secret', $a);
         self::assertArrayNotHasKey('secret', $a);
         $token = $this->login('scenario.user', 'LocalScenario123!');
@@ -133,9 +133,9 @@ final class CoreModulesTest extends WebTestCase
         self::assertSame('ChangedMockSecret!', $this->call('POST', 'Accounts/1_1/Password/Retrieve'));
         self::assertSame('ACME-Mock-Only-001!', $this->call('POST', 'Accounts/1_1/Password/Retrieve', ['Version' => 1]));
         self::assertStringNotContainsString('ACME-Mock-Only', json_encode($this->call('GET', 'Accounts/1_1/Secret/Versions')));
-        $this->call('DELETE', 'Safes/APP-PROD-WINDOWS', null, 409);
+        $this->call('DELETE', 'Safes/PAM-PRD-ERP-WIN', null, 409);
         $this->call('DELETE', 'Platforms/targets/1', null, 409);
-        $this->call('POST', 'Safes', ['safeName' => 'app-prod-windows'], 409);
+        $this->call('POST', 'Safes', ['safeName' => 'pam-prd-erp-win'], 409);
         $this->call('POST', 'Users', ['username' => 'PAMADMIN', 'initialPassword' => 'MockOnly!'], 409);
         $this->call('POST', 'Users/1/disable', null, 409);
     }
@@ -143,12 +143,15 @@ final class CoreModulesTest extends WebTestCase
     public function testPlatformPolicyOverrideRoundtripAndValidation(): void
     {
         $path = 'Platforms/Targets/1/PrivilegedSessionManagement';
-        $policy = ['PSMServerId' => 'PSM-LAB-02', 'PSMConnectors' => [['PSMConnectorID' => 'PSM-RDP', 'Enabled' => true, 'OverrideUserParameters' => [['Name' => 'Port', 'Value' => '3390', 'Visible' => false]]]]];
+        $policy = ['PSMServerId' => 'PSM-LAB-02', 'PSMConnectors' => [['PSMConnectorID' => 'PSM-RDP', 'Enabled' => true]]];
         self::assertSame($policy, $this->call('PUT', $path, $policy));
         self::assertSame($policy, $this->call('GET', $path));
+        $unsupported = $policy;
+        $unsupported['PSMConnectors'][0]['OverrideUserParameters'] = [];
+        $this->call('PUT', $path, $unsupported, 400);
         $rdp = $this->call('POST', 'Accounts/1_1/PSMConnect', ['ConnectionComponent' => 'PSM-RDP']);
-        self::assertStringContainsString('psm-02.acme.example', $rdp);
-        self::assertStringContainsString('/p 3390', $rdp);
+        self::assertStringContainsString('psm-02.corp.acme.example', $rdp);
+        self::assertStringContainsString('/p 3389', $rdp);
         self::assertStringNotContainsString('ACME-Mock-Only', $rdp);
         $invalid = $policy;
         $invalid['PSMServerId'] = 'PSMP-LAB-01';
@@ -174,7 +177,7 @@ final class CoreModulesTest extends WebTestCase
         $users = $this->call('GET', 'Users?search=pamadmin');
         self::assertSame(1, $users['Total']);
         self::assertSame('pamadmin', $users['Users'][0]['username']);
-        $accounts = $this->call('GET', 'Accounts?filter=safeName%20eq%20APP-PROD-WINDOWS&limit=2&offset=1');
+        $accounts = $this->call('GET', 'Accounts?filter=safeName%20eq%20PAM-PRD-ERP-WIN&limit=2&offset=1');
         self::assertCount(2, $accounts['value']);
         self::assertSame(8, $accounts['count']);
         $this->call('GET', 'Accounts?limit=-1', null, 400);

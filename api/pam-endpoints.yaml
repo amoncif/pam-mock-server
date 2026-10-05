@@ -2270,8 +2270,8 @@
       "example": {
         "userName": "svc.new",
         "address": "new.acme.example",
-        "safeName": "APP-PROD-WINDOWS",
-        "platformId": "MockWinDomain",
+        "safeName": "PAM-PRD-ERP-WIN",
+        "platformId": "ACME-WinDomain",
         "secret": "LocalMock123!"
       }
     },
@@ -18547,34 +18547,6 @@
               },
               "Enabled": {
                 "type": "boolean"
-              },
-              "OverrideUserParameters": {
-                "type": "array",
-                "description": "Mock extension: per-connector overrides. Port is used in generated mock RDP files.",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "Name",
-                    "Value"
-                  ],
-                  "properties": {
-                    "Name": {
-                      "type": "string"
-                    },
-                    "Value": {
-                      "type": "string"
-                    },
-                    "Visible": {
-                      "type": "boolean"
-                    },
-                    "Required": {
-                      "type": "boolean"
-                    },
-                    "UserParameter": {
-                      "type": "boolean"
-                    }
-                  }
-                }
               }
             }
           }
@@ -18585,14 +18557,7 @@
         "PSMConnectors": [
           {
             "PSMConnectorID": "PSM-RDP",
-            "Enabled": true,
-            "OverrideUserParameters": [
-              {
-                "Name": "Port",
-                "Value": "3389",
-                "Visible": true
-              }
-            ]
+            "Enabled": true
           }
         ]
       }
